@@ -62,7 +62,7 @@ body {
 
 .card-slide:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -76,6 +76,7 @@ body {
 .nav-item img {
     border-radius: 50%;
     transition: transform 0.3s ease;
+    box-shadow: 0px 5px 10px lime;
 }
 
 .nav-item img:hover {
@@ -85,6 +86,7 @@ body {
 h4.fs-6 {
     margin: 0;
     font-size: 16px;
+    text-shadow: 0px 5px 10px lime;
 }
 
 @media (max-width: 768px) {
@@ -127,8 +129,10 @@ header h1 {
 }
 
 nav {
+   
     color: black;
     padding: 10px 0;
+    text-shadow: 0px 5px 10px lime;
 }
 
 nav ul {
@@ -143,13 +147,14 @@ nav ul li {
 
 nav ul li a {
     color: black;
-    text-decoration: none;
+border-bottom: rgba(0, 0, 0, 0);
+transition:ease-in-out .5s;
+}
+nav ul li a:hover{
+text-decoration: underline;
+color: lime;
 }
 
-nav ul li a:hover {
-    text-decoration: 2px underline;
-    color: lime;
-}
 
 main {
     padding: 20px;
@@ -162,12 +167,11 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: black;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 10px 0;
     position: fixed;
