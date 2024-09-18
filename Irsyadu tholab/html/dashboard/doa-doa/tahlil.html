@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Al-Quran</title>
+    <title>Hope UI | Responsive Bootstrap 5 Admin Dashboard Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
@@ -30,6 +30,71 @@
     <!-- RTL Css -->
     <link rel="stylesheet" href="../../assets/css/rtl.min.css" />
 
+    <style>
+        .body {
+            font-family: Noto Sans Arabic;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-md {
+            font-size: 18px;
+        }
+
+        .text-primary-500 {
+            color: #3498db;
+        }
+
+        .mb-3 {
+            margin-bottom: 30px;
+        }
+
+        .sm:mt-3 {
+            margin-top: 30px;
+        }
+
+        .sm:mb-4 {
+            margin-bottom: 40px;
+        }
+
+        .dark:text-neutral-300 {
+            color: #333;
+        }
+    </style>
 
 </head>
 
@@ -83,7 +148,8 @@
             </div>
             <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                 <i class="icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor"
@@ -107,8 +173,8 @@
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="../admin.html">
                                 <i class="icon">
-                                    <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        class="icon-20">
+                                    <svg width="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="icon-20">
                                         <path opacity="0.4"
                                             d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z"
                                             fill="currentColor"></path>
@@ -370,12 +436,8 @@
                             <div class="flex-wrap text-center">
                                 <div class="d-block justify-content-center gap-2 align-items-center">
                                     <img src="../assets/icon/pattern.png" height="40px" alt="" />
-                                    <h2 class="mx-lg-5 fs-lg-1"><b>Surat () </b></h2>
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="ms-4">Arti : </p>
-                                        <p class="ms-4">Jumlah Ayat : </p>
-                                        <p class="ms-4">Tempat Turun : </p>
-                                    </div>
+                                    <h2 class="mx-lg-5 fs-lg-1"><b>Bacaan Tahlil</b></h2>
+
                                     <img src="../assets/icon/pattern.png" height="40px" alt="" />
                                 </div>
                             </div>
@@ -406,53 +468,407 @@
                 <div class="col-12">
                     <div class="card mt-4">
 
-                        <div class="card-header d-block" style="border-bottom: 2px solid rgb(163, 160, 160);">
-                            <a href="../alquran.html" class="btn btn-danger mt-2 ms-4"
-                                style="width: 200px; height: 65px;">
-                                <p class="text-white">Kembali Ke Daftar Surat</p>
-                            </a>
+                        <!-- tahlil start -->
 
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <a href=".html" class="btn btn-success mb-2 me-2 "
-                                    style="width: 300px; height: 40px;">
-                                    <p class="text-white"> Surat Sebelumnya</p>
-                                </a>
 
-                                <a href=".html" class="btn btn-success mb-2 me-2 "
-                                    style="width: 300px; height: 40px;">
-                                    <p class="text-white"> Surat Selanjutnya</p>
-                                </a>
-                            </div>
-                        </div>
 
-                        <!-- Isi surat -->
-
-                        <div class="col-md-12 mt-3">
-                            <div class="mt-3 border-bottom">
+                        <div class="col-md-12">
+                            <div class="card">
                                 <div class="card-body">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-6 col-12">
-                                            <p class="mt-2"><i>Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6 col-12 text-end">
-                                            <h3>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h3>
-                                            <small>bismillāhir-raḥmānir-raḥīm(i).</small>
-                                        </div>
-                                    </div>
+                                    <h1 class="text-right">إِلَى حَضْرَةِ النَّبِيِّ الْمُصْطَفَى سَيِّدِنَا مُحمَّدٍ
+                                        صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وَاٰلِهِ وَأَزْوَاجِهِ وَأَوْلَادِهِ
+                                        وَذُرِّيَّاتِهِ الْفَــاتِحَةُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Ila
+                                        ḫadlratin-nabiyyil-musthafâ sayyidinâ Muḫammadin shallallahu ‘alaihi wa sallama
+                                        wa âlihi wa azwâjihi wa awlâdihi wa dzurriyyâtihi al-fâtiḫah</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Kepada yang terhormat
+                                        Nabi Muhammad ﷺ, segenap keluarga, istri-istrinya, anak-anaknya, dan
+                                        keturunannya. Bacaan Al-Fatihah ini kami tujukan kepada Allah dan pahalanya
+                                        untuk mereka semua. Al-Fatihah…</p>
                                 </div>
                             </div>
                         </div>
 
 
-                        <!-- Akhir surat -->
 
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">ثُمَّ إِلَى حَضْرَةِ إِخْوَانِهِ مِنَ الْأَنْبِيَاءِ
+                                        وَالْمُرْسَلِيْنَ وَالْأَوْلِيَاءِ وَالشُّهَدَاءِ وَالصَّالِحِيْنَ
+                                        وَالصَّحَابَةِ وَالتَّابِعِيْنَ وَالْعُلَمَاءِ الْعَامِلِيْنَ وَالْمُصَنِّفِيْنَ
+                                        الْمُخْلِصِيْنَ وَجَمِيْعِ الْمَلَائِكَةِ الْمُقَرَّبِيْنَ، خُصُوْصًا إِلَى
+                                        سَيِّدِنَا الشَّيْخِ عَبْدِ الْقَادِرِ الْجِيْلَانِي وَخُصُوْصًا إِلَى
+                                        مُؤَسِّسِيْ جَمْعِيَّةِ نَهْضَةِ الْعُلَمَاءِ الْفَــاتِحَةُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Tsumma ilâ ḫadlrati
+                                        ikhwânihi minal-anbiya’i wal-mursalîn wal-auliya’i wasy-syuhadâ’i wash-shâlihîn
+                                        wash-shaḫâbati wat tâbi‘în wal-‘ulamâ’il-‘âmilîn wal-mushannifînal-mukhlishîn wa
+                                        jamî‘il-malâikatil-muqarrabîn, khusûshan ilâ sayyidinâsy-syaikh ‘abdil qâdir
+                                        al-jîlânî wa khushûshan ilâ muassisî jam‘iyyah Nahdlatil Ulama, al-fâtiḫah</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Lalu kepada segenap
+                                        saudara beliau dari kalangan pada nabi, rasul, wali, syuhada, orang-orang saleh,
+                                        sahabat, tabi‘in, ulama al-amilin (yang mengamalkan ilmunya), ulama penulis yang
+                                        ikhlas, semua malaikat Muqarrabin, terkhusus kepada Syekh Abdul Qadir al-Jilani
+                                        dan para pendiri organisasi Nahdlatul Ulama. Bacaan Al-Fatihah ini kami tujukan
+                                        kepada Allah dan pahalanya untuk mereka semua. Al-Fatihah.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">ثُمَّ إِلَى جَمِيْعِ أَهْلِ الْقُبُوْرِ مِنَ الْمُسْلِمِيْنَ
+                                        وَالْمُسْلِمَاتِ وَالْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ مِنْ مَشَارِقِ الْأَرْضِ
+                                        إِلَى مَغَارِبِهَا بَرِّهَا وَبَحْرِهَا خُصُوْصًا إِلَى اٰبَائِنَا
+                                        وَأُمَّهَاتِنَا وَأَجْدَادِنَا وَجَدَّاتِنَا وَمَشَايِخِنَا وَمَشَايِخِ
+                                        مَشَايِخِنَا وَأَسَاتِذَةِ أَسَاتِذَتِنَا وَلِمَنْ أَحْسَنَ إِلَيْنَا وَلِمَنِ
+                                        اجْتَمَعْنَا هٰهُنَا بِسَبَبِهِ الْفَاتِحَةُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Tsumma ilâ jamî‘i
+                                        ahlil-qubûri minal-muslimîna wal-muslimâti wal-mu’minîna wal-mu’minâti min
+                                        masyâriqil-ardli ilâ maghâribihâ barrihâ wa baḫrihâ khushushan ilâ abâ’inâ wa
+                                        ummahâtinâ wa ajdâdinâ wa jaddâtina wa masyâkhinâ wa masyâyikhi masyâyikhinâ wa
+                                        asâtidzati asâtidzatinâ wa liman aḫsana ilainâ wa liman ijtama‘nâ hâhunâ
+                                        bisababihi, al-fâtiḫah</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Kemudian kepada semua
+                                        ahli kubur Muslimin, Muslimat, Mukminin, Mukminat dari Timur ke Barat, baik di
+                                        laut dan di darat, khususnya bapak kami, ibu kami, kakek kami, nenek kami, guru
+                                        kami, pengajar dari guru kami, mereka yang telah berbuat baik kepada kami, dan
+                                        bagi ahli kubur/arwah yang menjadi sebab kami berkumpul di sini. Bacaan
+                                        Al-Fatihah ini kami tujukan kepada Allah dan pahalanya untuk mereka semua.
+                                        Al-Fatihah.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">ثُمَّ إِلَى جَمِيْعِ أهْلِ الْقُبُوْرِ مِمَّنْ ذُكِرَتْ
+                                        أَسْمَاؤُهُ فِيْ هٰذِهِ الرِّسَالَةِ حَضْرَةِ رُوْحِ …</h1>
+                                    <h1 class="text-right">وَحَضْرَةِ رُوْحِ …</h1>
+                                    <h1 class="text-right">وَحَضْرَةِ رُوْحِ …</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Tsumma ilâ jamî‘i
+                                        ahlil-qubûri mimman dzukirot asmâ’uhu fi hâdzihir risâlati, ḫadlrati rûhi…, wa
+                                        ḫadlrati rûhi…, wa ḫadlrati rûhi…, roḫimahumullâhu wa ghafarahum, al-fâtiḫah</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Kemudian kepada semua
+                                        ahli kubur, yang namanya disebutkan dalam risalah ini. Kepada…, dan kepada…, dan
+                                        kepada…. Semoga Allah merahmati dan mengampuni mereka. Bacaan Al-Fatihah ini
+                                        kami tujukan kepada Allah dan pahalanya untuk mereka semua. Al-Fatihah.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1><br>
+                                    <h1 class="text-right">قُلْ هُوَ اللّٰهُ اَحَدٌۚ، اَللّٰهُ الصَّمَدُۚ، لَمْ يَلِدْ
+                                        وَلَمْ يُوْلَدْۙ، وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَـــــدٌ ×٣</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">
+                                        Bismillâhir-raḫmânir-raḫîm(i), Qul huwallâhu aḫad, Allâhush-shamad, lam yalid wa
+                                        lam yûlad, wa lam yakul lahû kufuwan aḫad 3x</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Dengan menyebut nama
+                                        Allah yang maha pengasih lagi maha penyayang. Katakanlah (Muhammad), “Dialah
+                                        Allah, Yang Maha Esa. Allah tempat meminta segala sesuatu. (Allah) tidak beranak
+                                        dan tidak pula diperanakkan. Dan tidak ada sesuatu yang setara dengan Dia.” (3
+                                        kali).</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">لَا إِلٰهَ إِلَّا اللهُ وَاللهُ أَكْبَرُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Lâ ilâha illâllâhu wallâhu
+                                        akbar</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Tiada tuhan yang layak
+                                        disembah kecuali Allah. Allah maha besar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1><br>
+                                    <h1 class="text-right">قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ، مِنْ شَرِّ مَـــا خَلَقَۙ،
+                                        وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ، وَمِنْ شَرِّ النَّفّٰثٰتِ فِى الْعُقَدِۙ،
+                                        وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">
+                                        Bismillâhir-raḫmânir-raḫîm(i), Qul a‘udzu bi rabbil-falaq, min syarri mâ khalaq,
+                                        wa min syarri ghâsiqin idzâ waqab, wa min syarrin-naffâtsâti fîl-‘uqad, wa min
+                                        syarri ḫâsidin idzâ ḫasad</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Dengan menyebut nama
+                                        Allah yang maha pengasih lagi maha penyayang. Katakanlah, “Aku berlindung kepada
+                                        Tuhan yang menguasai subuh (fajar), dari kejahatan (makhluk yang) Dia ciptakan,
+                                        dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan
+                                        (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya), dan dari
+                                        kejahatan orang yang dengki apabila dia dengki.”</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">لَا إِلٰهَ إِلَّا اللهُ وَاللهُ أَكْبَرُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Lâ ilâha illâllâhu wallâhu
+                                        akbar</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Tiada tuhan yang layak
+                                        disembah kecuali Allah. Allah maha besar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1><br>
+                                    <h1 class="text-right">قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ، مَلِكِ النَّـــاسِۙ، اِلٰهِ
+                                        النَّاسِۙ، مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِۖ، الَّذِيْ يُوَسْوِسُ فِيْ
+                                        صُدُوْرِ النَّاسِۙ، مِنَ الْجِنَّةِ وَالنَّــاسِ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">
+                                        Bismillâhir-raḫmânir-raḫîm(i), Qul a‘udzû bi rabbin-nâs, malikin-nâs,
+                                        ilahin-nâs, min syarril-waswâsil khannâs, alladzi yuwaswisu fî shudûrin-nâs,
+                                        minal-jinnati wan-nâs.</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Dengan menyebut nama
+                                        Allah yang maha pengasih lagi maha penyayang. Katakanlah, “Aku berlindung kepada
+                                        Tuhannya manusia, raja manusia, sembahan manusia, dari kejahatan (bisikan) setan
+                                        yang bersembunyi, yang membisikkan (kejahatan) ke dalam dada manusia, dari
+                                        (golongan) jin dan manusia.”</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">لَا إِلٰهَ إِلَّا اللهُ وَاللهُ أَكْبَرُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4">Lâ ilâha illâllâhu wallâhu
+                                        akbar</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Tiada tuhan yang layak
+                                        disembah kecuali Allah. Allah maha besar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                                    <h1 class="text-right">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ، الرَّحْمٰنِ
+                                        الرَّحِيْمِۙ، مٰلِكِ يَوْمِ الدِّيْنِۗ، اِيَّاكَ نَعْبُدُ وَاِيَّاكَ
+                                        نَسْتَعِيْنُۗ، اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَۙ، صِرَاطَ الَّذِيْنَ
+                                        اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ
+                                    </h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">
+                                        Bismillâhir-raḫmânir-raḫîm(i), al-ḫamdu lillâhi rabbil-‘âlamîn,
+                                        Ar-raḫmânir-raḫîm, mâliki yaumid-dîn, iyyâka na‘budu wa iyyâka nasta‘în,
+                                        ihdinâsh-shirâthal-mustaqîm, shirâtal ladzîna an‘amta ‘alaihim ghairil-maghdlûbi
+                                        ‘alaihim wa lâdl-dlâllîn. Âmîn</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Dengan menyebut nama
+                                        Allah yang maha pengasih lagi maha penyayang. Segala puji bagi Allah, Tuhan
+                                        semesta alam. Yang maha pengasih lagi maha penyayang. Yang menguasai hari
+                                        pembalasan. Hanya kepada-Mu kami menyembah. Hanya kepada-Mu pula kami memohon
+                                        pertolongan. Tunjukkanlah kami ke jalan yang lurus, yaitu jalan orang-orang yang
+                                        telah Kauanugerahi nikmat kepada mereka, bukan jalan mereka yang dimurkai dan
+                                        bukan pula jalan mereka yang sesat. Semoga Kaukabulkan permohonan kami.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                                    <h1 class="text-right"> الۤــــــمّۤۚ، ذٰلِكَ الْكِتٰبُ لَا رَيْبَۛ فِيْهِۛ هُدًى
+                                        لِّلْمُتَّقِيْنَۙ، الَّذِيْنَ يُؤْمِنُوْنَ بِالْغَيْبِ وَيُقِيْمُوْنَ الصَّلٰوةَ
+                                        وَمِمَّا رَزَقْنٰهُمْ يُنْفِقُوْنَۙ، وَالَّذِيْنَ يُؤْمِنُوْنَ بِمَآ اُنْزِلَ
+                                        اِلَيْكَ وَمَآ اُنْزِلَ مِنْ قَبْلِكَ ۚ وَبِالْاٰخِرَةِ هُمْ يُوْقِنُوْنَۗ،
+                                        اُولٰۤىِٕكَ عَلٰى هُدًى مِّنْ رَّبِّهِمْۙ وَاُولٰۤىِٕكَ هُمُ الْمُفْلِحُوْنَ
+                                    </h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">
+                                        Bismillâhir-rahmânir-rahîm(i), Alif Lâm Mîm, dzâlikal-kitâbu lâ raiba fîhi,
+                                        hudal-lilmuttaqîn, al-ladzîna yu’minûna bil-ghaibi wa yuqîmûnash-shalâta wa
+                                        mimmâ razaqnâhum yunfiqûn, wal-ladzîna yu’minûna bimâ unzila ilaika wa mâ unzila
+                                        min qablika, wa bil-âkhirati hum yûqinûn, ulâ’ika ‘alâ hudam mir rabbihim wa
+                                        ulâ’ika humul-mufliḫûn.</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Dengan menyebut nama
+                                        Allah yang maha pengasih lagi maha penyayang. Alif lam mim. Demikian itu kitab
+                                        ini tidak ada keraguan padanya. Sebagai petunjuk bagi mereka yang bertakwa.
+                                        Yaitu mereka yang beriman kepada yang ghaib, yang mendirikan shalat, dan
+                                        menafkahkan sebagian rezeki yang kami anugerahkan kepada mereka. Dan mereka yang
+                                        beriman kepada kitab Al-Qur’an yang telah diturunkan kepadamu (Muhammad ﷺ) dan
+                                        kitab-kitab yang telah diturunkan sebelumnya, serta mereka yakin akan adanya
+                                        kehidupan akhirat. Mereka itulah yang tetap mendapat petunjuk dari tuhannya.
+                                        Merekalah orang orang yang beruntung.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="text-right">وَإِلٰهُكُمْ إِلٰهٌ وَّاحِدٌ لَا إِلٰهَ إِلَّا هُوَ
+                                        الرَّحْمٰنُ الرَّحِيمُ</h1>
+                                    <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Wa
+                                        ilâhukum ilâhuw wâḫidul lâ ilâha illa Huwar-raḫmânur-raḫîm.</p>
+                                    <p class="text-md text-neutral-700 dark:text-neutral-300">Artinya, “Dan Tuhan
+                                        kalian adalah Tuhan yang maha esa. Tiada tuhan yang layak disembah kecuali Dia
+                                        yang maha pengasih lagi maha penyayang.”</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Allahu lâ ilâha illa huwal-ḫayyul-qayyûm(u). Lâ ta’khudzuhû sinatuw wa lâ naûm(u). Lahû mâ fis-samâwâti wa mâ fil-ardl. Man dzal ladzî yasyfa’u ‘indahû illâ bi idznih(i). Ya’lamu mâ baina aidîhim wa mâ khalfahum. Wa lâ yuḫithûna bi syai’in min ‘ilmihî illâ bimâ syâ’a wasi’a kursiyyuhus-samawâti wal-ardl. Wa lâ ya’ûduhu ḫifdhuhumâ wahuwal-‘aliyyul-adhîm.</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Allah, tiada yang layak disembah kecuali Dia yang hidup kekal lagi berdiri sendiri. Tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan di bumi. Tiada yang dapat memberikan syafaat di sisi-Nya kecuali dengan izin-Nya. Dia mengetahui apa yang ada di hadapan dan di belakang mereka. Mereka tidak mengetahui sesuatu dari ilmu-Nya kecuali apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dia tidak merasa berat menjaga keduanya. Dia maha tinggi lagi maha agung.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">لِلّٰهِ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ وَاِنْ تُبْدُوْا مَا فِيْٓ اَنْفُسِكُمْ اَوْ تُخْفُوْهُ يُحَاسِبْكُمْ بِهِ اللّٰهُۗ فَيَغْفِرُ لِمَنْ يَّشَاۤءُ وَيُعَذِّبُ مَنْ يَّشَاۤءُۗ وَاللّٰهُ عَلٰى كُلِّ شَيْءٍ قَدِيْرٌ، اٰمَنَ الرَّسُوْلُ بِمَآ اُنْزِلَ اِلَيْهِ مِنْ رَّبِّهٖ وَالْمُؤْمِنُوْنَۗ كُلٌّ اٰمَنَ بِاللّٰهِ وَمَلٰۤىِٕكَتِهٖ وَكُتُبِهٖ وَرُسُلِهٖۗ لَا نُفَرِّقُ بَيْنَ اَحَدٍ مِّنْ رُّسُلِهٖۗ وَقَالُوْا سَمِعْنَا وَاَطَعْنَا غُفْرَانَكَ رَبَّنَا وَاِلَيْكَ الْمَصِيْرُ، لَا يُكَلِّفُ اللّٰهُ نَفْسًا اِلَّا وُسْعَهَاۗ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْۗ رَبَّنَا لَا تُؤَاخِذْنَآ اِنْ نَّسِيْنَآ اَوْ اَخْطَأْنَاۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ اِصْرًا كَمَا حَمَلْتَهٗ عَلَى الَّذِيْنَ مِنْ قَبْلِنَاۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهٖۚ
+                          وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ×٧
+                          أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Lillâhi mâ fis-samawâti wa mâ fil-ardli, wa in tubdû mâ fî anfusikum au tukhfûhu yuḫâsibkum bihillah. Fayaghfiru limay yasyâ’u wa yu‘adzdzibu may yasyâ’u. Wallahu ‘alâ kulli syai’in qadîr. Âmanar-rasûlu bimâ unzila ilaihi mir rabbihi wal-mu’minûn(a), kullun âmana billâhi wa malâ’ikatihi wa kutubihi wa rusulih(i). Lâ nufarriqu baina aḫadim mir-rusulihi wa qâlû sami‘nâ wa atha‘nâ gufrânaka rabbanâ wa ilaikal-mashîr. La yukallifullâhu nafsan illâ wus‘ahâ lahâ mâ kasabat wa ‘alaihâ mâk tasabat. Rabbanâ la tu’akhidhnâ in nasînâ au akhtha’na rabbanâ walâ taḫmil alainâ ishran kamâ ḫamaltahu ‘alal-ladzinâ min qablinâ rabbanâ wa lâ tuḫammilnâ mâ lâ thâqata lanâ bihi</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Hanya milik Allah segala yang ada di langit dan yang ada di bumi. Jika kamu menyatakan atau merahasiakan apa saja yang di hatimu, maka kamu dengan itu semua tetap akan diperhitungkan oleh Allah. Dia akan mengampuni dan menyiksa orang yang dikehendaki. Allah maha kuasa atas segala sesuatu. Rasulullah dan orang-orang yang beriman mempercayai apa saja yang diturunkan kepadanya dari Tuhannya. Semuanya beriman kepada Allah, para malaikat-Nya, kitab-kitab-Nya, dan kepada para utusan-Nya. ‘Kami tidak membeda-bedakan seorang rasul dari lainnya.’ Mereka berkata, ‘Kami mendengar dan kami menaati. Ampunan-Mu, wahai Tuhan kami, yang kami harapkan. Hanya kepada-Mu tempat kembali.’ Allah tidak membebani seseorang kecuali dengan kemampuannya. Ia mendapat balasan atas apa yang dia perbuat dan siksaan dari apa yang dia lakukan. ‘Tuhan kami, janganlah Kau siksa kami jika kami terlupa atau salah. Tuhan kami, jangan Kau tanggungkan pada kami dengan beban berat sebagaimana Kaubebankan kaum sebelum kami. Jangan pula Kaubebankan pada kami sesuatu yang kami tidak mampu. Ampunilah kami. Kasihanilah kami. Kau pemimpin kami. Tolonglah kami menghadapi golongan kafir.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">ارْحَمْنَا، يَا أَرْحَمَ الرَّاحِمِيْنَ ×٧</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Irḫamnâ yâ arḫamar-râḫimîn 7x</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Kasihani kami, wahai Tuhan yang maha kasih (7 kali).</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">رَحْمَةُ اللهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ الْبَيْتِ إِنَّهُ حَمِيْدٌ مَّجِيْدٌ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Raḫmatul-lâhi wa barakâtuhu ‘alaikum ahlal-baiti innahu ḫamîdun majîd</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Dan rahmat Allah serta berkah-Nya (kami harapkan) melimpah di atas kamu sekalian wahai ahlul bait. Sungguh Dia maha terpuji lagi maha pemurah.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">إِنَّمَا يُريِدُ اللهُ لِيُذْهِبَ عَنْكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيْرًا</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Innamâ yurîdullâhu liyudzhiba ‘ankumur-rijsa ahlal-baiti wa yuthahhira kum tathhîra</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Sungguh Allah berkehendak menghilangkan segala kotoran padamu, wahai ahlul bait, dan menyucikanmu sebersih-bersihnya.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">إِنَّ اللهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ، يَا أَيُّهَا الَّذِيْنَ أٰمَنُوْا صَلُّوْا عَلَيْهِ وَسَلِّمُوْا تَسْلِيْمًا</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Innallâha wa malâ’ikatahu yushallûna ‘alan-nabiyyi yâ ayyuhal-ladzina âmanû shallû ‘alaihi wa sallimû taslîmâ</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Sungguh Allah dan para malaikat-Nya bershalawat untuk nabi. Wahai orang-orang yang beriman, bacalah shalawat untuknya dan ucapkanlah salam penghormatan kepadanya.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">اَللّٰهُمَّ صَلِّ أَفْضَلَ الصَّلَاةِ عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ نُوْرِ الْهُدَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اٰلِهِ وَصَحْهِ وَسَلِّمْ، عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Allâhumma shalli afdlalash-shalâti ‘alâ as‘adi makhlûqôtika nûril-hudâ sayyidinâ Muḫammadin wa ‘alâ âlihi wa shaḫbihi wa sallim, ‘adada ma‘lûmâtika wa midâda kalimâtika kullamâ dzakaradz dzâkirûna wa ghafala ‘an dzikrikal ghâfilûn</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Ya Allah, tambahkanlah rahmat dan kesejahteraan untuk makhluk paling bahagia, cahaya petunjuk, pemimpin dan tuan kami, Nabi Muhammad ﷺ, serta keluarganya, sebanyak pengetahuan-Mu dan sebanyak tinta kalimat-kalimat-Mu pada saat dzikir orang-orang yang ingat dan pada saat lengah orang-orang yang lalai berzikir kepada-Mu.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">اَللّٰهُمَّ صَلِّ أَفْضَلَ الصَّلَاةِ عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ شَمْسِ الضُّحَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اٰلِهِ وَصَحْبِهِ وَسَلِّمْ، عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Allâhumma shalli afdlalash shalati ‘alâ as‘adi makhlûqôtika syamsidl dluḫâ sayyidinâ Muḫammadin wa ‘alâ âlihi wa shaḫbihi wa sallim, ‘adada ma‘lûmâtika wa midâda kalimâtika kullamâ dzakaradz dzâkirûna wa ghafala ‘an dzikrikal ghâfilûn</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Ya Allah, tambahkanlah rahmat dan kesejahteraan untuk makhluk paling bahagia, matahari dhuha, pemimpin dan tuan kami, Nabi Muhammad ﷺ, serta keluarganya, sebanyak pengetahuan-Mu dan sebanyak tinta kalimat-kalimat-Mu pada saat dzikir orang-orang yang ingat dan pada saat lengah orang-orang yang lalai berzikir kepada-Mu.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">اَللّٰهُمَّ صَلِّ أَفْضَلَ الصَّلَاةِ عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ بَدْرِ الدُّجَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اٰلِهِ وَصَحْبِهِ وَسَلِّمْ، عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Allâhumma shalli afdlalash-shalati ‘alâ as‘adi makhlûqôtika badrid-dujâ sayyidinâ Muḫammadin wa ‘alâ âlihi wa shaḫbihi wa sallim, ‘adada ma‘lûmâtika wa midâda kalimâtika kullamâ dzakaradz-dzâkirûna wa ghafala ‘an dzikrikal-ghâfilûn</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Ya Allah, tambahkanlah rahmat dan kesejahteraan untuk makhluk paling bahagia, purnama kegelapan, pemimpin dan tuan kami, Nabi Muhammad ﷺ, serta keluarganya, sebanyak pengetahuan-Mu dan sebanyak tinta kalimat-kalimat-Mu pada saat dzikir orang-orang yang ingat dan pada saat lengah orang-orang yang lalai berzikir kepada-Mu.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">وَسَلِّمْ وَرَضِيَ اللهُ تَعَالَى عَنْ سَادَاتِنَا أَصْحَابِ رَسُوْلِ اللهِ أَجْمَعِيْنَ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Wa sallim wa radliyallahu ta‘âla ‘an sâdâtinâ ash-ḫabi rasulillah ajma‘în</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Semoga Allah yang maha suci dan tinggi meridhai seluruh sahabat Rasulullah.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body">
+                                <h1 class="text-right">حَسْبُنَا اللهُ وَنِعْمَ الْوَكِيْلُ، نِعْمَ الْمَوْلَى وَنِعْمَ النَّصِيْرُ</h1>
+                                <p class="text-md text-primary-500 mb-3 sm:mt-3 sm:mb-4 dark:text-primary-300">Ḫasbunâllâhu wa ni‘mal wakîl, ni‘mal maula w ani‘man nashîr</p>
+                                <p class="text-md text-neutral-700 dark:text-neutral-300">Cukup Allah bagi kami. Dia sebaik-baik wakil (Surat Ali Imran ayat 173). Dia sebaik-baik pemimpin dan penolong (Surat Al-Anfal ayat 40).</p>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                        <!-- tahlil end -->
 
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <div class="btn-download">
+            <a class="btn btn-success px-3 py-2"
+                href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/"
+                target="_blank">
+                <svg class="icon-24" width="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4"
+                        d="M17.554 7.29614C20.005 7.29614 22 9.35594 22 11.8876V16.9199C22 19.4453 20.01 21.5 17.564 21.5L6.448 21.5C3.996 21.5 2 19.4412 2 16.9096V11.8773C2 9.35181 3.991 7.29614 6.438 7.29614H7.378L17.554 7.29614Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M12.5464 16.0374L15.4554 13.0695C15.7554 12.7627 15.7554 12.2691 15.4534 11.9634C15.1514 11.6587 14.6644 11.6597 14.3644 11.9654L12.7714 13.5905L12.7714 3.2821C12.7714 2.85042 12.4264 2.5 12.0004 2.5C11.5754 2.5 11.2314 2.85042 11.2314 3.2821L11.2314 13.5905L9.63742 11.9654C9.33742 11.6597 8.85043 11.6587 8.54843 11.9634C8.39743 12.1168 8.32142 12.3168 8.32142 12.518C8.32142 12.717 8.39743 12.9171 8.54643 13.0695L11.4554 16.0374C11.6004 16.1847 11.7964 16.268 12.0004 16.268C12.2054 16.268 12.4014 16.1847 12.5464 16.0374Z"
+                        fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
         <!-- Footer Section Start -->
         <footer class="footer">
             <div class="footer-body">
@@ -464,7 +880,9 @@
                 </ul>
                 <div class="right-panel">
                     ©
-                    <script>document.write(new Date().getFullYear())</script> Hope UI, Made with
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Hope UI, Made with
                     <span class="">
                         <svg class="icon-15" width="15" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -497,7 +915,8 @@
             <div class="d-flex align-items-center">
                 <h3 class="offcanvas-title me-3" id="offcanvasExampleLabel">Settings</h3>
             </div>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <div class="offcanvas-body data-scrollbar">
             <div class="row">
@@ -534,8 +953,9 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <h5 class="mt-4 mb-3">Color Customizer</h5>
                         <button class="btn btn-transparent p-0 border-0" data-value="theme-color-default"
-                            data-info="#079aa2" data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="" data-bs-original-title="Default">
+                            data-info="#079aa2" data-setting="color-mode1" data-name="color"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
+                            data-bs-original-title="Default">
                             <svg class="icon-18" width="18" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -551,8 +971,8 @@
                         <div class="btn btn-border bg-transparent" data-value="theme-color-blue" data-info="#573BFF"
                             data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="" data-bs-original-title="Theme-1">
-                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32">
+                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="32">
                                 <circle cx="12" cy="12" r="10" fill="#00C3F9" />
                                 <path d="M2,12 a1,1 1 1,0 20,0" fill="#573BFF" />
                             </svg>
@@ -560,8 +980,8 @@
                         <div class="btn btn-border bg-transparent" data-value="theme-color-gray" data-info="#FD8D00"
                             data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="" data-bs-original-title="Theme-2">
-                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32">
+                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="32">
                                 <circle cx="12" cy="12" r="10" fill="#91969E" />
                                 <path d="M2,12 a1,1 1 1,0 20,0" fill="#FD8D00" />
                             </svg>
@@ -569,17 +989,18 @@
                         <div class="btn btn-border bg-transparent" data-value="theme-color-red" data-info="#366AF0"
                             data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="" data-bs-original-title="Theme-3">
-                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32">
+                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="32">
                                 <circle cx="12" cy="12" r="10" fill="#DB5363" />
                                 <path d="M2,12 a1,1 1 1,0 20,0" fill="#366AF0" />
                             </svg>
                         </div>
-                        <div class="btn btn-border bg-transparent" data-value="theme-color-yellow" data-info="#6410F1"
-                            data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="" data-bs-original-title="Theme-4">
-                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32">
+                        <div class="btn btn-border bg-transparent" data-value="theme-color-yellow"
+                            data-info="#6410F1" data-setting="color-mode1" data-name="color"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
+                            data-bs-original-title="Theme-4">
+                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="32">
                                 <circle cx="12" cy="12" r="10" fill="#EA6A12" />
                                 <path d="M2,12 a1,1 1 1,0 20,0" fill="#6410F1" />
                             </svg>
@@ -587,8 +1008,8 @@
                         <div class="btn btn-border bg-transparent" data-value="theme-color-pink" data-info="#25C799"
                             data-setting="color-mode1" data-name="color" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="" data-bs-original-title="Theme-5">
-                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32">
+                            <svg class="customizer-btn icon-32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="32">
                                 <circle cx="12" cy="12" r="10" fill="#E586B3" />
                                 <path d="M2,12 a1,1 1 1,0 20,0" fill="#25C799" />
                             </svg>
@@ -609,11 +1030,11 @@
                         </div>
                         <div class="text-center">
                             <img src="../../assets/images/settings/dark/02.png" alt=""
-                                class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="dir-mode"
-                                data-name="dir" data-value="rtl">
+                                class="mode dark-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="dir-mode" data-name="dir" data-value="rtl">
                             <img src="../../assets/images/settings/light/02.png" alt=""
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="dir-mode"
-                                data-name="dir" data-value="rtl">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="dir-mode" data-name="dir" data-value="rtl">
                             <span class="mt-2 "> RTL </span>
                         </div>
                     </div>
@@ -646,8 +1067,8 @@
                                 class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
                                 data-name="sidebar-type" data-value="sidebar-mini">
                             <img src="../../assets/images/settings/light/03.png" alt="mini"
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
-                                data-name="sidebar-type" data-value="sidebar-mini">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="sidebar" data-name="sidebar-type" data-value="sidebar-mini">
                             <span class="mt-2">Mini</span>
                         </div>
                         <div class="text-center">
@@ -655,8 +1076,9 @@
                                 class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
                                 data-name="sidebar-type" data-value="sidebar-hover" data-extra-value="sidebar-mini">
                             <img src="../../assets/images/settings/light/04.png" alt="hover"
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
-                                data-name="sidebar-type" data-value="sidebar-hover" data-extra-value="sidebar-mini">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="sidebar" data-name="sidebar-type" data-value="sidebar-hover"
+                                data-extra-value="sidebar-mini">
                             <span class="mt-2">Hover</span>
                         </div>
                         <div class="text-center">
@@ -664,8 +1086,8 @@
                                 class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
                                 data-name="sidebar-type" data-value="sidebar-boxed">
                             <img src="../../assets/images/settings/light/05.png" alt="boxed"
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
-                                data-name="sidebar-type" data-value="sidebar-boxed">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="sidebar" data-name="sidebar-type" data-value="sidebar-boxed">
                             <span class="mt-2">Boxed</span>
                         </div>
                     </div>
@@ -677,8 +1099,8 @@
                                 class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
                                 data-name="sidebar-item" data-value="navs-rounded">
                             <img src="../../assets/images/settings/light/06.png" alt="rounded-one-side"
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
-                                data-name="sidebar-item" data-value="navs-rounded">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="sidebar" data-name="sidebar-item" data-value="navs-rounded">
                             <span class="mt-2">Rounded One Side</span>
                         </div>
                         <div class="text-center">
@@ -695,8 +1117,8 @@
                                 class="mode dark-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
                                 data-name="sidebar-item" data-value="navs-pill">
                             <img src="../../assets/images/settings/light/09.png" alt="pill-one-side"
-                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2" data-setting="sidebar"
-                                data-name="sidebar-item" data-value="navs-pill">
+                                class="mode light-img img-fluid btn-border p-0 flex-column mb-2"
+                                data-setting="sidebar" data-name="sidebar-item" data-value="navs-pill">
                             <span class="mt-2">Pill One Side</span>
                         </div>
                         <div class="text-center">
