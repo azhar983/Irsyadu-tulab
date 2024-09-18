@@ -431,7 +431,7 @@ footer {
                   </div>
                   <!--logo End-->
 
-                  <h4 class="logo-title">Hope UI</h4>
+                  <h4 class="logo-title">Tefatie</h4>
                </a>
                <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                   <i class="icon">
@@ -569,20 +569,161 @@ footer {
     </nav>
     
     <main>
-        <section id="shalat">
-            <h2>Shalat Sunnah</h2>
-            <p>Shalat adalah ibadah yang sangat penting dalam Islam. Nabi Muhammad Shallallahu A'laihi Wasallam sangat menganjurkan untuk melaksanakan shalat lima waktu setiap hari.</p>
+        <section id="shalat.html">
         </section>
-        <section id="mengenal">
-            <h2>Sunnah Nabi Muhammad</h2>
-            <p>Umat Nabi Muhammad Shallallahu A'laihi Wasallam, tentu harus mengenal lebih dekat Nabinya tersebut .</p>
+        <section id="mengenal.html">
         </section>
-        <section id="puasa">
-            <h2>Puasa Sunnah </h2>
-            <p>Puasa yang dilakukan berdasarkan ajaran sunnah Nabi Muhammad Shallallahu A'laihi Wasallam, yang memiliki keutamaan dan pahala tersendiri di sisi Allah..</p>
+        <section id="puasa.html">
         </section>
         
     </main>
+
+    
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalat Sunnah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    text-shadow: 0px 5px 10px lime;
+}
+
+.shalat {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #fafafa;
+    opacity: 0; /* Mulai dengan tidak terlihat */
+    transform: translateY(20px); /* Posisi awal untuk animasi */
+    animation: fadeInUp 0.6s forwards; /* Menerapkan animasi */
+    box-shadow: 0px 5px 10px lime;
+}
+
+.sub-shalat {
+    margin: 10px 0;
+}
+
+h2 {
+    color: black;
+    text-shadow: 0px 5px 10px lime;
+}
+
+h3 {
+    color: black;
+    text-shadow: 0px 5px 10px lime;
+}
+
+strong {
+    color: #333;
+    text-shadow: 0px 5px 10px lime;
+}
+
+p{
+    text-shadow: 0px 5px 10px lime;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Mulai dengan tidak terlihat */
+        transform: translateY(20px); /* Posisi awal untuk animasi */
+    }
+    to {
+        opacity: 1; /* Menjadi terlihat */
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+/* Animasi untuk elemen dengan delay yang berbeda */
+.shalat:nth-child(1) { animation-delay: 0.1s; }
+.shalat:nth-child(2) { animation-delay: 0.2s; }
+.shalat:nth-child(3) { animation-delay: 0.3s; }
+.shalat:nth-child(4) { animation-delay: 0.4s; }
+.shalat:nth-child(5) { animation-delay: 0.5s; }
+.shalat:nth-child(6) { animation-delay: 0.6s; }
+.shalat:nth-child(7) { animation-delay: 0.7s; }
+.shalat:nth-child(8) { animation-delay: 0.8s; }
+
+</style>
+<body>
+    <div class="container">
+        <h1>Shalat Sunnah dalam Islam</h1>
+        <div class="shalat">
+            <h2>1. Shalat Sunnah Qabliyah dan Ba'diyah</h2>
+            <div class="sub-shalat">
+                <h3>a. Shalat Sunnah Qabliyah</h3>
+                <p><strong>Keterangan:</strong> Dilakukan sebelum shalat wajib.</p>
+                <p><strong>Keutamaan:</strong> Membantu mempersiapkan diri untuk shalat wajib.</p>
+            </div>
+            <div class="sub-shalat">
+                <h3>b. Shalat Sunnah Ba'diyah</h3>
+                <p><strong>Keterangan:</strong> Dilakukan setelah shalat wajib.</p>
+                <p><strong>Keutamaan:</strong> Menambah pahala dan menutupi kekurangan dalam shalat wajib.</p>
+            </div>
+        </div>
+        <div class="shalat">
+            <h2>2. Shalat Sunnah Dhuha</h2>
+            <p><strong>Keterangan:</strong> Dilakukan di waktu pagi, setelah matahari terbit hingga sebelum Dzuhur.</p>
+            <p><strong>Keutamaan:</strong> Sebagai bentuk sedekah untuk tubuh dan mendapatkan keberkahan.</p>
+        </div>
+        <div class="shalat">
+            <h2>3. Shalat Sunnah Tahajjud</h2>
+            <p><strong>Keterangan:</strong> Dilakukan di malam hari setelah tidur.</p>
+            <p><strong>Keutamaan:</strong> Waktu doa yang sangat baik dan sering dikabulkan.</p>
+        </div>
+        <div class="shalat">
+            <h2>4. Shalat Sunnah Tarawih</h2>
+            <p><strong>Keterangan:</strong> Dilakukan pada malam hari selama bulan Ramadan.</p>
+            <p><strong>Keutamaan:</strong> Memperoleh pahala yang besar selama bulan suci Ramadan.</p>
+        </div>
+        <div class="shalat">
+            <h2>5. Shalat Sunnah Witir</h2>
+            <p><strong>Keterangan:</strong> Dilakukan setelah shalat Isya dan sebelum Subuh.</p>
+            <p><strong>Keutamaan:</strong> Penutup shalat malam dan memiliki banyak keutamaan.</p>
+        </div>
+        <div class="shalat">
+            <h2>6. Shalat Sunnah Istikharah</h2>
+            <p><strong>Keterangan:</strong> Dilakukan untuk meminta petunjuk Allah dalam keputusan penting.</p>
+            <p><strong>Keutamaan:</strong> Mendapat petunjuk dan keputusan terbaik dari Allah.</p>
+        </div>
+        <div class="shalat">
+            <h2>7. Shalat Sunnah Tahiyyat al-Masjid</h2>
+            <p><strong>Keterangan:</strong> Dilakukan saat masuk ke masjid.</p>
+            <p><strong>Keutamaan:</strong> Penghormatan kepada masjid dan bentuk ibadah tambahan.</p>
+        </div>
+        <div class="shalat">
+            <h2>8. Shalat Sunnah Tathawwu’</h2>
+            <p><strong>Keterangan:</strong> Shalat sunnah yang dilakukan kapan saja sebagai tambahan ibadah.</p>
+            <p><strong>Keutamaan:</strong> Dapat dilakukan sesuai kemampuan dan waktu.</p>
+        </div>
+    </div>
+</body>
+</html>
+
     
     <footer>
         <p>&copy; 2024 Sunnah-Sunnah Nabi. All rights reserved.</p>
