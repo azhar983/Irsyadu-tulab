@@ -111,6 +111,22 @@
       footer p {
          margin: 0;
       }
+      button{
+    align-items: center;
+    justify-content: center;
+margin-left: 380px;
+border: none;
+padding: 10px;
+border-radius: 15px;
+transition: transform .3s;
+box-shadow: 0 10 px 15px rgba(0, 0, 0, 0.1);
+
+}
+button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px yellow;
+    color: yellow;
+}
    </style>
 
 
@@ -420,7 +436,11 @@
                   </div>
                   <!--logo End-->
                </a>
-
+               <audio id="backgroundMusic" loop autoplay>
+                  <source src="audio/Full album Arabic song viral tiktok terbaru __ kumpulan lagu Arab viral.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+              <button id="playButton">🎵تشغيل الموسيقى🎵</button>
             </div>
          </nav>
 
@@ -462,6 +482,8 @@
                <a href="puasa.html">Puasa Sunnah</a>
             </ul>
          </nav>
+         <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
+
          <main>
             <section>
                <h2> Puasa Senin Kamis</h2>
@@ -881,6 +903,35 @@
 
    <!-- App Script -->
    <script src="../assets/js/hope-ui.js" defer></script>
+   <script>
+      const audio = document.getElementById('backgroundMusic');
+      const playButton = document.getElementById('playButton');
+  
+      playButton.addEventListener('click', function() {
+          audio.play();
+          playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
+      });
+  </script>
+  <script>
+   const scrollToTopButton = document.getElementById('scrollToTop');
+
+   // Tampilkan tombol ketika halaman di-scroll ke bawah
+   window.onscroll = function() {
+       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+           scrollToTopButton.style.display = "block";
+       } else {
+           scrollToTopButton.style.display = "none";
+       }
+   };
+
+   // Saat tombol diklik, scroll ke atas
+   scrollToTopButton.addEventListener('click', function() {
+       window.scrollTo({
+           top: 0,
+           behavior: 'smooth'
+       });
+   });
+</script>
 </body>
 
 </html>

@@ -102,6 +102,26 @@ color: yellow;
             footer p{
                 margin: 0;
             }
+            audio {
+    display: none;
+}
+button{
+    align-items: center;
+    justify-content: center;
+margin-left: 380px;
+border: none;
+padding: 10px;
+border-radius: 15px;
+transition: transform .3s;
+box-shadow: 0 10 px 15px rgba(0, 0, 0, 0.1);
+
+}
+button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px yellow;
+    color: yellow;
+}
+
     </style>
 
 
@@ -381,6 +401,7 @@ color: yellow;
                         <!--Logo start-->
                         <!--logo End-->
 
+
                         <!--Logo start-->
                         <div class="logo-main">
                             <div class="logo-normal">
@@ -409,9 +430,15 @@ color: yellow;
                                         transform="rotate(45 10.5562 -0.556152)" fill="currentColor" />
                                 </svg>
                             </div>
-                        </div>
+                        </div></a>
                         <!--logo End-->
-                    </a>
+                        <audio id="backgroundMusic" loop autoplay>
+                            <source src="audio/Sherine - Hobbo Ganna _ شيرين - حبه جنة.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <button id="playButton">🎵تشغيل الموسيقى🎵</button>
+                        
+                    
                     
                 </div>
             </nav>
@@ -455,7 +482,6 @@ color: yellow;
             <a href="puasa.html">Puasa Sunnah</a>
         </ul>
     </nav>
-    
     <main>
         <section id="shalat">
             <a href="shalat.html">
@@ -476,8 +502,10 @@ color: yellow;
             <p>Puasa yang dilakukan berdasarkan ajaran sunnah Nabi Muhammad Shallallahu A'laihi Wasallam, yang memiliki keutamaan dan pahala tersendiri di sisi Allah..</p>
         </section>
         
+        
     </main>
-    
+    <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
+
     <footer>
         <p>&copy; 2024 Sunnah-Sunnah Nabi. All rights reserved.</p>
     </footer>
@@ -821,6 +849,35 @@ color: yellow;
 
    <!-- App Script -->
    <script src="../assets/js/hope-ui.js" defer></script>
+   <script>
+    const audio = document.getElementById('backgroundMusic');
+    const playButton = document.getElementById('playButton');
+
+    playButton.addEventListener('click', function() {
+        audio.play();
+        playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
+    });
+</script>
+<script>
+    const scrollToTopButton = document.getElementById('scrollToTop');
+
+    // Tampilkan tombol ketika halaman di-scroll ke bawah
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+    };
+
+    // Saat tombol diklik, scroll ke atas
+    scrollToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 
 </html>
