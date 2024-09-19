@@ -40,31 +40,27 @@
                 color: #333;
                 transition: .7s;
             }
-            nav ul {
-                list-style: none;
-                padding: 0;
-                text-align: center;
-                margin: 0;
+            nav ul{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            nav ul a{
                 background: white;
                 border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 5px 10px #333;
                 margin: 15px;
                 padding: 20px;
-                width: 100%;
+                color: #333;
+                width: 280px;
                 transition: transform 0.2s;
-                align-items: center;
-                justify-content: center;
-                display: flex;
-                position: relative;
+                text-align: center;
             }
-            nav ul li {
-                display: inline;
-                margin: 0 15px;
-            }
-            nav a {
-                text-decoration: none;
-                color: #007BFF;
-                font-weight: bold;
+            nav ul a:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px yellow;
+                color: yellow;
             }
             main {
                 display: flex;
@@ -75,7 +71,7 @@
             section {
                 background: white;
                 border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 margin: 15px;
                 padding: 20px;
                 width: 280px;
@@ -83,19 +79,28 @@
             }
             section:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 20px yellow;
+                color: yellow;
             }
     
     
             footer {
                 text-align: center;
-                padding: 10px;
+                align-items: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 background-color: #007BFF;
                 color: white;
                 position: relative;
-                padding-bottom: 10px;
                 width: 100%;
                 border-radius: 15px;
+            }
+            h2:hover{
+color: yellow;
+            }
+
+            footer p{
+                margin: 0;
             }
     </style>
 
@@ -406,26 +411,13 @@
                             </div>
                         </div>
                         <!--logo End-->
-
-
-
-
-
-                        <h4 class="logo-title">TEFATIE</h4>
                     </a>
-                    <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-                        <i class="icon">
-                            <svg width="20px" class="icon-20" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-                            </svg>
-                        </i>
-                    </div>
+                    
                 </div>
             </nav>
 
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 200px">
+            <div class="iq-navbar-header" style="height: 150px">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
@@ -458,26 +450,29 @@
             </div>
     <nav>
         <ul>
-            <li><a href="shalat.html">Shalat  |</a></li>
-            <li><a href="mengenal.html">Mengenal Nabi Muhammad Salallahu 'Alaihi Wasallam</a></li>
-            <li><a href="puasa.html">| Puasa</a></li>
+            <a href="shalat.html">Shalat Sunnah</a>
+            <a href="mengenal.html">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
+            <a href="puasa.html">Puasa Sunnah</a>
         </ul>
     </nav>
     
     <main>
         <section id="shalat">
+            <a href="shalat.html">
          <img src="img/solat.jpeg" width="100%" alt="" >
-            <h2>Shalat Sunnah</h2>
+            <h2>Shalat Sunnah</h2></a>
             <p>Shalat adalah ibadah yang sangat penting dalam Islam. Nabi Muhammad Shallallahu A'laihi Wasallam sangat menganjurkan untuk melaksanakan shalat lima waktu setiap hari.</p>
         </section>
         <section id="mengenal">
+            <a href="mengenal.html">
          <img src="img/nabi.jpg" width="100%" alt="">
-            <h2>Sunnah Nabi Muhammad</h2>
+            <h2>Sunnah Nabi Muhammad</h2></a>
             <p>Umat Nabi Muhammad Shallallahu A'laihi Wasallam, tentu harus mengenal lebih dekat Nabinya tersebut .</p>
         </section>
         <section id="puasa">
+            <a href="puasa.html">
          <img src="img/puasa.jpeg" width="100%" alt="">
-            <h2>Puasa Sunnah </h2>
+            <h2>Puasa Sunnah </h2></a>
             <p>Puasa yang dilakukan berdasarkan ajaran sunnah Nabi Muhammad Shallallahu A'laihi Wasallam, yang memiliki keutamaan dan pahala tersendiri di sisi Allah..</p>
         </section>
         
