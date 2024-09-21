@@ -91,7 +91,6 @@
          color: yellow;
       }
 
-
       footer {
                 text-align: center;
                 align-items: center;
@@ -99,9 +98,13 @@
                 padding-bottom: 10px;
                 background-color: #007BFF;
                 color: white;
-                position: relative;
+                position:relative ;
                 width: 100%;
                 border-radius: 15px;
+            }
+
+            footer p{
+               margin: 0;
             }
 
       h2:hover {
@@ -111,9 +114,6 @@
         color: yellow;
       }
 
-      footer p {
-         margin: 0;
-      }
       .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -1199,7 +1199,7 @@
 
     // Tampilkan tombol ketika halaman di-scroll ke bawah
     window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             scrollToTopButton.style.display = "block";
         } else {
             scrollToTopButton.style.display = "none";
