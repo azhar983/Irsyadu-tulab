@@ -51,7 +51,7 @@
       nav ul a {
          background: white;
          border-radius: 8px;
-         box-shadow: 0 5px 10px #333;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
          margin: 15px;
          padding: 20px;
          color: #333;
@@ -62,8 +62,8 @@
 
       nav ul a:hover {
          transform: translateY(-5px);
-         box-shadow: 0 10px 20px yellow;
-         color: yellow;
+         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+         color: black;
       }
 
       main {
@@ -77,7 +77,7 @@
       section {
          background: white;
          border-radius: 8px;
-         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
          margin: 15px;
          color: black;
          padding: 20px;
@@ -87,8 +87,7 @@
 
       section:hover {
          transform: translateY(-5px);
-         box-shadow: 0 10px 20px yellow;
-         color: yellow;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       }
 
       footer {
@@ -107,12 +106,6 @@
                margin: 0;
             }
 
-      h2:hover {
-         color: yellow;
-      }
-      h3:hover{
-        color: yellow;
-      }
 
       .scroll-to-top {
     position: fixed;
@@ -443,10 +436,11 @@
                   <!--logo End-->
                </a>
                <audio id="backgroundMusic" loop autoplay>
-                <source src="audio/Y2meta.app - SHOLAWAT NABI TERBARU NISSA SABYAN 2024 __MP3 SHOLAWAT TERBARU 2024 NISSA SABYAN __ FULL SHOLAWAT (192 kbps).mp3" type="audio/mpeg">
+                <source src="audio/solawatnabi.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            <button style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0px 10px 15px yellow;" id="playButton">🎵تشغيل الموسيقى🎵</button>
+            <button style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);" id="playButton">🎵تشغيل الموسيقى🎵</button>
+            <button style="border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);"><a href="sunnah.html">Kembali</a></button>
             </div>
          </nav>
 
@@ -484,7 +478,7 @@
          <nav>
             <ul>
                <a href="shalat.html">Shalat Sunnah</a>
-               <a href="mengenal.html">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
+               <a href="mengenal.html" style="box-shadow: 0 2px 8px black;">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
                <a href="puasa.html">Puasa Sunnah</a>
             </ul>
          </nav>  
