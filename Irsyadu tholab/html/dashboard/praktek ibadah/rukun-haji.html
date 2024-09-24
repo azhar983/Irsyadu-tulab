@@ -395,29 +395,57 @@
                                 <ul id="list-example" class="list-group">
                                     <li class="list-group-item list-group-item-light text-center">
                                         <h4 class="text-dark"><b>Daftar list</b></h4>
-                                    </li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-1">Sholat Fardhu</a></li>
-                                    <li class="list-group-item list-group-item-light">
-                                        <h6 class="text-dark"><b>Niat Sholat Fardhu</b></h6>
-                                    </li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-2">Sholat Subuh</a></li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-3">Sholat Dzuhur</a></li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-4">Sholat Ashar</a></li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-5">Sholat Magrib</a></li>
-                                    <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                            href="#list-item-6">Sholat Isya</a></li>
+                                    </li>                                   
+                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush" id="accordionFlushExample">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    <a class="text-dark fs-5 fw-bold" href="">Ihram</a>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <a class="list-group-item list-group-item-action" href="#ihram-1">Mengerjakan Mandi sunnah</a>
+                                                        <a class="list-group-item list-group-item-action" href="#ihram-2">Mengerjakan Wudhu</a>
+                                                        <a class="list-group-item list-group-item-action" href="#ihram-3">Mengerjakan Pakain ihram</a>
+                                                        <a class="list-group-item list-group-item-action" href="#ihram-4">Sunnah Ihram bagi laki-laki</a>
+                                                        <a class="list-group-item list-group-item-action" href="#ihram-5">Mengucapkan Niat Haji</a>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush" id="accordionFlushExample">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    <a class="text-dark fs-5 fw-bold" href="">Wukuf</a>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <a class="list-group-item list-group-item-action" href="#wukuf-1">Mengerjakan sholat Dzuhur dan Ashar dengan qasar dan jamak</a>
+                                                        <a class="list-group-item list-group-item-action" href="#wukuf-2">Berangkat menuju Arafah dengan membaca talbiyah</a>
+                                                        <a class="list-group-item list-group-item-action" href="#wukuf-3">Mendengarkan Khutbah Wukuh</a>
+                                                        <a class="list-group-item list-group-item-action" href="#wukuf-4">Doa wukuf</a>             
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                 </ul>
 
                                 <div class="scrollspy-example"
                                     style="position: relative; height: 100%; overflow-y: auto;">
                                     <div class="card-header">
-                                        <h3 class="text-dark fw-bold mb-4 fs-1">Memulai ihram dari Miqat yang telah
-                                            ditentukan</h3>
+                                        <h3 id="list-item-1" class="text-dark fw-bold mb-4 fs-1">Ihram</h3>
                                     </div>
                                     <div class="card-body text-dark">
                                         <p>Miqat artinya batas waktu dan tempat melakukan ibadah haji serta umrah.
@@ -431,7 +459,7 @@
 
                                     <div class="card-body">
 
-                                        <li class="fs-4"><b>Mengerjakan Mandi sunnah</b></li>
+                                        <li id="ihram-1" class="fs-4"><b>Mengerjakan Mandi sunnah</b></li>
                                     </div>
                                     <div class="card-body">
                                         <div class="card-body text-end">
@@ -442,11 +470,11 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <li class="fs-4"><b>Mengerjakan Wudhu</b></li>
+                                        <li id="ihram-2" class="fs-4"><b>Mengerjakan Wudhu</b></li>
                                     </div>
 
                                     <div class="card-body">
-                                        <li class="fs-4"><b>Mengerjakan pakaian ihram</b></li>
+                                        <li id="ihram-3" class="fs-4"><b>Mengerjakan pakaian ihram</b></li>
                                         <img src="../img/tutorihram.jpg" class="img-fluid mt-3 mb-3" alt="">
                                         <p>cara memakai kain ihram yang benar adalah dengan satu kain diselendangkan
                                             di bahu untuk menutup bagian dada. Lalu, satu kainnya lagi dipakai di
@@ -454,7 +482,7 @@
                                             lutut.</p>
                                     </div>
                                     <div class="card-body text-dark">
-                                        <li class="fs-4"><b>Sunnah Ihram Bagi laki-laki</b></li>
+                                        <li id="ihram-4" class="fs-4"><b>Sunnah Ihram Bagi laki-laki</b></li>
                                         <p>Setelah mengetahui bagaimana cara memakai kain ihram yang benar, detikers
                                             juga perlu mengetahui sejumlah sunnah yang dianjurkan. Mengutip buku
                                             Tuntunan Manasik Haji dan Umrah oleh Pustaka Ibnu Umar, berikut anjuran
@@ -483,7 +511,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body text-dark">
-                                        <li class="fs-4"><b>Mengucapkan Niat Haji</b></li>
+                                        <li id="ihram-5" class="fs-4"><b>Mengucapkan Niat Haji</b></li>
                                         <p>Berikut niatnya :</p>
                                     </div>
                                     <div class="text-end">
@@ -518,8 +546,7 @@
 
                                     <div class="card-body">
 
-                                        <li class="fs-4"><b>Mengerjakan sholat Dzuhur dan Ashar dengan</b></li>
-                                        <p>cara qasar dan jamak di awal waktu</p>
+                                        <li id="#wukuf-1" class="fs-4 mb-3"><b>Mengerjakan sholat Dzuhur dan Ashar dengan qasar dan jamak</b></li>                  
                                         <p>Niat Sholat Jamak Qashar Taqdim :</p>
                                     </div>
 
@@ -547,7 +574,7 @@
                                             dikumpulkan kepada sholat Dzuhur karena Allah."</i>
                                     </div>
                                     <div class="card-body text-dark">
-                                        <li class="fs-4"><b>Berangkat menuju Arafah dengan membaca talbiyah</b></li>
+                                        <li id="#wukuf-2" class="fs-4"><b>Berangkat menuju Arafah dengan membaca talbiyah</b></li>
                                         <p>Berikut bacaan talbiyah :</p>
                                     </div>
                                     <div class="text-end">
@@ -567,10 +594,10 @@
                                             milik-Mu, dan kerajaan hanyalah milik-Mu, tiada sekutu bagi-Mu"</i>
                                     </div>
                                     <div class="card-body">
-                                        <li class="fs-4"><b>Mendengarkan Khutbah Wukuh</b></li>
+                                        <li id="#wukuf-3" class="fs-4"><b>Mendengarkan Khutbah Wukuh</b></li>
                                     </div>
                                     <div class="card-body">
-                                        <li class="fs-4"><b>Doa wukuf</b></li>
+                                        <li id="#wukuf4" class="fs-4"><b>Doa wukuf</b></li>
                                         <p>Saat wukuf di Arafah, doa yang sebaiknya dibaca adalah :</p>
                                     </div>
 
