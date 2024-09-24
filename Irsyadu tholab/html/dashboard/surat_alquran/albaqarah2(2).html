@@ -310,93 +310,67 @@
         <div class="sidebar-footer"></div>
     </aside>
     <main class="main-content">
-        <div class="position-relative iq-banner">
+
+        <div class="iq-banner">
             <!--Nav Start-->
-            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
-                <div class="container-fluid navbar-inner">
-                    <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
-                        <!--Logo start-->
-                        <!--logo End-->
+            <nav style="top: 1;" class="nav navbar navbar-expand-lg navbar-light iq-navbar sticky-top">
+                <div class="container-fluid navbar-inner ">
 
-                        <!--Logo start-->
-                        <div class="logo-main">
-                            <div class="logo-normal">
-                                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none"
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="../../assets/Logo-Altie.png" class="mb-2" height="25px" alt="">
+                        <div class="d-flex" id="search-input">
+                            <span class="input-group-text border border border-end-0 " id="search-input"
+                                style="border-radius: 0; ">
+                                <svg class="icon-18" width="18" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2"
-                                        transform="rotate(-45 -0.757324 19.2427)" fill="currentColor" />
-                                    <rect x="7.72803" y="27.728" width="28" height="4" rx="2"
-                                        transform="rotate(-45 7.72803 27.728)" fill="currentColor" />
-                                    <rect x="10.5366" y="16.3945" width="16" height="4" rx="2"
-                                        transform="rotate(45 10.5366 16.3945)" fill="currentColor" />
-                                    <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2"
-                                        transform="rotate(45 10.5562 -0.556152)" fill="currentColor" />
+                                    <circle cx="11.7669" cy="11.7666" r="8.98856" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                    <path d="M18.0186 18.4851L21.5426 22" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
-                            </div>
-                            <div class="logo-mini">
-                                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2"
-                                        transform="rotate(-45 -0.757324 19.2427)" fill="currentColor" />
-                                    <rect x="7.72803" y="27.728" width="28" height="4" rx="2"
-                                        transform="rotate(-45 7.72803 27.728)" fill="currentColor" />
-                                    <rect x="10.5366" y="16.3945" width="16" height="4" rx="2"
-                                        transform="rotate(45 10.5366 16.3945)" fill="currentColor" />
-                                    <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2"
-                                        transform="rotate(45 10.5562 -0.556152)" fill="currentColor" />
-                                </svg>
-                            </div>
+                            </span>
+                            <input type="search" class="border-start-0 border border-1" id="searchInput"
+                                placeholder="Cari Ayat" onkeyup="searchAyat()" style="width: 180px;">
                         </div>
-                        <!--logo End-->
-
-                        <h4 class="logo-title">Hope UI</h4>
-                    </a>
-                    <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-                        <i class="icon">
-                            <svg width="20px" class="icon-20" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-                            </svg>
-                        </i>
                     </div>
                 </div>
+
+                <style>
+                    #search-input {
+                        border: .5px solid whitesmoke;
+                    }
+
+                    #search-input:hover {
+                        transition: .1s ease-in;
+                        border: .5px solid blue;
+                    }
+                </style>
+
             </nav>
-
-            <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 200px">
-                <div class="container-fluid iq-container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="flex-wrap text-center">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="iq-header-img">
-                    <img src="../../assets/images/dashboard/top-header.png" alt="header"
-                        class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
-                    <img src="../../assets/images/dashboard/top-header1.png" alt="header"
-                        class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
-                    <img src="../../assets/images/dashboard/top-header2.png" alt="header"
-                        class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
-                    <img src="../../assets/images/dashboard/top-header3.png" alt="header"
-                        class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
-                    <img src="../../assets/images/dashboard/top-header4.png" alt="header"
-                        class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
-                    <img src="../../assets/images/dashboard/top-header5.png" alt="header"
-                        class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
-                </div>
-            </div> <!-- Nav Header Component End -->
-            <!--Nav End-->
         </div>
+        <div class="iq-navbar-header" style="height: 100px">
+        <div class="iq-header-img">
+            <img src="../../assets/images/dashboard/top-header.png" alt="header"
+                class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
+            <img src="../../assets/images/dashboard/top-header1.png" alt="header"
+                class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
+            <img src="../../assets/images/dashboard/top-header2.png" alt="header"
+                class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
+            <img src="../../assets/images/dashboard/top-header3.png" alt="header"
+                class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
+            <img src="../../assets/images/dashboard/top-header4.png" alt="header"
+                class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
+            <img src="../../assets/images/dashboard/top-header5.png" alt="header"
+                class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
+        </div>
+    </div>
 
         <div class="conatiner-fluid content-inner mt-n5 py-0">
 
             <!-- Card -->
             <div class="row">
                 <div class="col-12">
-                    <div class="card ">
+                    <div class="card" id="ayatContainer">
 
                         <div class="d-block " style="border-bottom: 2px solid rgb(163, 160, 160);">
                             <a href="../alquran.html" class="btn btn-danger mt-2 ms-4"
@@ -3368,6 +3342,8 @@
         <!-- Footer Section End -->
     </main>
    
+    <!-- Custom Script -->
+     <script src="script/ayatsearch.js"></script>
 
     <!-- Library Bundle Script -->
     <script src="../../assets/js/core/libs.min.js"></script>
