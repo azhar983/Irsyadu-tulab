@@ -1,0 +1,10 @@
+$prefix: "my-prefix-";
+$accordion-border-radius: 20px;
+
+:root {
+    --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+}
+
+.accordion {
+    border-radius: var(--#{$prefix}accordion-border-radius);
+}
