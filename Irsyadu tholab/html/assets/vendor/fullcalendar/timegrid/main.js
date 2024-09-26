@@ -131,7 +131,7 @@ Docs & License: https://fullcalendar.io/
             var timeText;
             var fullTimeText; // more verbose time text. for the print stylesheet
             var startTimeText; // just the start time text
-            classes.unshift('fc-time-grid-event');
+            classes.unshift('time-grid-event');
             // if the event appears to span more than one day...
             if (core.isMultiDayRange(eventRange.range)) {
                 // Don't display time text on segments that run entirely through a day.
@@ -159,9 +159,9 @@ Docs & License: https://fullcalendar.io/
                     ' style="' + skinCss + '"' :
                     '') +
                 '>' +
-                '<div class="fc-content">' +
+                '<div class="content">' +
                 (timeText ?
-                    '<div class="fc-time"' +
+                    '<div class="time"' +
                         ' data-start="' + core.htmlEscape(startTimeText) + '"' +
                         ' data-full="' + core.htmlEscape(fullTimeText) + '"' +
                         '>' +
@@ -169,19 +169,19 @@ Docs & License: https://fullcalendar.io/
                         '</div>' :
                     '') +
                 (eventDef.title ?
-                    '<div class="fc-title">' +
+                    '<div class="title">' +
                         core.htmlEscape(eventDef.title) +
                         '</div>' :
                     '') +
                 '</div>' +
                 /* TODO: write CSS for this
                 (isResizableFromStart ?
-                  '<div class="fc-resizer fc-start-resizer"></div>' :
+                  '<div class="resizer start-resizer"></div>' :
                   ''
                   ) +
                 */
                 (isResizableFromEnd ?
-                    '<div class="fc-resizer fc-end-resizer"></div>' :
+                    '<div class="resizer end-resizer"></div>' :
                     '') +
                 '</a>';
         };
@@ -260,12 +260,12 @@ Docs & License: https://fullcalendar.io/
                 var seg = segs_1[_i];
                 core.applyStyle(seg.el, this.generateSegCss(seg));
                 if (seg.level > 0) {
-                    seg.el.classList.add('fc-time-grid-event-inset');
+                    seg.el.classList.add('time-grid-event-inset');
                 }
                 // if the event is short that the title will be cut off,
                 // attach a className that condenses the title into the time area.
                 if (seg.eventRange.def.title && seg.bottom - seg.top < 30) {
-                    seg.el.classList.add('fc-short'); // TODO: "condensed" is a better name
+                    seg.el.classList.add('short'); // TODO: "condensed" is a better name
                 }
             }
         };
@@ -472,12 +472,12 @@ Docs & License: https://fullcalendar.io/
             _this.renderEventResize = core.memoizeRendering(_this._renderEventResize, _this._unrenderEventResize, [renderColumns]);
             _this.processOptions();
             el.innerHTML =
-                '<div class="fc-bg"></div>' +
-                    '<div class="fc-slats"></div>' +
-                    '<hr class="fc-divider ' + _this.theme.getClass('widgetHeader') + '" style="display:none" />';
-            _this.rootBgContainerEl = el.querySelector('.fc-bg');
-            _this.slatContainerEl = el.querySelector('.fc-slats');
-            _this.bottomRuleEl = el.querySelector('.fc-divider');
+                '<div class="bg"></div>' +
+                    '<div class="slats"></div>' +
+                    '<hr class="divider ' + _this.theme.getClass('widgetHeader') + '" style="display:none" />';
+            _this.rootBgContainerEl = el.querySelector('.bg');
+            _this.slatContainerEl = el.querySelector('.slats');
+            _this.bottomRuleEl = el.querySelector('.divider');
             _this.renderProps = renderProps;
             return _this;
         }
@@ -596,7 +596,7 @@ Docs & License: https://fullcalendar.io/
                 slotDate = dateEnv.add(dayStart, slotTime);
                 isLabeled = core.wholeDivideDurations(slotIterator, this.labelInterval) !== null;
                 axisHtml =
-                    '<td class="fc-axis fc-time ' + theme.getClass('widgetContent') + '">' +
+                    '<td class="axis time ' + theme.getClass('widgetContent') + '">' +
                         (isLabeled ?
                             '<span>' + // for matchCellWidths
                                 core.htmlEscape(dateEnv.format(slotDate, this.labelFormat)) +
@@ -605,7 +605,7 @@ Docs & License: https://fullcalendar.io/
                         '</td>';
                 html +=
                     '<tr data-time="' + core.formatIsoTimeString(slotDate) + '"' +
-                        (isLabeled ? '' : ' class="fc-minor"') +
+                        (isLabeled ? '' : ' class="minor"') +
                         '>' +
                         (!isRtl ? axisHtml : '') +
                         '<td class="' + theme.getClass('widgetContent') + '"></td>' +
@@ -627,7 +627,7 @@ Docs & License: https://fullcalendar.io/
                         renderIntroHtml: this.renderProps.renderBgIntroHtml
                     }) +
                     '</table>';
-            this.colEls = core.findElements(this.el, '.fc-day, .fc-disabled-day');
+            this.colEls = core.findElements(this.el, '.day, .disabled-day');
             for (var col = 0; col < this.colCnt; col++) {
                 this.publiclyTrigger('dayRender', [
                     {
@@ -657,29 +657,29 @@ Docs & License: https://fullcalendar.io/
             parts.push(this.renderProps.renderIntroHtml());
             for (var i = 0; i < this.colCnt; i++) {
                 parts.push('<td>' +
-                    '<div class="fc-content-col">' +
-                    '<div class="fc-event-container fc-mirror-container"></div>' +
-                    '<div class="fc-event-container"></div>' +
-                    '<div class="fc-highlight-container"></div>' +
-                    '<div class="fc-bgevent-container"></div>' +
-                    '<div class="fc-business-container"></div>' +
+                    '<div class="content-col">' +
+                    '<div class="event-container mirror-container"></div>' +
+                    '<div class="event-container"></div>' +
+                    '<div class="highlight-container"></div>' +
+                    '<div class="bgevent-container"></div>' +
+                    '<div class="business-container"></div>' +
                     '</div>' +
                     '</td>');
             }
             if (this.isRtl) {
                 parts.reverse();
             }
-            skeletonEl = this.contentSkeletonEl = core.htmlToElement('<div class="fc-content-skeleton">' +
+            skeletonEl = this.contentSkeletonEl = core.htmlToElement('<div class="content-skeleton">' +
                 '<table>' +
                 '<tr>' + parts.join('') + '</tr>' +
                 '</table>' +
                 '</div>');
-            this.colContainerEls = core.findElements(skeletonEl, '.fc-content-col');
-            this.mirrorContainerEls = core.findElements(skeletonEl, '.fc-mirror-container');
-            this.fgContainerEls = core.findElements(skeletonEl, '.fc-event-container:not(.fc-mirror-container)');
-            this.bgContainerEls = core.findElements(skeletonEl, '.fc-bgevent-container');
-            this.highlightContainerEls = core.findElements(skeletonEl, '.fc-highlight-container');
-            this.businessContainerEls = core.findElements(skeletonEl, '.fc-business-container');
+            this.colContainerEls = core.findElements(skeletonEl, '.content-col');
+            this.mirrorContainerEls = core.findElements(skeletonEl, '.mirror-container');
+            this.fgContainerEls = core.findElements(skeletonEl, '.event-container:not(.mirror-container)');
+            this.bgContainerEls = core.findElements(skeletonEl, '.bgevent-container');
+            this.highlightContainerEls = core.findElements(skeletonEl, '.highlight-container');
+            this.businessContainerEls = core.findElements(skeletonEl, '.business-container');
             if (this.isRtl) {
                 this.colContainerEls.reverse();
                 this.mirrorContainerEls.reverse();
@@ -733,14 +733,14 @@ Docs & License: https://fullcalendar.io/
             var i;
             // render lines within the columns
             for (i = 0; i < segs.length; i++) {
-                var lineEl = core.createElement('div', { className: 'fc-now-indicator fc-now-indicator-line' });
+                var lineEl = core.createElement('div', { className: 'now-indicator now-indicator-line' });
                 lineEl.style.top = top + 'px';
                 this.colContainerEls[segs[i].col].appendChild(lineEl);
                 nodes.push(lineEl);
             }
             // render an arrow over the axis
             if (segs.length > 0) { // is the current time in view?
-                var arrowEl = core.createElement('div', { className: 'fc-now-indicator fc-now-indicator-arrow' });
+                var arrowEl = core.createElement('div', { className: 'now-indicator now-indicator-arrow' });
                 arrowEl.style.top = top + 'px';
                 this.contentSkeletonEl.appendChild(arrowEl);
                 nodes.push(arrowEl);
@@ -971,14 +971,14 @@ Docs & License: https://fullcalendar.io/
                 if (_this.opt('weekNumbers')) {
                     weekText = dateEnv.format(range.start, WEEK_HEADER_FORMAT);
                     return '' +
-                        '<th class="fc-axis fc-week-number ' + theme.getClass('widgetHeader') + '" ' + _this.axisStyleAttr() + '>' +
+                        '<th class="axis week-number ' + theme.getClass('widgetHeader') + '" ' + _this.axisStyleAttr() + '>' +
                         core.buildGotoAnchorHtml(// aside from link, important for matchCellWidths
                         _this, { date: range.start, type: 'week', forceOff: dayCnt > 1 }, core.htmlEscape(weekText) // inner HTML
                         ) +
                         '</th>';
                 }
                 else {
-                    return '<th class="fc-axis ' + theme.getClass('widgetHeader') + '" ' + _this.axisStyleAttr() + '></th>';
+                    return '<th class="axis ' + theme.getClass('widgetHeader') + '" ' + _this.axisStyleAttr() + '></th>';
                 }
             };
             /* Time Grid Render Methods
@@ -986,12 +986,12 @@ Docs & License: https://fullcalendar.io/
             // Generates the HTML that goes before the bg of the TimeGrid slot area. Long vertical column.
             _this.renderTimeGridBgIntroHtml = function () {
                 var theme = _this.theme;
-                return '<td class="fc-axis ' + theme.getClass('widgetContent') + '" ' + _this.axisStyleAttr() + '></td>';
+                return '<td class="axis ' + theme.getClass('widgetContent') + '" ' + _this.axisStyleAttr() + '></td>';
             };
             // Generates the HTML that goes before all other types of cells.
             // Affects content-skeleton, mirror-skeleton, highlight-skeleton for both the time-grid and day-grid.
             _this.renderTimeGridIntroHtml = function () {
-                return '<td class="fc-axis" ' + _this.axisStyleAttr() + '></td>';
+                return '<td class="axis" ' + _this.axisStyleAttr() + '></td>';
             };
             /* Day Grid Render Methods
             ------------------------------------------------------------------------------------------------------------------*/
@@ -999,7 +999,7 @@ Docs & License: https://fullcalendar.io/
             _this.renderDayGridBgIntroHtml = function () {
                 var theme = _this.theme;
                 return '' +
-                    '<td class="fc-axis ' + theme.getClass('widgetContent') + '" ' + _this.axisStyleAttr() + '>' +
+                    '<td class="axis ' + theme.getClass('widgetContent') + '" ' + _this.axisStyleAttr() + '>' +
                     '<span>' + // needed for matchCellWidths
                     core.getAllDayHtml(_this) +
                     '</span>' +
@@ -1008,17 +1008,17 @@ Docs & License: https://fullcalendar.io/
             // Generates the HTML that goes before all other types of cells.
             // Affects content-skeleton, mirror-skeleton, highlight-skeleton for both the time-grid and day-grid.
             _this.renderDayGridIntroHtml = function () {
-                return '<td class="fc-axis" ' + _this.axisStyleAttr() + '></td>';
+                return '<td class="axis" ' + _this.axisStyleAttr() + '></td>';
             };
-            _this.el.classList.add('fc-timeGrid-view');
+            _this.el.classList.add('timeGrid-view');
             _this.el.innerHTML = _this.renderSkeletonHtml();
             _this.scroller = new core.ScrollComponent('hidden', // overflow x
             'auto' // overflow y
             );
             var timeGridWrapEl = _this.scroller.el;
-            _this.el.querySelector('.fc-body > tr > td').appendChild(timeGridWrapEl);
-            timeGridWrapEl.classList.add('fc-time-grid-container');
-            var timeGridEl = core.createElement('div', { className: 'fc-time-grid' });
+            _this.el.querySelector('.body > tr > td').appendChild(timeGridWrapEl);
+            timeGridWrapEl.classList.add('time-grid-container');
+            var timeGridEl = core.createElement('div', { className: 'time-grid' });
             timeGridWrapEl.appendChild(timeGridEl);
             _this.timeGrid = new TimeGrid(_this.context, timeGridEl, {
                 renderBgIntroHtml: _this.renderTimeGridBgIntroHtml,
@@ -1026,7 +1026,7 @@ Docs & License: https://fullcalendar.io/
             });
             if (_this.opt('allDaySlot')) { // should we display the "all-day" area?
                 _this.dayGrid = new daygrid.DayGrid(// the all-day subcomponent of this view
-                _this.context, _this.el.querySelector('.fc-day-grid'), {
+                _this.context, _this.el.querySelector('.day-grid'), {
                     renderNumberIntroHtml: _this.renderDayGridIntroHtml,
                     renderBgIntroHtml: _this.renderDayGridBgIntroHtml,
                     renderIntroHtml: _this.renderDayGridIntroHtml,
@@ -1034,7 +1034,7 @@ Docs & License: https://fullcalendar.io/
                     cellWeekNumbersVisible: false
                 });
                 // have the day-grid extend it's coordinate area over the <hr> dividing the two grids
-                var dividerEl = _this.el.querySelector('.fc-divider');
+                var dividerEl = _this.el.querySelector('.divider');
                 _this.dayGrid.bottomCoordPadding = dividerEl.getBoundingClientRect().height;
             }
             return _this;
@@ -1056,18 +1056,18 @@ Docs & License: https://fullcalendar.io/
             return '' +
                 '<table class="' + theme.getClass('tableGrid') + '">' +
                 (this.opt('columnHeader') ?
-                    '<thead class="fc-head">' +
+                    '<thead class="head">' +
                         '<tr>' +
-                        '<td class="fc-head-container ' + theme.getClass('widgetHeader') + '">&nbsp;</td>' +
+                        '<td class="head-container ' + theme.getClass('widgetHeader') + '">&nbsp;</td>' +
                         '</tr>' +
                         '</thead>' :
                     '') +
-                '<tbody class="fc-body">' +
+                '<tbody class="body">' +
                 '<tr>' +
                 '<td class="' + theme.getClass('widgetContent') + '">' +
                 (this.opt('allDaySlot') ?
-                    '<div class="fc-day-grid"></div>' +
-                        '<hr class="fc-divider ' + theme.getClass('widgetHeader') + '" />' :
+                    '<div class="day-grid"></div>' +
+                        '<hr class="divider ' + theme.getClass('widgetHeader') + '" />' :
                     '') +
                 '</td>' +
                 '</tr>' +
@@ -1101,7 +1101,7 @@ Docs & License: https://fullcalendar.io/
             var scrollerHeight;
             var scrollbarWidths;
             // make all axis cells line up
-            this.axisWidth = core.matchCellWidths(core.findElements(this.el, '.fc-axis'));
+            this.axisWidth = core.matchCellWidths(core.findElements(this.el, '.axis'));
             // hack to give the view some height prior to timeGrid's columns being rendered
             // TODO: separate setting height from scroller VS timeGrid.
             if (!this.timeGrid.colEls) {
@@ -1112,7 +1112,7 @@ Docs & License: https://fullcalendar.io/
                 return;
             }
             // set of fake row elements that must compensate when scroller has scrollbars
-            var noScrollRowEls = core.findElements(this.el, '.fc-row').filter(function (node) {
+            var noScrollRowEls = core.findElements(this.el, '.row').filter(function (node) {
                 return !_this.scroller.el.contains(node);
             });
             // reset all dimensions back to the original state
@@ -1276,7 +1276,7 @@ Docs & License: https://fullcalendar.io/
             var _this = _super.call(this, _context, viewSpec, dateProfileGenerator, parentEl) || this;
             _this.buildDayTable = core.memoize(buildDayTable);
             if (_this.opt('columnHeader')) {
-                _this.header = new core.DayHeader(_this.context, _this.el.querySelector('.fc-head-container'));
+                _this.header = new core.DayHeader(_this.context, _this.el.querySelector('.head-container'));
             }
             _this.simpleTimeGrid = new SimpleTimeGrid(_this.context, _this.timeGrid);
             if (_this.dayGrid) {
