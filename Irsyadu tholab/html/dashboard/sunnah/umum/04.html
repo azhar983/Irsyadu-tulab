@@ -270,6 +270,23 @@
                         color: blue;
                         transition: 0.4s ease;
                     }
+                    .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
                 </style>
                 <div class="row">
                     <div class="flext-wrap text-center mb-2">
@@ -300,6 +317,8 @@
             <!-- Nav Header Component End -->
 
             <div class="conatiner-fluid content-inner">
+                <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
+
 
                 <div data-bs-spy="" data-bs-target="#list-example" data-bs-offset="" tabindex="0">
 
