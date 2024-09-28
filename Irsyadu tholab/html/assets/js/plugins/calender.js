@@ -14,7 +14,7 @@ if (document.querySelectorAll('#calendar1').length) {
       header: {
           left: "prev,next today",
           center: "title",
-          right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
+          right: ""
       },
       dateClick: function (info) {
           $('#schedule-start-date').val(info.dateStr);
