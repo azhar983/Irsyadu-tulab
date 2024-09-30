@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-   <meta charset="utf-8" />
+   <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
    <title>Hope UI | Responsive Bootstrap 5 Admin Dashboard Template</title>
 
@@ -16,10 +15,10 @@
    <link rel="stylesheet" href="../assets/vendor/aos/dist/aos.css" />
 
    <!-- Hope Ui Design System Css -->
-   <link rel="stylesheet" href="../assets/css/hope-ui.min.css?v=2.0.0" />
+   <link rel="stylesheet" href="../assets/css/hope-ui.min.css" />
 
    <!-- Custom Css -->
-   <link rel="stylesheet" href="../assets/css/custom.min.css?v=2.0.0" />
+   <link rel="stylesheet" href="../assets/css/custom.min.css" />
 
    <!-- Dark Css -->
    <link rel="stylesheet" href="../assets/css/dark.min.css" />
@@ -38,13 +37,20 @@
       overflow: hidden;
       text-overflow: ellipsis;
    }
+   .imges{
+      z-index: 9999;
+      top: 0;
+   }
+
 </style>
 
-<body class="  " style="width: 100%;">
+<body class="  " data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
    <!-- loader Start -->
    <div id="loading" >
       <div class="loader simple-loader">
-         <div class="loader-body"></div>
+         <div class="loader-body align-items-center d-flex">
+               <!-- <img class="imges position-fixed w-100" src="../assets/Irsyadu Thulab.gif" alt="Loading..."> -->
+         </div>
       </div>
    </div>
    <!-- loader END -->
@@ -69,7 +75,7 @@
 
 
 
-            <h5 class="logo-title fs-5">Irsyadu Thulab</h5>
+            <h5 class="logo-title ">Irsyadu Thulab</h5>
          </div>
          <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
             <i class="icon">
@@ -88,7 +94,7 @@
             <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
                <li class="nav-item static-item">
                   <a class="nav-link static-item disabled" href="#" tabindex="-1">
-                     <span class="default-icon">Home</span>
+                     <span class="default-icon">Dashboard</span>
                      <span class="mini-icon">-</span>
                   </a>
                </li>
@@ -180,7 +186,7 @@
       </div>
       <div class="sidebar-footer"></div>
    </aside>
-   <main class="main-content">
+   <main class="main-content overflow-hidden">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
@@ -200,7 +206,7 @@
                   </div>
                   <!--logo End-->
 
-                  <h4 class="logo-title">Irsyadu Thulab</h4>
+                  <h4 class="logo-title irsyad">Irsyadu Thulab</h4>
                </a>
                <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                   <i class="icon">
@@ -210,7 +216,7 @@
             </div>
          </nav>
          <!-- Nav Header Component Start -->
-         <div class="iq-navbar-header" style=" margin-top: 50px;">
+         <div class="iq-navbar-header" style=" margin-top: 80px;">
             <div class="">
                <div class="flex-wrap text-center">
                   <li class="swiper-slide card card-slide " data-aos="fade-up" data-aos-delay="700">
@@ -221,20 +227,19 @@
                   </li>
                </div>
             </div>
-            <div class="iq-header-img d-flex justify-content-center bg-light">
-            </div>
+               
          </div>
          <!-- Nav Header Component End -->
          <!--Nav End-->
       </div>
-      <div class="container mt-n5 p-0">
+      <div class="container-fluid mt-2 py-0">
          <div class="row">
             <div class="col-12">
                <div class="row row-cols-12">
                   <div class="overflow-hidden">
                      <ul class="container p-0 mb-2">
                         <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
-                           <div class="card-body text-center">
+                           <div class="card-body  text-center">
                               <div class="row mt-2">
                                  <div class="col-12 mb-3">
                                     <div class="d-flex justify-content-center gap-2 align-items-center">
@@ -244,49 +249,49 @@
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/alquran.html"><img src="../assets/icon/quran.png"
                                           height="50px" alt="" />
-                                       <h4 class="fs-6 mt-2 fw-bold">Al-Quran</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold">Al-Quran</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/jadwal_solat.html"><img
                                           src="../assets/icon/masjid.png" height="50px" alt="" />
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Jadwal<br>Sholat</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Jadwal<br>Sholat</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/sunnah.html"><img src="../assets/icon/bulan.png"
                                           height="50px" alt="" />
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Sunnah<br>Nabi</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Sunnah<br>Nabi</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/maulid.html"><img src="../assets/icon/maulid.png"
                                           height="50px" alt="" />
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Maulid<br>Nabi</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Maulid<br>Nabi</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/doa.html"><img src="../assets/icon/doa.png"
                                           height="50px" alt="" />
-                                       <h4 class="fs-6 mt-2 fw-bold">Doa Doa <br> Dan Sholawat</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold">Doa Doa <br> Dan Sholawat</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/kalender.html">
                                        <img src="../assets/icon/kalender.png" alt="" height="50px">
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Kalendar</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Kalendar</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/praktek.html">
                                        <img src="../assets/icon/solat.png" alt="" height="50px">
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Praktek<br>Ibadah</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Praktek<br>Ibadah</h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/tentang.html">
                                        <img src="../assets/icon/tentang.png" alt="" height="50px">
-                                       <h4 class="fs-6 mt-2 fw-bold text-nowrap">Tentang<br>Kami</h4>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Tentang<br>Kami</h6>
                                     </a>
                                  </div>
 
@@ -305,13 +310,13 @@
                         <div class="flex-wrap card-header d-flex justify-content-between align-items-center">
                            <div class="header-title gap-2 d-flex align-items-center">
                               <img src="../assets/icon/doa.png" height="40px" alt="">
-                              <h5 class="">Doa-Doa</h5>
+                              <h6 class="fw-bolder">Doa-Doa</h6>
                            </div>
                         </div>
                         <div class="card-body">
                            <h3 class="fw-bolder text-center">Tahlil</h3>
                            <div class="container">
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-end">
+                              <p class="fw-bold  truncate-multiline mt-3 text-end">
                                  إِلَى حَضْرَةِ النَّبِيِّ الْمُصْطَفَى سَيِّدِنَا مُحمَّدٍ صَلَّى اللهُ عَلَيْهِ
                                  وَسَلَّمَ وَاٰلِهِ وَأَزْوَاجِهِ وَأَوْلَادِهِ وَذُرِّيَّاتِهِ الْفَــاتِحَةُ
                               </p>
@@ -327,13 +332,13 @@
                         <div class="flex-wrap card-header d-flex justify-content-between align-items-center">
                            <div class="header-title gap-2 d-flex align-items-center">
                               <img src="../assets/icon/quran.png" height="40px" alt="">
-                              <h5 class="">Al-quran</h5>
+                              <h6 class="fw-bolder">Al-quran</h6>
                            </div>
                         </div>
                         <div class="card-body">
                            <h3 class="fw-bolder text-center">Yasin</h3>
                            <div class="container">
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-end">
+                              <p class="fw-bold  truncate-multiline mt-3 text-end">
                                  يٰسۤۚ ۝١وَالْقُرْاٰنِ الْحَكِيْمِۙ۝٢ اِنَّكَ لَمِنَ الْمُرْسَلِيْنَۙ ۝٣
                                  عَلٰى صِرَاطٍ مُّسْتَقِيْمٍۗ ۝٤تَنْزِيْلَ الْعَزِيْزِ الرَّحِيْمِۙ ۝٥
                               </p>
@@ -349,13 +354,13 @@
                         <div class="flex-wrap card-header d-flex justify-content-between align-items-center">
                            <div class="header-title gap-2 d-flex align-items-center">
                               <img src="../assets/icon/quran.png" height="40px" alt="">
-                              <h5 class="">Al-quran</h5>
+                              <h6 class="fw-bolder">Al-quran</h6>
                            </div>
                         </div>
                         <div class="card-body">
                            <h3 class="fw-bolder text-center">Ayat kursi</h3>
                            <div class="container">
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-end">
+                              <p class="fw-bold  truncate-multiline mt-3 text-end">
                                  اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ
                                  وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ
                                  عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا
@@ -363,7 +368,7 @@
                                  السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ
                                  (٢٥٥)
                               </p>
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-start long-text">
+                              <p class="fw-bold  truncate-multiline mt-3 text-start long-text">
                                  Artinya : <br> Allah, tidak ada tuhan selain Dia, Yang Mahahidup lagi terus-menerus
                                  mengurus (makhluk-Nya). Dia tidak dilanda oleh kantuk dan tidak (pula) oleh tidur.
                                  Milik-Nyalah apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat
@@ -373,7 +378,7 @@
                                  meliputi langit dan bumi. Dia tidak merasa berat memelihara keduanya. Dialah yang
                                  Mahatinggi lagi Mahaagung.
                               <div class=" text-center">
-                                 <a href="doa-doa/" class="btn btn-sm btn-primary">Baca😊</a>
+                                 <a href="doa-doa/tahlil.html" class="btn btn-sm btn-primary">Baca😊</a>
                               </div>
                            </div>
                         </div>
@@ -385,20 +390,20 @@
                         <div class="flex-wrap card-header d-flex justify-content-between align-items-center">
                            <div class="header-title gap-2 d-flex align-items-center">
                               <img src="../assets/icon/doa.png" height="40px" alt="">
-                              <h5 class="">Doa</h5>
+                              <h6 class="fw-bolder">Doa</h6>
                            </div>
                         </div>
                         <div class="card-body">
                            <h3 class="fw-bolder text-center">Doa Untuk Kedua Orang Tua</h3>
                            <div class="container">
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-end">
+                              <p class="fw-bold  truncate-multiline mt-3 text-end">
                                  رَبِّ اغْفِرْ لِيْ وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِيْ صَغِيْرَا. رَبَّنَا
                                  آتِنَا فِى الدُّنْيَا حَسَنَةً، وَفِى الْآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ،
                                  سًبْحَانَ رَبَّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُوْنَ، وَسَلَامٌ عَلَى الْمُرْسَلِيْنَ،
                                  وَصَلَّى اللهُ علَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اَلِهِ وَصَحْبِهِ وَسَلَّمَ
                                  وَالْحَمْدُ لِلهِ رَبِّ الْعَلَمِيْنَ
                               </p>
-                              <p class="fw-bold fs-5 truncate-multiline mt-3 text-start long-text">
+                              <p class="fw-bold  truncate-multiline mt-3 text-start long-text">
                                  Artinya:<br> "Tuhanku, ampunilah dosaku dan (dosa) kedua orang tuaku. Sayangilah
                                  keduanya sebagaimana keduanya menyayangiku di waktu aku kecil. Tuhan kami, berikanlah
                                  kami kebaikan di dunia dan kebaikan di akhirat. Lindungi kami dari siksa api neraka.
@@ -408,7 +413,7 @@
                                  sekalian alam."</p>
                               </p>
                               <div class=" text-center">
-                                 <a href="doa-doa/ortu.html" class="btn btn-sm btn-primary">Baca😊</a>
+                                 <a href="doa-doa/doaharian.html#list-item-12" class="btn btn-sm btn-primary">Baca😊</a>
                               </div>
                            </div>
                         </div>
