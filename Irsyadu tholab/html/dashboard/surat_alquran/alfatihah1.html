@@ -180,6 +180,8 @@
   <main class="main-content">
     <div class="position-relative iq-banner">
       <!--Nav Start-->
+      <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+        style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
       <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
         <div class="container-fluid navbar-inner">
           <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
@@ -251,15 +253,9 @@
       <div class="conatiner-fluid content-inner mt-n5 p-0">
         <!-- Card -->
         <div class="card mt-4">
-          <div class="card-header d-block justify-content-center" style="border-bottom: 2px solid rgb(163, 160, 160)">
-            <div class="btn btn-danger mt-2" style="width: 200px; height: 65px">
-              <a href="../alquran.html" class="text-white">Kembali Ke Daftar Surat</a>
-            </div>
-
-            <div class="card-header d-flex justify-content-end align-items-center">
-              <a href="albaqarah2.html" class="text-white btn btn-success mb-2" style="width: 200px">
-                Surat Selanjutnya</a>
-            </div>
+          <div class="d-block py-4" style="border-bottom: 2px solid rgb(163, 160, 160)">
+            <a href="../alquran.html" class="btn btn-primary mt-2 ms-4" style="width: 200px;">
+              << Kembali Ke Daftar Surat </a>
           </div>
 
           <!-- Isi surat -->
@@ -397,10 +393,18 @@
               </div>
             </div>
           </div>
-
+          <div class="my-3">
+            <div class="card-header d-flex justify-content-end">
+              <a href="albaqarah2.html" class="btn btn-info text-nowrap btn-sm mb-2">
+                Surat Selanjutnya >
+              </a>
+            </div>
+          </div>
           <!-- Akhir surat -->
         </div>
       </div>
+
+    </div>
     </div>
     <!-- Footer Section Start -->
     <footer class="footer">

@@ -176,6 +176,8 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
             <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
                 <div class="container-fluid navbar-inner">
                     <a href="../../dashboard/index.html" class="navbar-brand ms-auto me-auto">
@@ -204,15 +206,15 @@
             </nav>
 
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 200px; margin-top: 70px;">
+            <div class="iq-navbar-header" style="height: 250px; margin-top: 70px;">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="flex-wrap  text-center">
                                 <div class="d-flex justify-content-center gap-2 align-items-center">
-                              
-                                    <h2 class="mx-lg-5 fs-lg-1"> Rukun Haji</h2>
-                                   
+                                    <img src="../../assets/icon/pattern.png" height="40px" alt="" />
+                                    <h2 class="mx-lg-5 fs-lg-1"> ASSALAMUALAIKUM </h2>
+                                    <img src="../../assets/icon/pattern.png" height="40px" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -235,498 +237,496 @@
             </div>
             <!-- Nav Header Component End -->
             <!--Nav End-->
+        </div>
+        <div class="container mt-n5 p-0">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="800">
+                            <div class="col-md-12 col-lg-12">
+                                <ul id="list-example" class="list-group">
+                                    <li class="list-group-item list-group-item-light text-center">
+                                        <h4 class="text-dark"><b>Daftar list</b></h4>
+                                    </li>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <a class="text-dark  fw-bold" href="">Ihram</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram">Ihram</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram-1">Mengerjakan Mandi sunnah</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram-2">Mengerjakan Wudhu</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram-3">Mengerjakan Pakain ihram</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram-4">Sunnah Ihram bagi laki-laki</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#ihram-5">Mengucapkan Niat Haji</a>
 
-            <div class="container mt-n5 p-0">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="row">
-                            <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="800">
-                                <div class="col-md-12 col-lg-12">
-                                    <ul id="list-example" class="list-group">
-                                        <li class="list-group-item list-group-item-light text-center">
-                                            <h4 class="text-dark"><b>Daftar list</b></h4>
-                                        </li>
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    <a class="text-dark  fw-bold" href="">Ihram</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram">Ihram</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram-1">Mengerjakan Mandi sunnah</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram-2">Mengerjakan Wudhu</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram-3">Mengerjakan Pakain ihram</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram-4">Sunnah Ihram bagi laki-laki</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#ihram-5">Mengucapkan Niat Haji</a>
-
-                                                    </ul>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                    <a class="text-dark  fw-bold" href="">Wukuf</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#wukuf">Wukuf</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#wukuf-1">Mengerjakan sholat Dzuhur dan Ashar dengan
-                                                            qasar
-                                                            dan jamak</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#wukuf-2">Berangkat menuju Arafah dengan membaca
-                                                            talbiyah</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#wukuf-3">Mendengarkan Khutbah Wukuh</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#wukuf-4">Doa wukuf</a>
-                                                    </ul>
-                                                </div>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <a class="text-dark  fw-bold" href="">Wukuf</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#wukuf">Wukuf</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#wukuf-1">Mengerjakan sholat Dzuhur dan Ashar dengan qasar
+                                                        dan jamak</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#wukuf-2">Berangkat menuju Arafah dengan membaca
+                                                        talbiyah</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#wukuf-3">Mendengarkan Khutbah Wukuh</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#wukuf-4">Doa wukuf</a>
+                                                </ul>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                    aria-expanded="false" aria-controls="flush-collapseThree">
-                                                    <a class="text-dark  fw-bold" href="">Thawaf</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#thawaf">Thawaf</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#thawaf-1">Macam-Macam Thawaf</a>
-                                                    </ul>
-                                                </div>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <a class="text-dark  fw-bold" href="">Thawaf</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#thawaf">Thawaf</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#thawaf-1">Macam-Macam Thawaf</a>
+                                                </ul>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                                    aria-expanded="false" aria-controls="flush-collapseFour">
-                                                    <a class="text-dark  fw-bold" href="">Sa'i</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#sa'i">Sa'i</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#sa'i-1">Syarat Sa'i</a>
-                                                    </ul>
-                                                </div>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                <a class="text-dark  fw-bold" href="">Sa'i</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#sa'i">Sa'i</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#sa'i-1">Syarat Sa'i</a>
+                                                </ul>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                                                    aria-expanded="false" aria-controls="flush-collapseFive">
-                                                    <a class="text-dark  fw-bold" href="">Tahallul</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#tahallul">Tahallul</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#tahallul-1">Macam-macam Tahallul</a>
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#tahallul-2">Doa Tahallul</a>
-                                                    </ul>
-                                                </div>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                                aria-expanded="false" aria-controls="flush-collapseFive">
+                                                <a class="text-dark  fw-bold" href="">Tahallul</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#tahallul">Tahallul</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#tahallul-1">Macam-macam Tahallul</a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#tahallul-2">Doa Tahallul</a>
+                                                </ul>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
-                                            id="accordionFlushExample">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
-                                                    aria-expanded="false" aria-controls="flush-collapseSix">
-                                                    <a class="text-dark  fw-bold" href="">Tertib</a>
-                                                </button>
-                                            </h2>
-                                            <div id="flush-collapseSix" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <ul class="list-group list-group-flush">
-                                                        <a class="list-group-item list-group-item-action"
-                                                            href="#tertib">Tertib</a>
-                                                    </ul>
-                                                </div>
+                                    <div style="border: 1px solid darkgray;" class="accordion accordion-flush"
+                                        id="accordionFlushExample">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                                aria-expanded="false" aria-controls="flush-collapseSix">
+                                                <a class="text-dark  fw-bold" href="">Tertib</a>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <a class="list-group-item list-group-item-action"
+                                                        href="#tertib">Tertib</a>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </ul>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="scrollspy-example" style="position: relative; height: 100%; overflow-y: auto;">
+                                <div class="card-header">
+                                    <h3 id="ihram" class="text-dark fw-bold mb-4 ">Ihram</h3>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <p>Miqat artinya batas waktu dan tempat melakukan ibadah haji serta umrah.
+                                        Terdapat dua macam miqat, yaitu miqat zamani (batas waktu) dan miqat makani
+                                        (batas tempat).</p>
+                                    <p>Batas waktu untuk melakukan ibadah haji adalah pada bulan Syawal, Zulkaidah,
+                                        dan Zulhijah. Sementara itu, batas tempat untuk memulai ibadah haji terletak
+                                        di beberapa kota dan tergantung dari arah kedatangan jamaah haji.</p>
+                                    <p>Adapun urutan pelaksanaan ihram ialah sebagai berikut :</p>
                                 </div>
 
-                                <div class="scrollspy-example"
-                                    style="position: relative; height: 100%; overflow-y: auto;">
-                                    <div class="card-header">
-                                        <h3 id="ihram" class="text-dark fw-bold mb-4 ">Ihram</h3>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <p>Miqat artinya batas waktu dan tempat melakukan ibadah haji serta umrah.
-                                            Terdapat dua macam miqat, yaitu miqat zamani (batas waktu) dan miqat makani
-                                            (batas tempat).</p>
-                                        <p>Batas waktu untuk melakukan ibadah haji adalah pada bulan Syawal, Zulkaidah,
-                                            dan Zulhijah. Sementara itu, batas tempat untuk memulai ibadah haji terletak
-                                            di beberapa kota dan tergantung dari arah kedatangan jamaah haji.</p>
-                                        <p>Adapun urutan pelaksanaan ihram ialah sebagai berikut :</p>
-                                    </div>
+                                <div class="card-body">
 
-                                    <div class="card-body">
-
-                                        <li id="ihram-1" class=""><b>Mengerjakan Mandi sunnah</b></li>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-body text-end">
-                                            <p class="">نَوَيْتُ غُسْلَ الِإحرَام سُنَّةً لِلهِ تَعَالَى</p>
-                                            <i>Nawaytu ghuslal ihrāmi sunnatan lilāhi ta‘ālā</i>
-                                        </div>
-                                        <i>"Saya niat mandi ihram sunnah karena Allah SWT."</i>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <li id="ihram-2" class=""><b>Mengerjakan Wudhu</b></li>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <li id="ihram-3" class=""><b>Mengerjakan pakaian ihram</b></li>
-                                        <img src="../img/tutorihram.jpg" class="img-fluid mt-3 mb-3" alt="">
-                                        <p>cara memakai kain ihram yang benar adalah dengan satu kain diselendangkan
-                                            di bahu untuk menutup bagian dada. Lalu, satu kainnya lagi dipakai di
-                                            bawah dengan cara seperti disarung, untuk menutupi bagian pusar sampai
-                                            lutut.</p>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <li id="ihram-4" class=""><b>Sunnah Ihram Bagi laki-laki</b></li>
-                                        <p>Setelah mengetahui bagaimana cara memakai kain ihram yang benar, detikers
-                                            juga perlu mengetahui sejumlah sunnah yang dianjurkan. Mengutip buku
-                                            Tuntunan Manasik Haji dan Umrah oleh Pustaka Ibnu Umar, berikut anjuran
-                                            sunnah ihram bagi laki-laki.</p>
-                                        <ul>
-                                            <li>Mandi</li>
-                                            <li>Memakai wangi-wangian pada tubuhnya</li>
-                                            <li>Memotong kuku, mencukur kumis, merapikan jenggot, rambut ketiak, dan
-                                                rambut kemaluan</li>
-                                            <li>Memakai kain ihram yang berwarna putih yang menutup kedua belikat
-                                                dan kedua pundak</li>
-                                            <li>Sholat sunnah ihram</li>
-                                        </ul>
-                                        <p>Berikut niatnya :</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="">أُصَلِّي سُنَّةً قَبْلَ الْاِ حْرَامِ رَكْعَتَيْنِ لِلَّهِ
-                                            تَعَالَى</p>
-                                        <i>Ushalli sunnatan qablal ihraami rak'ataini lillaahi ta'aalaa.</i>
-                                    </div>
-                                    <div>
-                                        <div class="card-body">
-
-                                            <i>"Saya niat salat sunat sebelum ihram dua rakaat karena Allah
-                                                ta'ala."</i>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <li id="ihram-5" class=""><b>Mengucapkan Niat Haji</b></li>
-                                        <p>Berikut niatnya :</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="">نَوَيْتُ الْحَجَّ وَأَحْرَمْتُ بِهِ لِلهِ تَعَالَى لَبَّيْكَ
-                                            اللَّهُمَّ بحَجًَةِ</p>
-                                        <i>nawaitul hajja wa ahramtu bihi lillahi ta’ala labbaika Allahumma
-                                            hajjan.</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <i>"Aku niat melaksanakan haji dan berihram karena Allah Swt. Aku sambut
-                                            panggilan-Mu, ya Allah untuk berhaji."</i>
-                                    </div>
-
-
-                                    <div class="card-header">
-                                        <h3 class="text-dark fw-bold mb-4 ">Wukuh di Arafah pada 9 Zulhijah</h3>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <p>Kata wukuf berasal dari kata Arab "wuquf" yang berarti berhenti, yakni
-                                            berhenti dari kegiatan apapun agar bisa melakukan perenungan diri.
-                                            Sedangkan kata "arafah" berarti naik-mengenali.</p>
-                                        <p>Jadi, wukuf di Arafah adalah saat fisik jamaah berhenti di Padang Arafah.
-                                            Sedangkan jiwa dan spiritual jamaah sedang berjumpa dengan Allah SWT.
-                                            Wukuf di Arafah biasanya menimbulkan rasa haru, karena teringat dosa
-                                            serta yaumul mahsyar saat manusia harus bertanggung jawab.</p>
-                                        <p>Wukuf dilakukan pada 9 Dzulhijjah, atau sehari sebelum hari raya Idul
-                                            Adha. Pelaksanaan wukuf adalah sejak gelincir matahari (zuhur) di hari
-                                            Arafah (9 Dzulhijjah) hingga terbit fajar (subuh) malam Idul Adha (10
-                                            Dzulhijjah).</p>
-                                        <p>terdapat beberapa amalan yang bisa dikerjakan, yaitu :</p>
-                                    </div>
-
-                                    <div class="card-body">
-
-                                        <li id="wukuf-1" class=" mb-3"><b>Mengerjakan sholat Dzuhur dan Ashar dengan
-                                                qasar dan jamak</b></li>
-                                        <p>Niat Sholat Jamak Qashar Taqdim :</p>
-                                    </div>
-
+                                    <li id="ihram-1" class=""><b>Mengerjakan Mandi sunnah</b></li>
+                                </div>
+                                <div class="card-body">
                                     <div class="card-body text-end">
-                                        <p class="">أصَلَّى فَرْضَ الظُّهْر رَكْعَتَيْنِ قَصْرًا
-                                            مَجمُوعًا إِلَيْهِالْعَصْرُ لِلَّهِ تَعَالَى</p>
-                                        <i>Ushallii fardhaz-zhuhri rak'ataini qashran majmuu'an ilaihil
-                                            'ashru adaa'an lillaahita'aalaa.</i>
+                                        <p class="">نَوَيْتُ غُسْلَ الِإحرَام سُنَّةً لِلهِ تَعَالَى</p>
+                                        <i>Nawaytu ghuslal ihrāmi sunnatan lilāhi ta‘ālā</i>
                                     </div>
+                                    <i>"Saya niat mandi ihram sunnah karena Allah SWT."</i>
+                                </div>
+
+                                <div class="card-body">
+                                    <li id="ihram-2" class=""><b>Mengerjakan Wudhu</b></li>
+                                </div>
+
+                                <div class="card-body">
+                                    <li id="ihram-3" class=""><b>Mengerjakan pakaian ihram</b></li>
+                                    <img src="../img/tutorihram.jpg" class="img-fluid mt-3 mb-3" alt="">
+                                    <p>cara memakai kain ihram yang benar adalah dengan satu kain diselendangkan
+                                        di bahu untuk menutup bagian dada. Lalu, satu kainnya lagi dipakai di
+                                        bawah dengan cara seperti disarung, untuk menutupi bagian pusar sampai
+                                        lutut.</p>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <li id="ihram-4" class=""><b>Sunnah Ihram Bagi laki-laki</b></li>
+                                    <p>Setelah mengetahui bagaimana cara memakai kain ihram yang benar, detikers
+                                        juga perlu mengetahui sejumlah sunnah yang dianjurkan. Mengutip buku
+                                        Tuntunan Manasik Haji dan Umrah oleh Pustaka Ibnu Umar, berikut anjuran
+                                        sunnah ihram bagi laki-laki.</p>
+                                    <ul>
+                                        <li>Mandi</li>
+                                        <li>Memakai wangi-wangian pada tubuhnya</li>
+                                        <li>Memotong kuku, mencukur kumis, merapikan jenggot, rambut ketiak, dan
+                                            rambut kemaluan</li>
+                                        <li>Memakai kain ihram yang berwarna putih yang menutup kedua belikat
+                                            dan kedua pundak</li>
+                                        <li>Sholat sunnah ihram</li>
+                                    </ul>
+                                    <p>Berikut niatnya :</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="">أُصَلِّي سُنَّةً قَبْلَ الْاِ حْرَامِ رَكْعَتَيْنِ لِلَّهِ
+                                        تَعَالَى</p>
+                                    <i>Ushalli sunnatan qablal ihraami rak'ataini lillaahi ta'aalaa.</i>
+                                </div>
+                                <div>
                                     <div class="card-body">
-                                        <i>"Saya niat sholat fardhu Dzuhur dua rakaat secara qashar yang
-                                            dikumpulkan padanya sholat Ashar karena Allah."</i>
+
+                                        <i>"Saya niat salat sunat sebelum ihram dua rakaat karena Allah
+                                            ta'ala."</i>
                                     </div>
-                                    <div class="card-body">
-                                        <p class="mt-3">Niat Sholat Jamak Qashar Takhir :</p>
-                                    </div>
-                                    <div class="card-body text-end">
-                                        <p class="">أصَلَّى فَرْضَ الْعَصْرِ رَكْعَتَيْنِ
-                                            قَصْرًامَجْمُوعًا إِلَىالظُّهْرِ لِلَّهِ تَعَالَى</p>
-                                        <i>Ushallii fardhal 'ashri rak'ataini qashran majmuu'an
-                                            ilazh-zhuhri adaa'an lillaahi ta'aalaa.</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <i>"Saya niat sholat fardhu Ashar dua rakaat secara qashar yang
-                                            dikumpulkan kepada sholat Dzuhur karena Allah."</i>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <li id="wukuf-2" class=""><b>Berangkat menuju Arafah dengan membaca talbiyah</b>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <li id="ihram-5" class=""><b>Mengucapkan Niat Haji</b></li>
+                                    <p>Berikut niatnya :</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="">نَوَيْتُ الْحَجَّ وَأَحْرَمْتُ بِهِ لِلهِ تَعَالَى لَبَّيْكَ
+                                        اللَّهُمَّ بحَجًَةِ</p>
+                                    <i>nawaitul hajja wa ahramtu bihi lillahi ta’ala labbaika Allahumma
+                                        hajjan.</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"Aku niat melaksanakan haji dan berihram karena Allah Swt. Aku sambut
+                                        panggilan-Mu, ya Allah untuk berhaji."</i>
+                                </div>
+
+
+                                <div class="card-header">
+                                    <h3 class="text-dark fw-bold mb-4 ">Wukuh di Arafah pada 9 Zulhijah</h3>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <p>Kata wukuf berasal dari kata Arab "wuquf" yang berarti berhenti, yakni
+                                        berhenti dari kegiatan apapun agar bisa melakukan perenungan diri.
+                                        Sedangkan kata "arafah" berarti naik-mengenali.</p>
+                                    <p>Jadi, wukuf di Arafah adalah saat fisik jamaah berhenti di Padang Arafah.
+                                        Sedangkan jiwa dan spiritual jamaah sedang berjumpa dengan Allah SWT.
+                                        Wukuf di Arafah biasanya menimbulkan rasa haru, karena teringat dosa
+                                        serta yaumul mahsyar saat manusia harus bertanggung jawab.</p>
+                                    <p>Wukuf dilakukan pada 9 Dzulhijjah, atau sehari sebelum hari raya Idul
+                                        Adha. Pelaksanaan wukuf adalah sejak gelincir matahari (zuhur) di hari
+                                        Arafah (9 Dzulhijjah) hingga terbit fajar (subuh) malam Idul Adha (10
+                                        Dzulhijjah).</p>
+                                    <p>terdapat beberapa amalan yang bisa dikerjakan, yaitu :</p>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <li id="wukuf-1" class=" mb-3"><b>Mengerjakan sholat Dzuhur dan Ashar dengan
+                                            qasar dan jamak</b></li>
+                                    <p>Niat Sholat Jamak Qashar Taqdim :</p>
+                                </div>
+
+                                <div class="card-body text-end">
+                                    <p class="">أصَلَّى فَرْضَ الظُّهْر رَكْعَتَيْنِ قَصْرًا
+                                        مَجمُوعًا إِلَيْهِالْعَصْرُ لِلَّهِ تَعَالَى</p>
+                                    <i>Ushallii fardhaz-zhuhri rak'ataini qashran majmuu'an ilaihil
+                                        'ashru adaa'an lillaahita'aalaa.</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"Saya niat sholat fardhu Dzuhur dua rakaat secara qashar yang
+                                        dikumpulkan padanya sholat Ashar karena Allah."</i>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mt-3">Niat Sholat Jamak Qashar Takhir :</p>
+                                </div>
+                                <div class="card-body text-end">
+                                    <p class="">أصَلَّى فَرْضَ الْعَصْرِ رَكْعَتَيْنِ
+                                        قَصْرًامَجْمُوعًا إِلَىالظُّهْرِ لِلَّهِ تَعَالَى</p>
+                                    <i>Ushallii fardhal 'ashri rak'ataini qashran majmuu'an
+                                        ilazh-zhuhri adaa'an lillaahi ta'aalaa.</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"Saya niat sholat fardhu Ashar dua rakaat secara qashar yang
+                                        dikumpulkan kepada sholat Dzuhur karena Allah."</i>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <li id="wukuf-2" class=""><b>Berangkat menuju Arafah dengan membaca talbiyah</b>
+                                    </li>
+                                    <p>Berikut bacaan talbiyah :</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ لَبَّيْكَ لاَ شَرِيكَ
+                                        لَكَ
+                                        لَبَّيْكَ إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ لاَ شَرِيكَ
+                                        لَكَ</p>
+                                    <i>Labbaik Allahumma labbaik. Labbaik laa syarika laka labbaik. Innal
+                                        hamda
+                                        wan ni'mata laka wal mulk laa syarika lak.</i>
+                                </div>
+                                <div class="card-body">
+
+                                    <i>"Ya Allah, aku memenuhi panggilan-Mu, Ya Allah aku memenuhi
+                                        panggilan-Mu,
+                                        tidak ada sekutu bagi-Mu, sesungguhnya pujian dan kenikmatan hanya
+                                        milik-Mu, dan kerajaan hanyalah milik-Mu, tiada sekutu bagi-Mu"</i>
+                                </div>
+                                <div class="card-body">
+                                    <li id="wukuf-3" class=""><b>Mendengarkan Khutbah Wukuh</b></li>
+                                </div>
+                                <div class="card-body">
+                                    <li id="wukuf4" class=""><b>Doa wukuf</b></li>
+                                    <p>Saat wukuf di Arafah, doa yang sebaiknya dibaca adalah :</p>
+                                </div>
+
+                                <div class="text-end">
+                                    <p class="">اللَّهُمَّ لَكَ الْحَمْدُ كَالَّذِي نَقُولُ وَخَيْرًا
+                                        مِمَّا نَقُولُ ، اللَّهُمَّ لَكَ صَلَاتِي وَنُسُكِي وَمَحْيَايَ
+                                        وَمَمَاتِي وَإِلَيْكَ مَآبِي وَلَكَ رَبِّ تُرَاثِي ، اللَّهُمَّ
+                                        إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ وَوَسْوَسَةِ الصَّدْرِ
+                                        وَشَتَاتِ الْأَمْرِ ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا
+                                        تَجِيءُ بِهِ الرِّيحُ</p>
+                                    <i>Allahumma lakal hamdu kalladzi naqulu wa khairom mimma naqulu,
+                                        allahumma sholati wa nusuki wa mahyaya wa mamati wa ilaika ma-abi wa
+                                        laka rabbi turatsi, allahumma inni a'uzu bika min 'azabil qobri wa
+                                        waswasatis shodri wa syatatil amri, allahumma inni a'uzu bika min
+                                        syarrima taji-u bihir rihu.</i>
+                                </div>
+                                <div class="card-body">
+
+                                    <i>"Ya Allah, bagi Mu pujian seperti yang kami ucapkan, dan lebih baik
+                                        dari apa yang kami ucapkan. Ya Allah, untuk-Mu salatku, ibadah
+                                        hajiku, untuk-Mu kehidupanku dan kematianku dan kepada-Mu kami akan
+                                        kembali, untuk-Mu kami tunjukkan ibadahku. Ya Allah, kami berlindung
+                                        kepada-Mu dari siksa neraka, dari hati yang ragu dan dari tercerai
+                                        berainya urusan. Ya Allah, aku berlindung kepada-Mu dari yang
+                                        terburuk yang didatangkan oleh angin."</i>
+                                </div>
+                                <!--  -->
+                                <div class="card-header">
+                                    <h3 class="text-dark fw-bold mb-4 ">Thawaf</h3>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <p>tawaf secara bahasa dalam Panduan Muslim Kaffah Sehari-hari oleh Muh.
+                                        Hambali, yakni mengelilingi. Sementara tawaf yang dimaksud dalam
+                                        haji dan umrah adalah mengelilingi Kakbah atau baitullah.
+                                    </p>
+                                    <p>mengelilingi Ka'bah 7 kali, dimana Ka'bah selalu berada di
+                                        sebelah kiri jamaah haji yang dimulai dan diakhiri pada arah sejajar
+                                        dari hajar aswad dengan kondisi suci dari hadas dan najis.</p>
+                                    <p>Allah SWT dalam Surah Al-Hajj ayat 29 mensyariatkan tawaf kepada
+                                        hamba-hamba-Nya yang melaksanakan ibadah haji dan umrah.</p>
+
+                                </div>
+
+
+
+                                <div class="card-body text-end">
+                                    <p class="">وَلْيَطَّوَّفُوْا بِالْبَيْتِ الْعَتِيْقِ
+                                    </p>
+                                    <i>walyaṭṭawwafụ bil-baitil-'atīq</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"dan melakukan tawaf di sekeliling al-Bait al-'Atīq
+                                        (Baitullah)"</i>
+                                </div>
+
+                                <div class="card-body text-dark">
+                                    <li class=" mb-3"><b>Macam-Macam Thawaf</b></li>
+                                    <ul>
+
+                                        <li>Thawaf Qudum</li>
+                                        <p>dilakukan saat pertama kali datang ke Masjidilharam. Sebagaimana
+                                            Nabi SAW langsung mengerjakan tawaf sesampainya di
+                                            Masjidilharam, sebelum melaksanakan ibadah lainnya.</p>
+                                        <li>Thawaf Ifadhah</li>
+                                        <p>Termasuk dalam rangkain ibadah haji dan umrah</p>
+                                        <li>Thawaf</li>
+                                        <p>merupakan tawaf perpisahan yang dilakukan pada akhir ibadah haji
+                                            dan umrah, dan sebelum meninggalkan kota Makkah.</p>
+                                    </ul>
+                                </div>
+                                <h3 id="sa'i" class="card-header  fw-bold">Sa'i</h3>
+
+                                <div class="card-body">
+                                    <p>Sa'i adalah berjalan kaki dan berlari-lari kecil di antara kedua bukit Shafa
+                                        dan Marwah, sebanyak tujuh kali (bolak-balik) dari Bukit Shafa ke Bukit
+                                        Marwah dan sebaliknya. Hal tersebut dijelaskan dalam buku Situs-situs Dalam
+                                        Al-Qur'an oleh Syahruddin El-Fikri.</p>
+                                    <p>Perintah melaksanakan sa'i dalam ibadah haji dan umrah tercantum dalam Surah
+                                        Al-Baqarah ayat 158.</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="">اِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَاۤىِٕرِ اللّٰهِ ۚ فَمَنْ
+                                        حَجَّ الْبَيْتَ اَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ اَنْ يَّطَّوَّفَ
+                                        بِهِمَا ۗ وَمَنْ تَطَوَّعَ خَيْرًاۙ فَاِنَّ اللّٰهَ شَاكِرٌ عَلِيْمٌ</p>
+                                    <i>Innaṣ-ṣafā wal-marwata min sya'ā`irillāh, fa man ḥajjal-baita awi'tamara fa
+                                        lā junāḥa 'alaihi ay yaṭṭawwafa bihimā, wa man taṭawwa'a khairan fa
+                                        innallāha syākirun 'alīm</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"Sesungguhnya Shafa dan Marwah merupakan sebagian syiar (agama) Allah. Maka,
+                                        siapa beribadah haji ke Baitullah atau berumrah, tidak ada dosa baginya
+                                        mengerjakan sa'i antara keduanya. Siapa yang dengan kerelaan hati
+                                        mengerjakan kebajikan, maka sesungguhnya Allah Maha Mensyukuri, lagi Maha
+                                        Mengetahui."</i>
+                                </div>
+                                <div class="card-body">
+                                    <li id="sa'i-1" class=" mb-3"><b>Syarat Sa'i</b></li>
+                                    <ul>
+                                        <li>Dikerjakan setelah rangkaian ibadah thawaf di sekeliling Kakbah, dan
+                                            tidak dibenarkan bila melaksanakan sa'i terlebih dahulu.</li>
+                                        <li>Dilakukan sebanyak tujuh kali putaran.</li>
+                                        <li>Memulainya dari Shafa dan berakhir di Marwah. Diperkirakan jarak anatara
+                                            kedua bukit sekitar 420 meter.</li>
+                                        <li>Dilakukan pada tempat sa'i, yaitu jalan memanjang antara Shafa dan
+                                            Marwah, sebab Nabi SAW mengerjakannya demikian. Dan dalam haditsnya
+                                            beliau bersabda,
+                                            <p class="text-end ">خُذُوا عنِّي مَنَاسِكَكُمْ</p>
+                                            <i>"Ambillah tata cara ibadah haji kalian dariku." (HR Muslim)</i>
                                         </li>
-                                        <p>Berikut bacaan talbiyah :</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ لَبَّيْكَ لاَ شَرِيكَ
-                                            لَكَ
-                                            لَبَّيْكَ إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ لاَ شَرِيكَ
-                                            لَكَ</p>
-                                        <i>Labbaik Allahumma labbaik. Labbaik laa syarika laka labbaik. Innal
-                                            hamda
-                                            wan ni'mata laka wal mulk laa syarika lak.</i>
-                                    </div>
-                                    <div class="card-body">
+                                    </ul>
+                                </div>
+                                <h3 id="tahallul" class="card-header  fw-bold">Tahallul</h3>
 
-                                        <i>"Ya Allah, aku memenuhi panggilan-Mu, Ya Allah aku memenuhi
-                                            panggilan-Mu,
-                                            tidak ada sekutu bagi-Mu, sesungguhnya pujian dan kenikmatan hanya
-                                            milik-Mu, dan kerajaan hanyalah milik-Mu, tiada sekutu bagi-Mu"</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <li id="wukuf-3" class=""><b>Mendengarkan Khutbah Wukuh</b></li>
-                                    </div>
-                                    <div class="card-body">
-                                        <li id="wukuf4" class=""><b>Doa wukuf</b></li>
-                                        <p>Saat wukuf di Arafah, doa yang sebaiknya dibaca adalah :</p>
-                                    </div>
-
-                                    <div class="text-end">
-                                        <p class="">اللَّهُمَّ لَكَ الْحَمْدُ كَالَّذِي نَقُولُ وَخَيْرًا
-                                            مِمَّا نَقُولُ ، اللَّهُمَّ لَكَ صَلَاتِي وَنُسُكِي وَمَحْيَايَ
-                                            وَمَمَاتِي وَإِلَيْكَ مَآبِي وَلَكَ رَبِّ تُرَاثِي ، اللَّهُمَّ
-                                            إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ وَوَسْوَسَةِ الصَّدْرِ
-                                            وَشَتَاتِ الْأَمْرِ ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا
-                                            تَجِيءُ بِهِ الرِّيحُ</p>
-                                        <i>Allahumma lakal hamdu kalladzi naqulu wa khairom mimma naqulu,
-                                            allahumma sholati wa nusuki wa mahyaya wa mamati wa ilaika ma-abi wa
-                                            laka rabbi turatsi, allahumma inni a'uzu bika min 'azabil qobri wa
-                                            waswasatis shodri wa syatatil amri, allahumma inni a'uzu bika min
-                                            syarrima taji-u bihir rihu.</i>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <i>"Ya Allah, bagi Mu pujian seperti yang kami ucapkan, dan lebih baik
-                                            dari apa yang kami ucapkan. Ya Allah, untuk-Mu salatku, ibadah
-                                            hajiku, untuk-Mu kehidupanku dan kematianku dan kepada-Mu kami akan
-                                            kembali, untuk-Mu kami tunjukkan ibadahku. Ya Allah, kami berlindung
-                                            kepada-Mu dari siksa neraka, dari hati yang ragu dan dari tercerai
-                                            berainya urusan. Ya Allah, aku berlindung kepada-Mu dari yang
-                                            terburuk yang didatangkan oleh angin."</i>
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-header">
-                                        <h3 class="text-dark fw-bold mb-4 ">Thawaf</h3>
-                                    </div>
-                                    <div class="card-body text-dark">
-                                        <p>tawaf secara bahasa dalam Panduan Muslim Kaffah Sehari-hari oleh Muh.
-                                            Hambali, yakni mengelilingi. Sementara tawaf yang dimaksud dalam
-                                            haji dan umrah adalah mengelilingi Kakbah atau baitullah.
-                                        </p>
-                                        <p>mengelilingi Ka'bah 7 kali, dimana Ka'bah selalu berada di
-                                            sebelah kiri jamaah haji yang dimulai dan diakhiri pada arah sejajar
-                                            dari hajar aswad dengan kondisi suci dari hadas dan najis.</p>
-                                        <p>Allah SWT dalam Surah Al-Hajj ayat 29 mensyariatkan tawaf kepada
-                                            hamba-hamba-Nya yang melaksanakan ibadah haji dan umrah.</p>
-
-                                    </div>
-
-
-
-                                    <div class="card-body text-end">
-                                        <p class="">وَلْيَطَّوَّفُوْا بِالْبَيْتِ الْعَتِيْقِ
-                                        </p>
-                                        <i>walyaṭṭawwafụ bil-baitil-'atīq</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <i>"dan melakukan tawaf di sekeliling al-Bait al-'Atīq
-                                            (Baitullah)"</i>
-                                    </div>
-
-                                    <div class="card-body text-dark">
-                                        <li class=" mb-3"><b>Macam-Macam Thawaf</b></li>
-                                        <ul>
-
-                                            <li>Thawaf Qudum</li>
-                                            <p>dilakukan saat pertama kali datang ke Masjidilharam. Sebagaimana
-                                                Nabi SAW langsung mengerjakan tawaf sesampainya di
-                                                Masjidilharam, sebelum melaksanakan ibadah lainnya.</p>
-                                            <li>Thawaf Ifadhah</li>
-                                            <p>Termasuk dalam rangkain ibadah haji dan umrah</p>
-                                            <li>Thawaf</li>
-                                            <p>merupakan tawaf perpisahan yang dilakukan pada akhir ibadah haji
-                                                dan umrah, dan sebelum meninggalkan kota Makkah.</p>
-                                        </ul>
-                                    </div>
-                                    <h3 id="sa'i" class="card-header  fw-bold">Sa'i</h3>
-
-                                    <div class="card-body">
-                                        <p>Sa'i adalah berjalan kaki dan berlari-lari kecil di antara kedua bukit Shafa
-                                            dan Marwah, sebanyak tujuh kali (bolak-balik) dari Bukit Shafa ke Bukit
-                                            Marwah dan sebaliknya. Hal tersebut dijelaskan dalam buku Situs-situs Dalam
-                                            Al-Qur'an oleh Syahruddin El-Fikri.</p>
-                                        <p>Perintah melaksanakan sa'i dalam ibadah haji dan umrah tercantum dalam Surah
-                                            Al-Baqarah ayat 158.</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="">اِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَاۤىِٕرِ اللّٰهِ ۚ فَمَنْ
-                                            حَجَّ الْبَيْتَ اَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ اَنْ يَّطَّوَّفَ
-                                            بِهِمَا ۗ وَمَنْ تَطَوَّعَ خَيْرًاۙ فَاِنَّ اللّٰهَ شَاكِرٌ عَلِيْمٌ</p>
-                                        <i>Innaṣ-ṣafā wal-marwata min sya'ā`irillāh, fa man ḥajjal-baita awi'tamara fa
-                                            lā junāḥa 'alaihi ay yaṭṭawwafa bihimā, wa man taṭawwa'a khairan fa
-                                            innallāha syākirun 'alīm</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <i>"Sesungguhnya Shafa dan Marwah merupakan sebagian syiar (agama) Allah. Maka,
-                                            siapa beribadah haji ke Baitullah atau berumrah, tidak ada dosa baginya
-                                            mengerjakan sa'i antara keduanya. Siapa yang dengan kerelaan hati
-                                            mengerjakan kebajikan, maka sesungguhnya Allah Maha Mensyukuri, lagi Maha
-                                            Mengetahui."</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <li id="sa'i-1" class=" mb-3"><b>Syarat Sa'i</b></li>
-                                        <ul>
-                                            <li>Dikerjakan setelah rangkaian ibadah thawaf di sekeliling Kakbah, dan
-                                                tidak dibenarkan bila melaksanakan sa'i terlebih dahulu.</li>
-                                            <li>Dilakukan sebanyak tujuh kali putaran.</li>
-                                            <li>Memulainya dari Shafa dan berakhir di Marwah. Diperkirakan jarak anatara
-                                                kedua bukit sekitar 420 meter.</li>
-                                            <li>Dilakukan pada tempat sa'i, yaitu jalan memanjang antara Shafa dan
-                                                Marwah, sebab Nabi SAW mengerjakannya demikian. Dan dalam haditsnya
-                                                beliau bersabda,
-                                                <p class="text-end ">خُذُوا عنِّي مَنَاسِكَكُمْ</p>
-                                                <i>"Ambillah tata cara ibadah haji kalian dariku." (HR Muslim)</i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 id="tahallul" class="card-header  fw-bold">Tahallul</h3>
-
-                                    <div class="card-body">
-                                        <p>mencukur rambut hendaknya menghadap kiblat, dan paling sedikit memotong tiga
-                                            helai rambut.</p>
-                                        <p>Untuk jemaah haji pria hendaknya mencukur sebagian rambut kepala atau
-                                            memendekkannya. Bahkan lebih utama untuk menggundulinya. Sementara wanita,
-                                            utamanya adalah memendekkan rambut. Makruh bagi perempuan untuk menggundul
-                                            rambut kepalanya.</p>
-                                        <p>cukur rambut jemaah laki-laki, "Pada saat bercukur, disunnahkan menghadap ke
-                                            kiblat dan memulai pada bagian depan kepala. Kemudian mencukur sisi kanan
-                                            sampai pada kedua tulang yang menonjol di belakang kepala. Kemudian mencukur
-                                            sisi berikutnya."</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <li id="tahallul-1" class=""><b>Macam-Macam Tahallul</b></li>
-                                        <p>Tahallul dalam rangkaian umrah hanya terdapat satu macamnya, yakni setelah
-                                            semua amal ibadah umrah selesai. Sementara dalam pelaksanaan haji terdapat
-                                            dua jenis tahallul</p>
-                                        <ul>
-                                            <li class="">Tahallul awal</li>
-                                            <p>Tahallul dalam rangkaian umrah hanya terdapat satu macamnya, yakni
-                                                setelah semua amal ibadah umrah selesai. Sementara dalam pelaksanaan
-                                                haji terdapat dua jenis tahallul</p>
-                                            <li class="">Tahallul Tsani</li>
-                                            <p>dilakukan sesudah mengerjakan thawaf Ifadhah. Setelah tahallul tsani
-                                                dilaksanakan, maka jemaah haji boleh dan halal melakukan hal-hal yang
-                                                sebelumnya termasuk larangan ketika ihram. Seperti memakai wewangian,
-                                                menikah, mengadakan akad nikah, bersentuhan kulit yang membangkitkan
-                                                nafsu syahwat, hingga berhubungan badan.</p>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body">
-                                        <li id="tahallul-2" class=""><b>Doa Tahallul</b></li>
-                                        <p>terdapat doa yang bisa dibaca ketika mencukur rambut tahallul.</p>
-                                        <p>Beriku bacaan doa tahallul :</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="">اللَّهُمَّ أَثْبِتْ لي بِكُلِّ شَعْرَةٍ حَسَنَةً، وَامْحُ عَنِّي
-                                            بِهَا سَيِّئَةً</p>
-                                        <i>Allahumma atsbit lii bikulli sya'ratin hasanatan, wamhu 'annii bihaa
-                                            sayyi-atan</i>
-                                    </div>
-                                    <div class="card-body">
-                                        <i>"Ya Allah, tetapkan bagiku dengan setiap helai rambut yang aku cukur satu
-                                            kebaikan, hapuslah dosa dariku. Dan karenanya, angkatlah untukku satu
-                                            derajat di sisi-Mu."</i>
-                                    </div>
-                                    <h3 id="tertib" class="card-header  fw-bold">Tertib</h3>
-                                    <div class="card-body">
-                                        <p>semua rangkaian ibadah harus dilaksanakan secara berurutan, tidak boleh ada
-                                            yang dilewati atau ditukar urutannya. Apabila tidak tertib, maka ibadah haji
-                                            dianggap tidak sah.</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>mencukur rambut hendaknya menghadap kiblat, dan paling sedikit memotong tiga
+                                        helai rambut.</p>
+                                    <p>Untuk jemaah haji pria hendaknya mencukur sebagian rambut kepala atau
+                                        memendekkannya. Bahkan lebih utama untuk menggundulinya. Sementara wanita,
+                                        utamanya adalah memendekkan rambut. Makruh bagi perempuan untuk menggundul
+                                        rambut kepalanya.</p>
+                                    <p>cukur rambut jemaah laki-laki, "Pada saat bercukur, disunnahkan menghadap ke
+                                        kiblat dan memulai pada bagian depan kepala. Kemudian mencukur sisi kanan
+                                        sampai pada kedua tulang yang menonjol di belakang kepala. Kemudian mencukur
+                                        sisi berikutnya."</p>
+                                </div>
+                                <div class="card-body">
+                                    <li id="tahallul-1" class=""><b>Macam-Macam Tahallul</b></li>
+                                    <p>Tahallul dalam rangkaian umrah hanya terdapat satu macamnya, yakni setelah
+                                        semua amal ibadah umrah selesai. Sementara dalam pelaksanaan haji terdapat
+                                        dua jenis tahallul</p>
+                                    <ul>
+                                        <li class="">Tahallul awal</li>
+                                        <p>Tahallul dalam rangkaian umrah hanya terdapat satu macamnya, yakni
+                                            setelah semua amal ibadah umrah selesai. Sementara dalam pelaksanaan
+                                            haji terdapat dua jenis tahallul</p>
+                                        <li class="">Tahallul Tsani</li>
+                                        <p>dilakukan sesudah mengerjakan thawaf Ifadhah. Setelah tahallul tsani
+                                            dilaksanakan, maka jemaah haji boleh dan halal melakukan hal-hal yang
+                                            sebelumnya termasuk larangan ketika ihram. Seperti memakai wewangian,
+                                            menikah, mengadakan akad nikah, bersentuhan kulit yang membangkitkan
+                                            nafsu syahwat, hingga berhubungan badan.</p>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <li id="tahallul-2" class=""><b>Doa Tahallul</b></li>
+                                    <p>terdapat doa yang bisa dibaca ketika mencukur rambut tahallul.</p>
+                                    <p>Beriku bacaan doa tahallul :</p>
+                                </div>
+                                <div class="text-end">
+                                    <p class="">اللَّهُمَّ أَثْبِتْ لي بِكُلِّ شَعْرَةٍ حَسَنَةً، وَامْحُ عَنِّي
+                                        بِهَا سَيِّئَةً</p>
+                                    <i>Allahumma atsbit lii bikulli sya'ratin hasanatan, wamhu 'annii bihaa
+                                        sayyi-atan</i>
+                                </div>
+                                <div class="card-body">
+                                    <i>"Ya Allah, tetapkan bagiku dengan setiap helai rambut yang aku cukur satu
+                                        kebaikan, hapuslah dosa dariku. Dan karenanya, angkatlah untukku satu
+                                        derajat di sisi-Mu."</i>
+                                </div>
+                                <h3 id="tertib" class="card-header  fw-bold">Tertib</h3>
+                                <div class="card-body">
+                                    <p>semua rangkaian ibadah harus dilaksanakan secara berurutan, tidak boleh ada
+                                        yang dilewati atau ditukar urutannya. Apabila tidak tertib, maka ibadah haji
+                                        dianggap tidak sah.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
 
@@ -736,17 +736,27 @@
             <div class="footer-body">
                 <ul class="left-panel list-inline mb-0 p-0">
                     <li class="list-inline-item">
-                        <img src="../../assets/logo altie putih.png" height="20px" alt="">
-                        <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+                        <a href="../../dashboard/extra/privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="../../dashboard/extra/terms-of-service.html">Terms of Use</a>
                     </li>
                 </ul>
                 <div class="right-panel">
-                    Copyright
                     ©
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> SMK Al-Ittihad.
-                    by <a href="index.html">TEFATIE</a>.
+                    </script>
+                    Hope UI, Made with
+                    <span class="">
+                        <svg class="icon-15" width="15" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.85 2.50065C16.481 2.50065 17.111 2.58965 17.71 2.79065C21.401 3.99065 22.731 8.04065 21.62 11.5806C20.99 13.3896 19.96 15.0406 18.611 16.3896C16.68 18.2596 14.561 19.9196 12.28 21.3496L12.03 21.5006L11.77 21.3396C9.48102 19.9196 7.35002 18.2596 5.40102 16.3796C4.06102 15.0306 3.03002 13.3896 2.39002 11.5806C1.26002 8.04065 2.59002 3.99065 6.32102 2.76965C6.61102 2.66965 6.91002 2.59965 7.21002 2.56065H7.33002C7.61102 2.51965 7.89002 2.50065 8.17002 2.50065H8.28002C8.91002 2.51965 9.52002 2.62965 10.111 2.83065H10.17C10.21 2.84965 10.24 2.87065 10.26 2.88965C10.481 2.96065 10.69 3.04065 10.89 3.15065L11.27 3.32065C11.3618 3.36962 11.4649 3.44445 11.554 3.50912C11.6104 3.55009 11.6612 3.58699 11.7 3.61065C11.7163 3.62028 11.7329 3.62996 11.7496 3.63972C11.8354 3.68977 11.9247 3.74191 12 3.79965C13.111 2.95065 14.46 2.49065 15.85 2.50065ZM18.51 9.70065C18.92 9.68965 19.27 9.36065 19.3 8.93965V8.82065C19.33 7.41965 18.481 6.15065 17.19 5.66065C16.78 5.51965 16.33 5.74065 16.18 6.16065C16.04 6.58065 16.26 7.04065 16.68 7.18965C17.321 7.42965 17.75 8.06065 17.75 8.75965V8.79065C17.731 9.01965 17.8 9.24065 17.94 9.41065C18.08 9.58065 18.29 9.67965 18.51 9.70065Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    by <a href="https://iqonic.design/">IQONIC Design</a>.
                 </div>
             </div>
         </footer>

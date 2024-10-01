@@ -193,7 +193,9 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
-            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="top: 0;width: 100%;">
                 <div class="container-fluid navbar-inner">
                     <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
                         <!--Logo start-->
@@ -213,15 +215,15 @@
                         <h4 class="logo-title irsyad">Irsyadu Thulab</h4>
                     </a>
                     <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-                  <i class="icon">
-                     <img src="../../assets/icon/bar.png" class="icon-20" alt="">
-                  </i>
-               </div>
+                        <i class="icon">
+                            <img src="../../assets/icon/bar.png" class="icon-20" alt="">
+                        </i>
+                    </div>
                 </div>
             </nav>
 
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 200px">
+            <div class="iq-navbar-header" style="height: 200px;margin-top: 70px;">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
@@ -252,170 +254,166 @@
             </div> <!-- Nav Header Component End -->
             <!--Nav End-->
         </div>
-        <div class="conatiner-fluid content-inner mt-n5 p-0">
+        <div class=" mt-n5 p-0">
 
             <!-- doa -->
 
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="70" tabindex="0">
+                <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
+                    <h3 class="card-header text-center  fw-bold mb-4">Niat-Niat Mandi</h3>
+                    <div class="col-md-12 col-lg-12">
+                        <a href="../doa.html" class="btn btn-primary btn-sm mb-4">Kembali</a>
+                        <ul id="list-example" class="list-group mb-6">
+                            <li class="list-group-item list-group-item-light text-center">
+                                <h4 class="text-dark"><b> Daftar list </b></h4>
+                            </li>
 
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="row">
-                                <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
-                                    <h3 class="card-header text-center  fw-bold mb-4">Niat-Niat Mandi</h3>
-                                    <div class="col-md-12 col-lg-12">
-                                        <a href="../doa.html" class="btn btn-danger mb-4">Kembali</a>
-                                        <ul id="list-example" class="list-group mb-6">
-                                            <li class="list-group-item list-group-item-light text-center">
-                                                <h4 class="text-dark"><b> Daftar list </b></h4>
-                                            </li>
-
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-1">Mandi Wajib</a></li>
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-2">Mandi Hari Jum'at</a></li>
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-3">Mandi Hari Raya</a></li>
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-4">Mandi Ketika Hendak Melaksanakan Sholat
-                                                    Gerhana</a></li>
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-5">Mandi Sebelum Masuk Bulan Ramadhan</a></li>
-                                            <li class="list-group-item list-group-item-light"><a class="text-dark"
-                                                    href="#list-item-6">Mandi Ihram</a></li>
-
-
-                                        </ul>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-1">Mandi
+                                    Wajib</a></li>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-2">Mandi Hari
+                                    Jum'at</a></li>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-3">Mandi Hari
+                                    Raya</a></li>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-4">Mandi Ketika
+                                    Hendak Melaksanakan Sholat
+                                    Gerhana</a></li>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-5">Mandi Sebelum
+                                    Masuk Bulan Ramadhan</a></li>
+                            <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                    href="#list-item-6">Mandi
+                                    Ihram</a></li>
 
 
-                                        <div class="scrollspy-example"
-                                            style="position: relative; height: 100%; overflow-y: auto;">
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-1" style="list-style: none;">
-                                                    <h4 class="text-dark text-end mb-4">
-                                                        <b>
-                                                            نَوَيْتُ الْغُسْلَ لِرَفْعِ اْلحَدَثِ اْلأَكْبَرِ مِنَ
-                                                            اْلِجنَابَةِ فَرْضًا لِلهِ تَعَالَى
-                                                        </b>
-                                                    </h4>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi untuk menghilangkan hadats besar dari
-                                                    janabah, fardhu karena Allah ta'ala.
-                                                </p>
-                                            </div>
+                        </ul>
 
 
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-2" style="list-style: none;">
-                                                    <h4 class="text-dark text-end mb-4">
-                                                        <b>
-                                                            نَوَيْتُ الْغُسْلَ لِحُضُوْرِ صَلاَةِ الْجُمْعَةِ سُنَّةً
-                                                            ِللهِ تَعَالَى
-                                                        </b>
-                                                    </h4>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi untuk menghadiri sholat Jumat sunnah
-                                                    karena Allah Ta'ala.
-                                            </div>
-
-
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-3" style="list-style: none;">
-                                                    <div class="text-dark text-end mb-4">
-                                                        <h4 class="text-end ">Idul Fitri <br>
-                                                            <b>
-                                                                نَوَيْتُ الْغُسْلَ لِعِيْدِ اْلفِطْرِ سُنَّةً لِلهِ
-                                                                تَعَالَى
-                                                            </b>
-                                                        </h4><br>
-                                                        <h4 class="text-end">Idul Adha <br>
-                                                            <b>
-                                                                نَوَيْتُ الْغُسْلَ لِيَوْمِ عِيْدِ الْاَضْحَى ِ سُنَّةً
-                                                                ِللهِ تَعَالَى
-                                                            </b>
-                                                        </h4>
-                                                    </div>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi pada hari Raya Idul Fitri sunnah karena
-                                                    Allah Ta'ala.
-                                                </p><br>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi pada hari Raya Idul Adha sunnah karena
-                                                    Allah Ta'ala.
-                                                </p>
-                                            </div>
-
-
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-4" style="list-style: none;">
-                                                    <div class="text-dark text-end mb-4">
-                                                        <h4 class="text-end">Matahari <br>
-                                                            <b>
-                                                                نَوَيْتُ الْغُسْلَ لِصَلَاةِ الْكُسُوْفِ سُنَّةً لِلّٰهِ
-                                                                تَعَالَى
-                                                            </b>
-                                                        </h4><br>
-                                                        <h4 class="text-end">Bulan <br>
-                                                            <b>
-                                                                نَوَيْتُ الْغُسْلَ لِصَلَاةِ الْكُسُوْفِ سُنَّةً لِلّٰهِ
-                                                                تَعَالَى
-                                                            </b>
-                                                        </h4><br>
-                                                    </div>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi untuk gerhana matahari sunnah karena Allah
-                                                    ta'ala.
-                                                </p>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi untuk gerhana bulan sunnah karena Allah
-                                                    ta'ala.
-                                                </p>
-                                            </div>
-
-
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-5" style="list-style: none;">
-                                                    <h4 class="text-dark text-end mb-4">
-                                                        <b>
-                                                            نَوَيْتُ أَدَاءَ اْلغُسْلِ اْلمَسْنُوْنِ لِيْ فِيْ هَذِهِ
-                                                            اللَّيْلَةِ مِنْ رَمَضَانَ لله تَعَالَى
-                                                        </b>
-                                                    </h4>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya berniat menjalankan mandi yang disunnahkan kepadaku
-                                                    pada malam ini di bulan Ramadhan karena Allah Ta'ala.
-                                                </p>
-                                            </div>
-
-
-                                            <div class="card-body text-dark">
-                                                <li id="list-item-6" style="list-style: none;">
-                                                    <h4 class="text-dark text-end mb-4">
-                                                        <b>
-                                                            نَوَيْتُ غُسْلَ الِإحرَام سُنَّةً لِلهِ تَعَالَى
-                                                        </b>
-                                                    </h4>
-                                                </li>
-                                                <p class="text-dark mt-2">
-                                                    Artinya : Saya niat mandi ihram sunnah karena Allah Taa'la.
-                                                </p>
-                                            </div>
-
-
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
+                        <div class="scrollspy-example" style="position: relative; height: 100%; overflow-y: auto;">
+                            <div class="card-body text-dark">
+                                <li id="list-item-1" style="list-style: none;">
+                                    <h4 class="text-dark text-end mb-4">
+                                        <b>
+                                            نَوَيْتُ الْغُسْلَ لِرَفْعِ اْلحَدَثِ اْلأَكْبَرِ مِنَ
+                                            اْلِجنَابَةِ فَرْضًا لِلهِ تَعَالَى
+                                        </b>
+                                    </h4>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi untuk menghilangkan hadats besar dari
+                                    janabah, fardhu karena Allah ta'ala.
+                                </p>
                             </div>
+
+
+                            <div class="card-body text-dark">
+                                <li id="list-item-2" style="list-style: none;">
+                                    <h4 class="text-dark text-end mb-4">
+                                        <b>
+                                            نَوَيْتُ الْغُسْلَ لِحُضُوْرِ صَلاَةِ الْجُمْعَةِ سُنَّةً
+                                            ِللهِ تَعَالَى
+                                        </b>
+                                    </h4>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi untuk menghadiri sholat Jumat sunnah
+                                    karena Allah Ta'ala.
+                            </div>
+
+
+                            <div class="card-body text-dark">
+                                <li id="list-item-3" style="list-style: none;">
+                                    <div class="text-dark text-end mb-4">
+                                        <h4 class="text-end ">Idul Fitri <br>
+                                            <b>
+                                                نَوَيْتُ الْغُسْلَ لِعِيْدِ اْلفِطْرِ سُنَّةً لِلهِ
+                                                تَعَالَى
+                                            </b>
+                                        </h4><br>
+                                        <h4 class="text-end">Idul Adha <br>
+                                            <b>
+                                                نَوَيْتُ الْغُسْلَ لِيَوْمِ عِيْدِ الْاَضْحَى ِ سُنَّةً
+                                                ِللهِ تَعَالَى
+                                            </b>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi pada hari Raya Idul Fitri sunnah karena
+                                    Allah Ta'ala.
+                                </p><br>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi pada hari Raya Idul Adha sunnah karena
+                                    Allah Ta'ala.
+                                </p>
+                            </div>
+
+
+                            <div class="card-body text-dark">
+                                <li id="list-item-4" style="list-style: none;">
+                                    <div class="text-dark text-end mb-4">
+                                        <h4 class="text-end">Matahari <br>
+                                            <b>
+                                                نَوَيْتُ الْغُسْلَ لِصَلَاةِ الْكُسُوْفِ سُنَّةً لِلّٰهِ
+                                                تَعَالَى
+                                            </b>
+                                        </h4><br>
+                                        <h4 class="text-end">Bulan <br>
+                                            <b>
+                                                نَوَيْتُ الْغُسْلَ لِصَلَاةِ الْكُسُوْفِ سُنَّةً لِلّٰهِ
+                                                تَعَالَى
+                                            </b>
+                                        </h4><br>
+                                    </div>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi untuk gerhana matahari sunnah karena Allah
+                                    ta'ala.
+                                </p>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi untuk gerhana bulan sunnah karena Allah
+                                    ta'ala.
+                                </p>
+                            </div>
+
+
+                            <div class="card-body text-dark">
+                                <li id="list-item-5" style="list-style: none;">
+                                    <h4 class="text-dark text-end mb-4">
+                                        <b>
+                                            نَوَيْتُ أَدَاءَ اْلغُسْلِ اْلمَسْنُوْنِ لِيْ فِيْ هَذِهِ
+                                            اللَّيْلَةِ مِنْ رَمَضَانَ لله تَعَالَى
+                                        </b>
+                                    </h4>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya berniat menjalankan mandi yang disunnahkan kepadaku
+                                    pada malam ini di bulan Ramadhan karena Allah Ta'ala.
+                                </p>
+                            </div>
+
+
+                            <div class="card-body text-dark">
+                                <li id="list-item-6" style="list-style: none;">
+                                    <h4 class="text-dark text-end mb-4">
+                                        <b>
+                                            نَوَيْتُ غُسْلَ الِإحرَام سُنَّةً لِلهِ تَعَالَى
+                                        </b>
+                                    </h4>
+                                </li>
+                                <p class="text-dark mt-2">
+                                    Artinya : Saya niat mandi ihram sunnah karena Allah Taa'la.
+                                </p>
+                            </div>
+
+
+
+
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -32,101 +32,99 @@
 
 
     <style>
-            body {
-         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: #f4f4f4;
-         color: #333;
-         transition: .7s;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: .7s;
+        }
 
-      nav ul {
-         display: flex;
-         justify-content: center;
-         flex-wrap: wrap;
-         padding: 20px;
-      }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
 
-      nav ul a {
-         background: white;
-         border-radius: 8px;
-         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-         margin: 15px;
-         padding: 20px;
-         color: #333;
-         width: 280px;
-         transition: transform 0.2s;
-         text-align: center;
-      }
+        nav ul a {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            color: #333;
+            width: 280px;
+            transition: transform 0.2s;
+            text-align: center;
+        }
 
-      nav ul a:hover {
-         transform: translateY(-5px);
-         box-shadow: 0 5px 10px black;
-         color: black;
-      }
+        nav ul a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px black;
+            color: black;
+        }
 
-      main {
-         display: flex;
-         justify-content: center;
-         flex-wrap: wrap;
-         padding: 20px;
-         text-align: center;
-      }
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: center;
+        }
 
-      section {
-         background: white;
-         border-radius: 8px;
-         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-         margin: 15px;
-         color: black;
-         padding: 20px;
-         width: 100%;
-         transition: transform 0.2s;
-      }
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            color: black;
+            padding: 20px;
+            width: 100%;
+            transition: transform 0.2s;
+        }
 
-      section:hover {
-         transform: translateY(-5px);
-         box-shadow: 0 5px 10px black;
-         color: black;
-      }
-
-
-      footer {
-                text-align: center;
-                align-items: center;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                background-color: #007BFF;
-                color: white;
-                position: relative;
-                width: 100%;
-                border-radius: 15px;
-            }
-
-      footer p {
-         margin: 0;
-      }
-
-      .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-.scroll-to-top:hover {
-    background-color: #0056b3;
-}
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px black;
+            color: black;
+        }
 
 
+        footer {
+            text-align: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #0056b3;
+        }
     </style>
 
 
@@ -147,13 +145,13 @@
             <div class="navbar-brand" style="pointer-events: none;">
                 <!--Logo start-->
                 <div class="logo-main">
-                  <div class="logo-normal">
-                     <img src="../../assets/logo.png" height="40px" alt="">
-                  </div>
-                  <div class="logo-mini">
-                     <img src="../../assets/logo.png" height="40px" alt="">
-                  </div>
-               </div>
+                    <div class="logo-normal">
+                        <img src="../../assets/logo.png" height="40px" alt="">
+                    </div>
+                    <div class="logo-mini">
+                        <img src="../../assets/logo.png" height="40px" alt="">
+                    </div>
+                </div>
                 <!--logo End-->
 
 
@@ -163,8 +161,7 @@
             </div>
             <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                 <i class="icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor"
@@ -186,8 +183,8 @@
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="../index.html">
                             <i class="icon">
-                                <svg width="20" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="icon-20">
+                                <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="icon-20">
                                     <path opacity="0.4"
                                         d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z"
                                         fill="currentColor"></path>
@@ -382,6 +379,8 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
             <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
                 <div class="container-fluid navbar-inner">
                     <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto">
@@ -390,21 +389,25 @@
 
                         <!--Logo start-->
                         <div class="logo-main">
-               <div class="logo-normal">
-                  <img src="../assets/logo.png" height="40px" alt="">
-               </div>
-               <div class="logo-mini">
-                  <img src="../assets/logo.png" height="40px" alt="">
-               </div>
-            </div>
+                            <div class="logo-normal">
+                                <img src="../assets/logo.png" height="40px" alt="">
+                            </div>
+                            <div class="logo-mini">
+                                <img src="../assets/logo.png" height="40px" alt="">
+                            </div>
+                        </div>
                         <!--logo End-->
                     </a>
                     <audio id="backgroundMusic" loop autoplay>
-                     <source src="audio/nasheed.mp3" type="audio/mpeg">
-                     Your browser does not support the audio element.
-                 </audio>
-                 <button style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);" id="playButton">🎵تشغيل الموسيقى🎵</button>      
-                         <button style="border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);"><a href="sunnah.html">Kembali</a></button>
+                        <source src="audio/nasheed.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <button
+                        style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);"
+                        id="playButton">🎵تشغيل الموسيقى🎵</button>
+                    <button
+                        style="border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);"><a
+                            href="sunnah.html">Kembali</a></button>
 
                 </div>
             </nav>
@@ -443,165 +446,195 @@
             </div>
 
             <nav>
-               <ul>
-                  <a href="shalat.html" style="box-shadow: 0 2px 8px black;">Shalat Sunnah</a>
-                  <a href="mengenal.html">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
-                  <a href="puasa.html">Puasa Sunnah</a>
-               </ul>
+                <ul>
+                    <a href="shalat.html" style="box-shadow: 0 2px 8px black;">Shalat Sunnah</a>
+                    <a href="mengenal.html">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
+                    <a href="puasa.html">Puasa Sunnah</a>
+                </ul>
             </nav>
-            <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
+            <button id="scrollToTop" class="scroll-to-top" style="display: none;"></button>
 
-            <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Qabliyah dan Ba'diyah</h2>
-            <div class="sub-shalat">
-                <h3>Shalat Sunnah Qabliyah</h3>
-                <p><strong>Keterangan:</strong> Dilakukan sebelum shalat wajib.</p>
-                <p><strong>Keutamaan:</strong> Membantu mempersiapkan diri untuk shalat wajib.</p>
-            </div>
-         
-            <div class="sub-shalat">
-                <h3> Shalat Sunnah Ba'diyah</h3>
-                <p><strong>Keterangan:</strong> Dilakukan setelah shalat wajib.</p>
-                <p><strong>Keutamaan:</strong> Menambah pahala dan menutupi kekurangan dalam shalat wajib.</p>
-            </div>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Dhuha</h2>
-            <p><strong>Keterangan:</strong> Dilakukan di waktu pagi, setelah matahari terbit hingga sebelum Dzuhur.</p>
-            <p><strong>Keutamaan:</strong> Sebagai bentuk sedekah untuk tubuh dan mendapatkan keberkahan.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Tahajjud</h2>
-            <p><strong>Keterangan:</strong> Dilakukan di malam hari setelah tidur.</p>
-            <p><strong>Keutamaan:</strong> Waktu doa yang sangat baik dan sering dikabulkan.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Tarawih</h2>
-            <p><strong>Keterangan:</strong> Dilakukan pada malam hari selama bulan Ramadan.</p>
-            <p><strong>Keutamaan:</strong> Memperoleh pahala yang besar selama bulan suci Ramadan.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Witir</h2>
-            <p><strong>Keterangan:</strong> Dilakukan setelah shalat Isya dan sebelum Subuh.</p>
-            <p><strong>Keutamaan:</strong> Penutup shalat malam dan memiliki banyak keutamaan.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Istikharah</h2>
-            <p><strong>Keterangan:</strong> Dilakukan untuk meminta petunjuk Allah dalam keputusan penting.</p>
-            <p><strong>Keutamaan:</strong> Mendapat petunjuk dan keputusan terbaik dari Allah.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Tahiyyat al-Masjid</h2>
-            <p><strong>Keterangan:</strong> Dilakukan saat masuk ke masjid.</p>
-            <p><strong>Keutamaan:</strong> Penghormatan kepada masjid dan bentuk ibadah tambahan.</p>
-        </div></section></main>
-        <main><section>
-        <div class="shalat">
-            <h2> Shalat Sunnah Tathawwu’</h2>
-            <p><strong>Keterangan:</strong> Shalat sunnah yang dilakukan kapan saja sebagai tambahan ibadah.</p>
-            <p><strong>Keutamaan:</strong> Dapat dilakukan sesuai kemampuan dan waktu.</p>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Qabliyah dan Ba'diyah</h2>
+                        <div class="sub-shalat">
+                            <h3>Shalat Sunnah Qabliyah</h3>
+                            <p><strong>Keterangan:</strong> Dilakukan sebelum shalat wajib.</p>
+                            <p><strong>Keutamaan:</strong> Membantu mempersiapkan diri untuk shalat wajib.</p>
+                        </div>
+
+                        <div class="sub-shalat">
+                            <h3> Shalat Sunnah Ba'diyah</h3>
+                            <p><strong>Keterangan:</strong> Dilakukan setelah shalat wajib.</p>
+                            <p><strong>Keutamaan:</strong> Menambah pahala dan menutupi kekurangan dalam shalat wajib.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Dhuha</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan di waktu pagi, setelah matahari terbit hingga sebelum
+                            Dzuhur.</p>
+                        <p><strong>Keutamaan:</strong> Sebagai bentuk sedekah untuk tubuh dan mendapatkan keberkahan.
+                        </p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Tahajjud</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan di malam hari setelah tidur.</p>
+                        <p><strong>Keutamaan:</strong> Waktu doa yang sangat baik dan sering dikabulkan.</p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Tarawih</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan pada malam hari selama bulan Ramadan.</p>
+                        <p><strong>Keutamaan:</strong> Memperoleh pahala yang besar selama bulan suci Ramadan.</p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Witir</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan setelah shalat Isya dan sebelum Subuh.</p>
+                        <p><strong>Keutamaan:</strong> Penutup shalat malam dan memiliki banyak keutamaan.</p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Istikharah</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan untuk meminta petunjuk Allah dalam keputusan penting.
+                        </p>
+                        <p><strong>Keutamaan:</strong> Mendapat petunjuk dan keputusan terbaik dari Allah.</p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Tahiyyat al-Masjid</h2>
+                        <p><strong>Keterangan:</strong> Dilakukan saat masuk ke masjid.</p>
+                        <p><strong>Keutamaan:</strong> Penghormatan kepada masjid dan bentuk ibadah tambahan.</p>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <section>
+                    <div class="shalat">
+                        <h2> Shalat Sunnah Tathawwu’</h2>
+                        <p><strong>Keterangan:</strong> Shalat sunnah yang dilakukan kapan saja sebagai tambahan ibadah.
+                        </p>
+                        <p><strong>Keutamaan:</strong> Dapat dilakukan sesuai kemampuan dan waktu.</p>
+                    </div>
         </div>
-    </div></section></main>
+        </section>
+    </main>
 
-    
+
     <footer>
         <p>&copy; 2024 Sunnah-Sunnah Nabi. All rights reserved.</p>
     </footer>
 
-                        
-                                 
-      
-      <!-- Footer Section Start -->
-      <footer class="footer">
-         <div class="footer-body">
+
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-body">
             <ul class="left-panel list-inline mb-0 p-0">
-               <li class="list-inline-item">
-                  <img src="../assets/logo altie putih.png" height="20px" alt="">
-                  <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-               </li>
+                <li class="list-inline-item">
+                    <img src="../assets/logo altie putih.png" height="20px" alt="">
+                    <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+                </li>
             </ul>
             <div class="right-panel">
-               Copyright 
-               ©<script>
-                  document.write(new Date().getFullYear());
-               </script> SMK Al-Ittihad.
-               by <a href="index.html">TEFATIE</a>.
+                Copyright
+                ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> SMK Al-Ittihad.
+                by <a href="index.html">TEFATIE</a>.
             </div>
-         </div>
-      </footer>
-      <!-- Footer Section End -->
-   </main>
-   
-   <!-- Wrapper End-->
-   <!-- offcanvas start -->
-   
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    </main>
 
-   <!-- Library Bundle Script -->
-   <script src="../assets/js/core/libs.min.js"></script>
+    <!-- Wrapper End-->
+    <!-- offcanvas start -->
 
-   <!-- External Library Bundle Script -->
-   <script src="../assets/js/core/external.min.js"></script>
 
-   <!-- Widgetchart Script -->
-   <script src="../assets/js/charts/widgetcharts.js"></script>
+    <!-- Library Bundle Script -->
+    <script src="../assets/js/core/libs.min.js"></script>
 
-   <!-- mapchart Script -->
-   <script src="../assets/js/charts/vectore-chart.js"></script>
-   <script src="../assets/js/charts/dashboard.js"></script>
+    <!-- External Library Bundle Script -->
+    <script src="../assets/js/core/external.min.js"></script>
 
-   <!-- fslightbox Script -->
-   <script src="../assets/js/plugins/fslightbox.js"></script>
+    <!-- Widgetchart Script -->
+    <script src="../assets/js/charts/widgetcharts.js"></script>
 
-   <!-- Settings Script -->
-   <script src="../assets/js/plugins/setting.js"></script>
+    <!-- mapchart Script -->
+    <script src="../assets/js/charts/vectore-chart.js"></script>
+    <script src="../assets/js/charts/dashboard.js"></script>
 
-   <!-- Slider-tab Script -->
-   <script src="../assets/js/plugins/slider-tabs.js"></script>
+    <!-- fslightbox Script -->
+    <script src="../assets/js/plugins/fslightbox.js"></script>
 
-   <!-- Form Wizard Script -->
-   <script src="../assets/js/plugins/form-wizard.js"></script>
+    <!-- Settings Script -->
+    <script src="../assets/js/plugins/setting.js"></script>
 
-   <!-- AOS Animation Plugin-->
-   <script src="../assets/vendor/aos/dist/aos.js"></script>
+    <!-- Slider-tab Script -->
+    <script src="../assets/js/plugins/slider-tabs.js"></script>
 
-   <!-- App Script -->
-   <script src="../assets/js/hope-ui.js" defer></script>
-   <script>
-      const audio = document.getElementById('backgroundMusic');
-      const playButton = document.getElementById('playButton');
-  
-      playButton.addEventListener('click', function() {
-          audio.play();
-          playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
-      });
-  </script>
-  <script>
-   const scrollToTopButton = document.getElementById('scrollToTop');
+    <!-- Form Wizard Script -->
+    <script src="../assets/js/plugins/form-wizard.js"></script>
 
-   // Tampilkan tombol ketika halaman di-scroll ke bawah
-   window.onscroll = function() {
-       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-           scrollToTopButton.style.display = "block";
-       } else {
-           scrollToTopButton.style.display = "none";
-       }
-   };
+    <!-- AOS Animation Plugin-->
+    <script src="../assets/vendor/aos/dist/aos.js"></script>
 
-   // Saat tombol diklik, scroll ke atas
-   scrollToTopButton.addEventListener('click', function() {
-       window.scrollTo({
-           top: 0,
-           behavior: 'smooth'
-       });
-   });
-</script>
+    <!-- App Script -->
+    <script src="../assets/js/hope-ui.js" defer></script>
+    <script>
+        const audio = document.getElementById('backgroundMusic');
+        const playButton = document.getElementById('playButton');
+
+        playButton.addEventListener('click', function () {
+            audio.play();
+            playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
+        });
+    </script>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        // Tampilkan tombol ketika halaman di-scroll ke bawah
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        };
+
+        // Saat tombol diklik, scroll ke atas
+        scrollToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
