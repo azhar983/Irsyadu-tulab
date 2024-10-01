@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -39,19 +40,19 @@
       overflow: hidden;
       text-overflow: ellipsis;
    }
-   .imges{
+
+   .imges {
       z-index: 9999;
       top: 0;
    }
-
 </style>
 
 <body class="  " data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
    <!-- loader Start -->
-   <div id="loading" >
+   <div id="loading">
       <div class="loader simple-loader">
          <div class="loader-body align-items-center d-flex">
-               <!-- <img class="imges position-fixed w-100" src="../assets/Irsyadu Thulab.gif" alt="Loading..."> -->
+            <!-- <img class="imges position-fixed w-100" src="../assets/Irsyadu Thulab.gif" alt="Loading..."> -->
          </div>
       </div>
    </div>
@@ -191,6 +192,8 @@
    <main class="main-content overflow-hidden">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
+         <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+            style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
             <div class="container-fluid navbar-inner">
                <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
@@ -219,35 +222,41 @@
          </nav>
          <!-- Nav Header Component Start -->
          <div class="iq-navbar-header" style=" margin-top: 80px;">
-               <div class="flex-wrap text-center">
-                  <li class="swiper-slide card card-slide " data-aos="fade-up" data-aos-delay="700">
-                        <div id="carouselExampleInterval" class="container-fluid carousel slide" data-bs-ride="carousel">
-                           <div class="carousel-inner">
-                             <div class="carousel-item  position-relative active" data-bs-interval="3000">
-                               <img src="../assets/images/dashboard/banner/banner1.png" class="d-block w-100 position-relative" alt="...">
-                             </div>
-                             <div class="carousel-item  position-relative" data-bs-interval="3000">
-                               <img src="../assets/images/dashboard/banner/banner2.png" class="d-block w-100 position-relative" alt="...">
-                             </div>
-                             <div class="carousel-item  position-relative" data-bs-interval="3000">
-                               <img src="../assets/images/dashboard/banner/banner3.png" class="d-block w-100 position-relative" alt="...">
-                             </div>
-                             <div class="carousel-item  position-relative" data-bs-interval="3000">
-                               <img src="../assets/images/dashboard/banner/banner4.png" class="d-block w-100 position-relative" alt="...">
-                             </div>
-                           </div>
-                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                             <span class="visually-hidden">Previous</span>
-                           </button>
-                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                             <span class="visually-hidden">Next</span>
-                           </button>
-                         </div>
-                  </li>
-               </div>
-               
+            <div class="flex-wrap text-center">
+               <li class="swiper-slide card card-slide " data-aos="fade-up" data-aos-delay="700">
+                  <div id="carouselExampleInterval" class="container-fluid carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item  position-relative active" data-bs-interval="3000">
+                           <img src="../assets/images/dashboard/banner/banner1.png"
+                              class="d-block w-100 position-relative" alt="...">
+                        </div>
+                        <div class="carousel-item  position-relative" data-bs-interval="3000">
+                           <img src="../assets/images/dashboard/banner/banner2.png"
+                              class="d-block w-100 position-relative" alt="...">
+                        </div>
+                        <div class="carousel-item  position-relative" data-bs-interval="3000">
+                           <img src="../assets/images/dashboard/banner/banner3.png"
+                              class="d-block w-100 position-relative" alt="...">
+                        </div>
+                        <div class="carousel-item  position-relative" data-bs-interval="3000">
+                           <img src="../assets/images/dashboard/banner/banner4.png"
+                              class="d-block w-100 position-relative" alt="...">
+                        </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                     </button>
+                  </div>
+               </li>
+            </div>
+
          </div>
          <!-- Nav Header Component End -->
          <!--Nav End-->
@@ -275,19 +284,22 @@
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/jadwal_solat.html"><img
                                           src="../assets/icon/masjid.png" height="50px" alt="" />
-                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Jadwal<br>Sholat</h6>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Jadwal<br>Sholat
+                                       </h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/sunnah.html"><img src="../assets/icon/bulan.png"
                                           height="50px" alt="" />
-                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Sunnah<br>Nabi</h6>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Sunnah<br>Nabi
+                                       </h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/maulid.html"><img src="../assets/icon/maulid.png"
                                           height="50px" alt="" />
-                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Maulid<br>Nabi</h6>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Maulid<br>Nabi
+                                       </h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
@@ -305,13 +317,15 @@
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/praktek.html">
                                        <img src="../assets/icon/solat.png" alt="" height="50px">
-                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Praktek<br>Ibadah</h6>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Praktek<br>Ibadah
+                                       </h6>
                                     </a>
                                  </div>
                                  <div class="nav-item mb-4 col-3">
                                     <a class="" href="../dashboard/tentang.html">
                                        <img src="../assets/icon/tentang.png" alt="" height="50px">
-                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Tentang<br>Kami</h6>
+                                       <h6 style="font-size: 13px;" class=" mt-2 fw-bold text-nowrap">Tentang<br>Kami
+                                       </h6>
                                     </a>
                                  </div>
 
@@ -453,8 +467,9 @@
                </li>
             </ul>
             <div class="right-panel">
-               Copyright 
-               ©<script>
+               Copyright
+               ©
+               <script>
                   document.write(new Date().getFullYear());
                </script> SMK Al-Ittihad.
                by <a href="index.html">TEFATIE</a>.
@@ -463,21 +478,21 @@
       </footer>
       <!-- Footer Section End -->
    </main>
-   
+
    <!-- Wrapper End-->
    <script>
       document.addEventListener('DOMContentLoaded', function () {
-          Swal.fire({
-              title: 'Selamat Datang!',
-              text: 'Mohon Bantu Kami Jika Ada Tulisan Yang Salah',
-              icon: 'info',
-              confirmButtonText: 'Tutup'
-          });
+         Swal.fire({
+            title: 'Selamat Datang!',
+            text: 'Mohon Bantu Kami Jika Ada Tulisan Yang Salah',
+            icon: 'info',
+            confirmButtonText: 'Tutup'
+         });
       });
-      
-  </script>
+
+   </script>
    <!-- offcanvas start -->
-   
+
 
    <!-- Library Bundle Script -->
    <script src="../assets/js/core/libs.min.js"></script>

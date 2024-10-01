@@ -241,6 +241,8 @@
    <main class="main-content" style="height: 85vh;">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
+         <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+            style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
             <div class="container-fluid navbar-inner">
                <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto">
@@ -303,79 +305,80 @@
       </div>
       <div class="container mt-n5 p-0">
          <div class="overflow-hidden d-slider1">
-                     <ul class="container p-0 m-0  mb-2">
-                        <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
-                           <div class="card-body text-center">
-                              <div class="row mt-2">
-                                 <div class="col-12">
-                                    <div class="mt-4 d-flex align-items-center justify-content-center">
-                                       <h5 class="fw-bolder" id="sholat-berikutnya"></h5>
-                                       <div class="circle-container">
-                                          <div class="">
-                                             <svg width="200" height="200">
-                                                <circle class="circle-background" cx="100" cy="100" r="70" />
-                                                <circle class="circle-foreground" cx="100" cy="100" r="70" />
-                                             </svg>
-                                          </div>
-                                          <div class="countdown-text" id="countdown">00:00:00</div>
-                                       </div>
-                                    </div>
+            <ul class="container p-0 m-0  mb-2">
+               <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card-body text-center">
+                     <div class="row mt-2">
+                        <div class="col-12">
+                           <div class="mt-4 d-flex align-items-center justify-content-center">
+                              <h5 class="fw-bolder" id="sholat-berikutnya"></h5>
+                              <div class="circle-container">
+                                 <div class="">
+                                    <svg width="200" height="200">
+                                       <circle class="circle-background" cx="100" cy="100" r="70" />
+                                       <circle class="circle-foreground" cx="100" cy="100" r="70" />
+                                    </svg>
                                  </div>
-                                 <div class="container text-center p-5">
-                                    <h1 class="text-primary fw-bold">Waktu Sholat Hari Ini</h1>
-                                    <p class="lead fw-bolder">Waktu sholat berdasarkan lokasi Anda</p>
-                                    <div class="row justify-content-center">
-                                       <table class="table mb-0 border-2">
-                                          <thead>
-                                             <tr>
-                                                <th scope="col">Sholat</th>
-                                                <th scope="col">Waktu</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody id="waktu-sholat">
-                                             <!-- Waktu Sholat akan ditambahkan oleh JavaScript -->
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </div>
-
-
+                                 <div class="countdown-text" id="countdown">00:00:00</div>
                               </div>
                            </div>
-                        </li>
-                     </ul>
+                        </div>
+                        <div class="container text-center p-5">
+                           <h1 class="text-primary fw-bold">Waktu Sholat Hari Ini</h1>
+                           <p class="lead fw-bolder">Waktu sholat berdasarkan lokasi Anda</p>
+                           <div class="row justify-content-center">
+                              <table class="table mb-0 border-2">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col">Sholat</th>
+                                       <th scope="col">Waktu</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="waktu-sholat">
+                                    <!-- Waktu Sholat akan ditambahkan oleh JavaScript -->
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+
+                     </div>
+                  </div>
+               </li>
+            </ul>
          </div>
       </div>
       </div>
 
       <!-- Footer Section Start -->
    </main>
-      <footer class="footer">
-         <div class="footer-body">
-            <ul class="left-panel list-inline mb-0 p-0">
-               <li class="list-inline-item">
-                  <img src="../assets/logo altie putih.png" height="20px" alt="">
-                  <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-               </li>
-            </ul>
-            <div class="right-panel">
-               Copyright 
-               ©<script>
-                  document.write(new Date().getFullYear());
-               </script> SMK Al-Ittihad.
-               by <a href="index.html">TEFATIE</a>.
-            </div>
+   <footer class="footer">
+      <div class="footer-body">
+         <ul class="left-panel list-inline mb-0 p-0">
+            <li class="list-inline-item">
+               <img src="../assets/logo altie putih.png" height="20px" alt="">
+               <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+            </li>
+         </ul>
+         <div class="right-panel">
+            Copyright
+            ©
+            <script>
+               document.write(new Date().getFullYear());
+            </script> SMK Al-Ittihad.
+            by <a href="index.html">TEFATIE</a>.
          </div>
-      </footer>
-      <!-- Footer Section End -->
-   
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
    <!-- Wrapper End-->
    <!-- offcanvas start -->
    <script>
       async function getPrayerTimes(latitude, longitude) {
          const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`);
          const data = await response.json();
-   
+
          const filteredTimes = {
             Fajr: data.data.timings.Fajr,
             Dhuhr: data.data.timings.Dhuhr,
@@ -383,15 +386,15 @@
             Maghrib: data.data.timings.Maghrib,
             Isha: data.data.timings.Isha
          };
-   
+
          return filteredTimes;
       }
-   
+
       function getRemainingTime(targetTime) {
          const now = new Date();
          const target = new Date(now.toDateString() + ' ' + targetTime);
          const difference = target - now;
-   
+
          if (difference > 0) {
             const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -400,51 +403,51 @@
          }
          return { hours: 0, minutes: 0, seconds: 0, total: 0 };
       }
-   
+
       function findCurrentAndNextSholat(waktuSholat) {
          const now = new Date();
          const currentTime = now.getHours() + ":" + now.getMinutes().toString().padStart(2, '0');
          let previousSholat = null;
          let nextSholat = null;
-   
+
          for (const [sholat, waktu] of Object.entries(waktuSholat)) {
             if (currentTime >= waktu) {
-               previousSholat = { sholat, waktu }; 
+               previousSholat = { sholat, waktu };
             } else if (!nextSholat && currentTime < waktu) {
-               nextSholat = { sholat, waktu }; 
+               nextSholat = { sholat, waktu };
             }
          }
-   
+
          if (!nextSholat) {
             const tomorrowFajr = new Date();
             tomorrowFajr.setDate(tomorrowFajr.getDate() + 1);
             nextSholat = { sholat: 'Fajr', waktu: waktuSholat.Fajr + ' (esok)' };
          }
-   
+
          return { previousSholat, nextSholat };
       }
-   
+
       function updateSholatCountdown(waktuSholat) {
          const { previousSholat, nextSholat } = findCurrentAndNextSholat(waktuSholat);
          const countdownTextElement = document.getElementById('countdown');
          const sholatBerikutnyaElement = document.getElementById('sholat-berikutnya');
          const circleForeground = document.querySelector('.circle-foreground');
-   
+
          if (previousSholat && nextSholat) {
             sholatBerikutnyaElement.textContent = `Sholat berikutnya: ${nextSholat.sholat} - ${nextSholat.waktu}`;
-   
+
             const now = new Date();
             const target = new Date(now.toDateString() + ' ' + nextSholat.waktu);
             const initialDifference = target - now;
-   
+
             const interval = setInterval(() => {
                const remainingTime = getRemainingTime(nextSholat.waktu);
                countdownTextElement.textContent = `${remainingTime.hours.toString().padStart(2, '0')}:${remainingTime.minutes.toString().padStart(2, '0')}:${remainingTime.seconds.toString().padStart(2, '0')}`;
-   
+
                const percentRemaining = remainingTime.total / initialDifference;
                const circleOffset = 408 * percentRemaining;
                circleForeground.style.strokeDashoffset = circleOffset;
-   
+
                if (remainingTime.total <= 0) {
                   clearInterval(interval);
                   updateSholatCountdown(waktuSholat);
@@ -452,12 +455,12 @@
             }, 1000);
          }
       }
-   
-      document.addEventListener("deviceready", function() {
+
+      document.addEventListener("deviceready", function () {
          navigator.geolocation.getCurrentPosition(async (position) => {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
-   
+
             const waktuSholat = await getPrayerTimes(latitude, longitude);
             displayPrayerTimes(waktuSholat);
             updateSholatCountdown(waktuSholat);
@@ -466,7 +469,7 @@
             alert("Gagal mendapatkan lokasi. Pastikan izin lokasi telah diaktifkan.");
          });
       }, false);
-   
+
       function displayPrayerTimes(waktuSholat) {
          const tbody = document.getElementById('waktu-sholat');
          tbody.innerHTML = '';
@@ -477,7 +480,7 @@
          }
       }
    </script>
-   
+
 
    <!-- Library Bundle Script -->
    <script src="../assets/js/core/libs.min.js"></script>
