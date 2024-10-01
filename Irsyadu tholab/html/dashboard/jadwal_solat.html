@@ -238,9 +238,11 @@
       </div>
       <div class="sidebar-footer"></div>
    </aside>
-   <main class="main-content">
+   <main class="main-content" style="height: 85vh;">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
+         <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+            style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
             <div class="container-fluid navbar-inner">
                <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto">
@@ -276,7 +278,7 @@
                      <div class="flex-wrap  text-center">
                         <div class="d-flex justify-content-center gap-2 align-items-center">
                            <img src="../assets/icon/pattern.png" height="40px" alt="" />
-                           <h2 class="mx-lg-5 fs-lg-1"> Jangan Lupa Sholat </h2>
+                              <h2 class="mx-lg-5 fs-lg-1"> Jangan Lupa Sholat </h2>
                            <img src="../assets/icon/pattern.png" height="40px" alt="" />
                         </div>
                      </div>
@@ -284,7 +286,7 @@
                </div>
             </div>
             <div class="iq-header-img">
-               <img src="../assets/images/dashboard/top-header.png" alt="header"
+               <img src="../assets/images/dashboard/solat.jpg" alt="header"
                   class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
                <img src="../assets/images/dashboard/top-header1.png" alt="header"
                   class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
@@ -302,83 +304,77 @@
          <!--Nav End-->
       </div>
       <div class="container mt-n5 p-0">
-         <div class="row">
-            <div class="col-12">
-               <div class="row row-cols-12">
-                  <div class="overflow-hidden d-slider1">
-                     <ul class="container p-0 m-0  mb-2">
-                        <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
-                           <div class="card-body text-center">
-                              <div class="row mt-2">
-                                 <div class="col-12">
-                                    <div class="mt-4 d-flex align-items-center justify-content-center">
-                                       <h5 class="fw-bolder" id="sholat-berikutnya"></h5>
-                                       <div class="circle-container">
-                                          <div class="">
-                                             <svg width="200" height="200">
-                                                <circle class="circle-background" cx="100" cy="100" r="70" />
-                                                <circle class="circle-foreground" cx="100" cy="100" r="70" />
-                                             </svg>
-                                          </div>
-                                          <div class="countdown-text" id="countdown">00:00:00</div>
-                                       </div>
-                                    </div>
+         <div class="overflow-hidden d-slider1">
+            <ul class="container p-0 m-0  mb-2">
+               <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card-body text-center">
+                     <div class="row mt-2">
+                        <div class="col-12">
+                           <div class="mt-4 d-flex align-items-center justify-content-center">
+                              <h5 class="fw-bolder" id="sholat-berikutnya"></h5>
+                              <div class="circle-container">
+                                 <div class="">
+                                    <svg width="200" height="200">
+                                       <circle class="circle-background" cx="100" cy="100" r="70" />
+                                       <circle class="circle-foreground" cx="100" cy="100" r="70" />
+                                    </svg>
                                  </div>
-                                 <div class="container text-center p-5">
-                                    <h1 class="text-primary fw-bold">Waktu Sholat Hari Ini</h1>
-                                    <p class="lead fw-bolder">Waktu sholat berdasarkan lokasi Anda</p>
-                                    <div class="row justify-content-center">
-                                       <table class="table mb-0 border-2">
-                                          <thead>
-                                             <tr>
-                                                <th scope="col">Sholat</th>
-                                                <th scope="col">Waktu</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody id="waktu-sholat">
-                                             <!-- Waktu Sholat akan ditambahkan oleh JavaScript -->
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </div>
-
-
+                                 <div class="countdown-text" id="countdown">00:00:00</div>
                               </div>
                            </div>
-                        </li>
-                     </ul>
+                        </div>
+                        <div class="container text-center p-5">
+                           <h1 class="text-primary fw-bold">Waktu Sholat Hari Ini</h1>
+                           <p class="lead fw-bolder">Waktu sholat berdasarkan lokasi Anda</p>
+                           <div class="row justify-content-center">
+                              <table class="table mb-0 border-2">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col">Sholat</th>
+                                       <th scope="col">Waktu</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="waktu-sholat">
+                                    <!-- Waktu Sholat akan ditambahkan oleh JavaScript -->
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+
+                     </div>
                   </div>
-               </div>
-            </div>
+               </li>
+            </ul>
          </div>
       </div>
       </div>
 
       <!-- Footer Section Start -->
-      <footer class="footer">
-         <div class="footer-body">
-            <ul class="left-panel list-inline mb-0 p-0">
-               <li class="list-inline-item">
-                  <img src="../assets/logo altie putih.png" height="20px" alt="">
-                  <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-               </li>
-            </ul>
-            <div class="right-panel">
-               Copyright 
-               ©<script>
-                  document.write(new Date().getFullYear());
-               </script> SMK Al-Ittihad.
-               by <a href="index.html">TEFATIE</a>.
-            </div>
-         </div>
-      </footer>
-      <!-- Footer Section End -->
    </main>
-   
+   <footer class="footer">
+      <div class="footer-body">
+         <ul class="left-panel list-inline mb-0 p-0">
+            <li class="list-inline-item">
+               <img src="../assets/logo altie putih.png" height="20px" alt="">
+               <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+            </li>
+         </ul>
+         <div class="right-panel">
+            Copyright
+            ©
+            <script>
+               document.write(new Date().getFullYear());
+            </script> SMK Al-Ittihad.
+            by <a href="index.html">TEFATIE</a>.
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
    <!-- Wrapper End-->
    <!-- offcanvas start -->
    <script>
-      // Fungsi untuk mendapatkan waktu sholat dari API Aladhan
       async function getPrayerTimes(latitude, longitude) {
          const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`);
          const data = await response.json();
@@ -394,7 +390,6 @@
          return filteredTimes;
       }
 
-      // Menghitung waktu tersisa
       function getRemainingTime(targetTime) {
          const now = new Date();
          const target = new Date(now.toDateString() + ' ' + targetTime);
@@ -409,23 +404,20 @@
          return { hours: 0, minutes: 0, seconds: 0, total: 0 };
       }
 
-      // Mencari waktu sholat yang baru saja berlalu dan waktu berikutnya
       function findCurrentAndNextSholat(waktuSholat) {
          const now = new Date();
          const currentTime = now.getHours() + ":" + now.getMinutes().toString().padStart(2, '0');
          let previousSholat = null;
          let nextSholat = null;
 
-         // Cari sholat yang baru saja berlalu dan yang berikutnya
          for (const [sholat, waktu] of Object.entries(waktuSholat)) {
             if (currentTime >= waktu) {
-               previousSholat = { sholat, waktu }; // Waktu sholat yang sudah berlalu
+               previousSholat = { sholat, waktu };
             } else if (!nextSholat && currentTime < waktu) {
-               nextSholat = { sholat, waktu }; // Waktu sholat berikutnya
+               nextSholat = { sholat, waktu };
             }
          }
 
-         // Jika waktu sholat berikutnya tidak ditemukan (setelah Isha), kembali ke Fajr esok hari
          if (!nextSholat) {
             const tomorrowFajr = new Date();
             tomorrowFajr.setDate(tomorrowFajr.getDate() + 1);
@@ -435,7 +427,6 @@
          return { previousSholat, nextSholat };
       }
 
-      // Memperbarui countdown dari sholat sebelumnya ke sholat berikutnya
       function updateSholatCountdown(waktuSholat) {
          const { previousSholat, nextSholat } = findCurrentAndNextSholat(waktuSholat);
          const countdownTextElement = document.getElementById('countdown');
@@ -449,17 +440,14 @@
             const target = new Date(now.toDateString() + ' ' + nextSholat.waktu);
             const initialDifference = target - now;
 
-            // Mulai countdown dari waktu sholat sebelumnya ke waktu sholat berikutnya
             const interval = setInterval(() => {
                const remainingTime = getRemainingTime(nextSholat.waktu);
                countdownTextElement.textContent = `${remainingTime.hours.toString().padStart(2, '0')}:${remainingTime.minutes.toString().padStart(2, '0')}:${remainingTime.seconds.toString().padStart(2, '0')}`;
 
-               // Update animasi lingkaran
                const percentRemaining = remainingTime.total / initialDifference;
                const circleOffset = 408 * percentRemaining;
                circleForeground.style.strokeDashoffset = circleOffset;
 
-               // Jika countdown selesai, reset untuk sholat berikutnya
                if (remainingTime.total <= 0) {
                   clearInterval(interval);
                   updateSholatCountdown(waktuSholat);
@@ -468,8 +456,7 @@
          }
       }
 
-      // Mengambil lokasi pengguna
-      if (navigator.geolocation) {
+      document.addEventListener("deviceready", function () {
          navigator.geolocation.getCurrentPosition(async (position) => {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
@@ -481,11 +468,8 @@
             console.error("Geolocation error:", error);
             alert("Gagal mendapatkan lokasi. Pastikan izin lokasi telah diaktifkan.");
          });
-      } else {
-         alert("Geolocation tidak didukung oleh browser ini.");
-      }
+      }, false);
 
-      // Menampilkan waktu sholat ke dalam tabel
       function displayPrayerTimes(waktuSholat) {
          const tbody = document.getElementById('waktu-sholat');
          tbody.innerHTML = '';
@@ -495,8 +479,8 @@
             tbody.appendChild(row);
          }
       }
-
    </script>
+
 
    <!-- Library Bundle Script -->
    <script src="../assets/js/core/libs.min.js"></script>
