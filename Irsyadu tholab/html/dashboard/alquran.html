@@ -229,6 +229,8 @@
                   color: blue;
                   transition: .4s ease;
                }
+
+           
             </style>
             <div class="row">
 
@@ -2265,24 +2267,24 @@
          let noResults = document.getElementById('noResults');
          let found = false;
 
-         // Loop melalui setiap elemen surat
+        
          for (let i = 0; i < cards.length; i++) {
             let cardContent = cards[i].innerText.toLowerCase();
 
-            // Cek apakah teks input ada di dalam konten kartu
+        
             if (cardContent.indexOf(input) > -1) {
-                  cards[i].style.display = ""; // Tampilkan kartu jika cocok
-                  found = true; // Tandai bahwa setidaknya ada 1 kartu yang cocok
+                  cards[i].style.display = ""; 
+                  found = true; 
             } else {
-                  cards[i].style.display = "none"; // Sembunyikan kartu jika tidak cocok
+                  cards[i].style.display = "none"; 
             }
          }
 
-         // Jika tidak ada hasil yang ditemukan, tampilkan pesan
+         /
          if (!found) {
             noResults.classList.remove('d-none');
          } else {
-            noResults.classList.add('d-none'); // Sembunyikan pesan jika hasil ditemukan
+            noResults.classList.add('d-none'); 
          }
       }
 
