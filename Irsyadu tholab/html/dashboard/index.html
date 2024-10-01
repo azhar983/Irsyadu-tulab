@@ -28,6 +28,8 @@
 
    <!-- RTL Css -->
    <link rel="stylesheet" href="../assets/css/rtl.min.css" />
+
+   <link rel="stylesheet" href="../assets/node_modules/sweetalert2/dist/sweetalert2.min.css">
 </head>
 <style>
    .long-text {
@@ -463,6 +465,17 @@
    </main>
    
    <!-- Wrapper End-->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          Swal.fire({
+              title: 'Selamat Datang!',
+              text: 'Mohon Bantu Kami Jika Ada Tulisan Yang Salah',
+              icon: 'info',
+              confirmButtonText: 'Tutup'
+          });
+      });
+      
+  </script>
    <!-- offcanvas start -->
    
 
@@ -496,6 +509,8 @@
 
    <!-- App Script -->
    <script src="../assets/js/hope-ui.js" defer></script>
+
+   <script src="../assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
