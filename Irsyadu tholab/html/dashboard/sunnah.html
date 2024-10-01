@@ -31,6 +31,26 @@
   <link rel="stylesheet" href="../assets/css/rtl.min.css" />
 </head>
 
+<style>
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+</style>
+
 <body class="  ">
   <!-- loader Start -->
   <div id="loading">
@@ -170,226 +190,284 @@
   <main class="main-content">
     <div class="position-relative iq-banner">
       <!--Nav Start-->
-      <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
-        style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
-      <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
+      <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
         <div class="container-fluid navbar-inner">
-          <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
+          <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto">
             <!--Logo start-->
             <!--logo End-->
+
 
             <!--Logo start-->
             <div class="logo-main">
               <div class="logo-normal">
-                <img src="../assets/logo.png" height="40px" alt="" />
+                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)"
+                    fill="currentColor" />
+                  <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)"
+                    fill="currentColor" />
+                  <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)"
+                    fill="currentColor" />
+                  <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)"
+                    fill="currentColor" />
+                </svg>
               </div>
               <div class="logo-mini">
-                <img src="../assets/logo.png" height="40px" alt="" />
+                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)"
+                    fill="currentColor" />
+                  <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)"
+                    fill="currentColor" />
+                  <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)"
+                    fill="currentColor" />
+                  <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)"
+                    fill="currentColor" />
+                </svg>
               </div>
             </div>
-            <!--logo End-->
-
-            <h4 class="logo-title">Irsyadu Thulab</h4>
           </a>
-          <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-            <i class="icon">
-              <img src="../assets/icon/bar.png" class="icon-20" alt="" />
-            </i>
-          </div>
+          <!--logo End-->
         </div>
       </nav>
+
       <!-- Nav Header Component Start -->
-      <div class="iq-navbar-header" style="height: 150px; margin-top: 70px">
-        <div class="container-fluid iq-container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="flex-wrap text-center">
-                <div class="d-flex justify-content-center gap-2 align-items-center">
-                  <img src="../assets/icon/bulan.png" height="40px" alt="" />
-                  <h2 class="mx-lg-5 fs-lg-1">Sunnah-Sunnah Nabi SAW</h2>
-                  <img src="../assets/icon/bulan.png" height="40px" alt="" />
+
+      <div class="iq-header-img">
+        <img src="../assets/images/dashboard/top-header1.png" alt="header"
+          class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
+        <img src="../assets/images/dashboard/top-header2.png" alt="header"
+          class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
+        <img src="../assets/images/dashboard/top-header3.png" alt="header"
+          class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
+        <img src="../assets/images/dashboard/top-header4.png" alt="header"
+          class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
+        <img src="../assets/images/dashboard/top-header5.png" alt="header"
+          class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
+      </div>
+    </div>
+    <!-- Sidebar Menu End -->
+    </div>
+    </div>
+    <div class="sidebar-footer"></div>
+    </aside>
+    <main class="main-content">
+      <div class="position-relative iq-banner">
+        <!--Nav Start-->
+        <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+          style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
+        <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
+          <div class="container-fluid navbar-inner">
+            <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto me-auto">
+              <!--Logo start-->
+              <!--logo End-->
+
+              <!--Logo start-->
+              <div class="logo-main">
+                <div class="logo-normal">
+                  <img src="../assets/logo.png" height="40px" alt="" />
+                </div>
+                <div class="logo-mini">
+                  <img src="../assets/logo.png" height="40px" alt="" />
+                </div>
+              </div>
+              <!--logo End-->
+
+              <h4 class="logo-title">Irsyadu Thulab</h4>
+            </a>
+            <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+              <i class="icon">
+                <img src="../assets/icon/bar.png" class="icon-20" alt="" />
+              </i>
+            </div>
+          </div>
+        </nav>
+        <!-- Nav Header Component Start -->
+        <div class="iq-navbar-header" style="height: 150px;">
+          <div class="container-fluid iq-container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="flex-wrap text-center">
+                  <div class="d-flex justify-content-center gap-2 align-items-center">
+                    <img src="../assets/icon/bulan.png" height="40px" alt="" />
+                    <h2 class="mx-lg-5 fs-lg-1">Sunnah-Sunnah Nabi SAW</h2>
+                    <img src="../assets/icon/bulan.png" height="40px" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <style>
-          .link {
-            color: rgb(255, 255, 255);
-          }
+          <style>
+            .link {
+              color: rgb(255, 255, 255);
+            }
 
-          .link:hover {
-            color: blue;
-            transition: 0.4s ease;
-          }
-        </style>
-        <div class="iq-navbar-header" style="height: 150px">
-          <div class="iq-header-img">
-            <img src="../assets/images/dashboard/top-header.png" alt="header"
-              class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
+            .link:hover {
+              color: blue;
+              transition: 0.4s ease;
+            }
+          </style>
+          <div class="iq-navbar-header" style="height: 150px">
+            <div class="iq-header-img">
+              <img src="../assets/images/dashboard/top-header.png" alt="header"
+                class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
+            </div>
           </div>
+          <!-- Nav Header Component End -->
+          <!--Nav End-->
         </div>
         <!-- Nav Header Component End -->
-        <!--Nav End-->
-      </div>
-      <!-- Nav Header Component End -->
 
-      <div class="mt-2 p-0">
-        <!-- pengenalan sunnah -->
-        <div class="  ">
-          <div class="card w-100 d-flex">
-            <img class="img-fluid w-100 rounded-top" src="../dashboard/img/so4.jpeg" alt="" />
-            <div class="card-header text-center">
-              <h1 class="fw-bolder">APA ITU SUNNAH?</h1>
-            </div>
-            <div class="card-body text-justify text-dark">
-              <p>
-                Sunnah merupakan segala perbuatan yang mendapat pahala jika
-                dilakukan dan tidak mendapat dosa jika ditinggalkan, tapi
-                rugilah orang yang meninggalkan sunnah
-              </p>
+        <div class="mt-2 p-0">
+          <!-- pengenalan sunnah -->
+          <div class="container">
+            <div class="card w-100 d-flex">
+              <img class="img-fluid w-100 rounded-top" src="../dashboard/img/nabi.jpg" alt="">
+              <div class="card-header text-center ">
+                <h1 class="fw-bolder">APA ITU SUNNAH?</h1>
+              </div>
+              <div class="card-body text-center text-dark">
+                <p>Sunnah merupakan segala perbuatan yang mendapat pahala jika dilakukan dan tidak mendapat dosa
+                  jika ditinggalkan, tapi rugilah orang yang meninggalkan sunnah</p>
+              </div>
             </div>
           </div>
+
+          <!-- sunnah waktu -->
+          <div class="  ">
+            <div class="card p-3" data-aos="fade-up" data-aos-delay="800">
+              <h1 class="text-center fw-bold p-4">SUNNAH YANG TERIKAT WAKTU</h1>
+              <ul class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu sebelum Shubuh</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/02_0.html">Sunnah di waktu Shubuh dan setelahnya</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu Dhuha</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu siang hari (Dhuzur)</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu sore hari (Ashar)</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu setelah terbenamnya matahari
+                  (Maghrib)</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu malam hari (Isya)</a>
+              </ul>
+            </div>
+          </div>
+
+          <!-- sunnah umum -->
+          <div class="container">
+            <div class="card p-3" data-aos="fade-up" data-aos-delay="800">
+              <h1 class="text-center  fw-bold p-4">SUNNAH YANG TIDAK TERIKAT WAKTU</h1>
+              <ul class="list-group list-group-flush ">
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/praktek ibadah/rukun-sholat.html">Sunnah ketika makan</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/praktek ibadah/sholat-fardu.html">Sunnah dalam salam, bertemu, dan
+                  bermajelis</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah dalam berpakaian dan perhiasan</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah ketika bersin dan menguap</a>
+                <a class="list-group-item list-group-item-action"
+                  href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah-sunnah harian lainnya</a>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <!-- sunnah waktu -->
-        <div class="  ">
-          <div class="card p-3" data-aos="fade-up" data-aos-delay="800">
-            <h1 class="text-center fw-bold p-4">SUNNAH YANG TERIKAT WAKTU</h1>
-            <ul class="list-group list-group-flush">
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu sebelum Shubuh</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu Shubuh dan setelahnya</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu Dhuha</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu siang hari (Dhuzur)</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu sore hari (Ashar)</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu setelah terbenamnya matahari
-                (Maghrib)</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/sunnah/terikat_waktu/01_0.html">Sunnah di waktu malam hari (Isya)</a>
+        <!-- Footer Section Start -->
+        <footer class="footer">
+          <div class="footer-body">
+            <ul class="left-panel list-inline mb-0 p-0">
+              <li class="list-inline-item">
+                <img src="../assets/logo altie putih.png" height="20px" alt="" />
+                <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+              </li>
             </ul>
+            <div class="right-panel">
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
+            </div>
           </div>
-        </div>
+        </footer>
+        <!-- Footer Section End -->
 
-        <!-- sunnah umum -->
-        <div class="  ">
-          <div class="card p-3" data-aos="fade-up" data-aos-delay="800">
-            <h1 class="text-center fw-bold p-4">
-              SUNNAH YANG TIDAK TERIKAT WAKTU
-            </h1>
-            <ul class="list-group list-group-flush">
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/praktek ibadah/rukun-sholat.html">Sunnah ketika makan</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/praktek ibadah/sholat-fardu.html">Sunnah dalam salam, bertemu, dan bermajelis</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah dalam berpakaian dan perhiasan</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah ketika bersin dan menguap</a>
-              <a class="list-group-item list-group-item-action"
-                href="../dashboard/praktek ibadah/sholat-sunah.html">Sunnah-sunnah harian lainnya</a>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <!-- Library Bundle Script -->
+        <script src="../assets/js/core/libs.min.js"></script>
 
-      <!-- Footer Section Start -->
-      <footer class="footer">
-        <div class="footer-body">
-          <ul class="left-panel list-inline mb-0 p-0">
-            <li class="list-inline-item">
-              <img src="../assets/logo altie putih.png" height="20px" alt="" />
-              <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-            </li>
-          </ul>
-          <div class="right-panel">
-            Copyright ©
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
-          </div>
-        </div>
-      </footer>
-      <!-- Footer Section End -->
+        <!-- External Library Bundle Script -->
+        <script src="../assets/js/core/external.min.js"></script>
 
-      <!-- Library Bundle Script -->
-      <script src="../assets/js/core/libs.min.js"></script>
+        <!-- Widgetchart Script -->
+        <script src="../assets/js/charts/widgetcharts.js"></script>
 
-      <!-- External Library Bundle Script -->
-      <script src="../assets/js/core/external.min.js"></script>
+        <!-- mapchart Script -->
+        <script src="../assets/js/charts/vectore-chart.js"></script>
+        <script src="../assets/js/charts/dashboard.js"></script>
 
-      <!-- Widgetchart Script -->
-      <script src="../assets/js/charts/widgetcharts.js"></script>
+        <!-- fslightbox Script -->
+        <script src="../assets/js/plugins/fslightbox.js"></script>
 
-      <!-- mapchart Script -->
-      <script src="../assets/js/charts/vectore-chart.js"></script>
-      <script src="../assets/js/charts/dashboard.js"></script>
+        <!-- Settings Script -->
+        <script src="../assets/js/plugins/setting.js"></script>
 
-      <!-- fslightbox Script -->
-      <script src="../assets/js/plugins/fslightbox.js"></script>
+        <!-- Slider-tab Script -->
+        <script src="../assets/js/plugins/slider-tabs.js"></script>
 
-      <!-- Settings Script -->
-      <script src="../assets/js/plugins/setting.js"></script>
+        <!-- Form Wizard Script -->
+        <script src="../assets/js/plugins/form-wizard.js"></script>
 
-      <!-- Slider-tab Script -->
-      <script src="../assets/js/plugins/slider-tabs.js"></script>
+        <!-- AOS Animation Plugin-->
+        <script src="../assets/vendor/aos/dist/aos.js"></script>
 
-      <!-- Form Wizard Script -->
-      <script src="../assets/js/plugins/form-wizard.js"></script>
+        <!-- App Script -->
+        <script src="../assets/js/hope-ui.js" defer></script>
+        <script>
+          const scrollToTopButton = document.getElementById("scrollToTop");
 
-      <!-- AOS Animation Plugin-->
-      <script src="../assets/vendor/aos/dist/aos.js"></script>
+          // Tampilkan tombol ketika halaman di-scroll ke bawah
+          window.onscroll = function () {
+            if (
+              document.body.scrollTop > 200 ||
+              document.documentElement.scrollTop > 200
+            ) {
+              scrollToTopButton.style.display = "block";
+            } else {
+              scrollToTopButton.style.display = "none";
+            }
+          };
 
-      <!-- App Script -->
-      <script src="../assets/js/hope-ui.js" defer></script>
-      <script>
-        const scrollToTopButton = document.getElementById("scrollToTop");
-
-        // Tampilkan tombol ketika halaman di-scroll ke bawah
-        window.onscroll = function () {
-          if (
-            document.body.scrollTop > 200 ||
-            document.documentElement.scrollTop > 200
-          ) {
-            scrollToTopButton.style.display = "block";
-          } else {
-            scrollToTopButton.style.display = "none";
-          }
-        };
-
-        // Saat tombol diklik, scroll ke atas
-        scrollToTopButton.addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
+          // Saat tombol diklik, scroll ke atas
+          scrollToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
           });
-        });
-      </script>
-      <!-- Google Tag Manager -->
-      <script>
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != "dataLayer" ? "&l=" + l : "";
-          j.async = true;
-          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
-        window.tag_manager_event = "dashboard-free-preview";
-        window.tag_manager_product = "HopeUI";
-      </script>
-      <!-- End Google Tag Manager -->
-    </div>
-  </main>
+        </script>
+        <!-- Google Tag Manager -->
+        <script>
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
+          window.tag_manager_event = "dashboard-free-preview";
+          window.tag_manager_product = "HopeUI";
+        </script>
+        <!-- End Google Tag Manager -->
+      </div>
+    </main>
 </body>
 
 </html>
