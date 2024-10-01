@@ -238,7 +238,7 @@
       </div>
       <div class="sidebar-footer"></div>
    </aside>
-   <main class="main-content">
+   <main class="main-content" style="height: 85vh;">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
@@ -302,10 +302,7 @@
          <!--Nav End-->
       </div>
       <div class="container mt-n5 p-0">
-         <div class="row">
-            <div class="col-12">
-               <div class="row row-cols-12">
-                  <div class="overflow-hidden d-slider1">
+         <div class="overflow-hidden d-slider1">
                      <ul class="container p-0 m-0  mb-2">
                         <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
                            <div class="card-body text-center">
@@ -347,14 +344,12 @@
                            </div>
                         </li>
                      </ul>
-                  </div>
-               </div>
-            </div>
          </div>
       </div>
       </div>
 
       <!-- Footer Section Start -->
+   </main>
       <footer class="footer">
          <div class="footer-body">
             <ul class="left-panel list-inline mb-0 p-0">
@@ -373,16 +368,14 @@
          </div>
       </footer>
       <!-- Footer Section End -->
-   </main>
    
    <!-- Wrapper End-->
    <!-- offcanvas start -->
    <script>
-      // Fungsi untuk mendapatkan waktu sholat dari API Aladhan
       async function getPrayerTimes(latitude, longitude) {
          const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`);
          const data = await response.json();
-
+   
          const filteredTimes = {
             Fajr: data.data.timings.Fajr,
             Dhuhr: data.data.timings.Dhuhr,
@@ -390,16 +383,15 @@
             Maghrib: data.data.timings.Maghrib,
             Isha: data.data.timings.Isha
          };
-
+   
          return filteredTimes;
       }
-
-      // Menghitung waktu tersisa
+   
       function getRemainingTime(targetTime) {
          const now = new Date();
          const target = new Date(now.toDateString() + ' ' + targetTime);
          const difference = target - now;
-
+   
          if (difference > 0) {
             const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -408,58 +400,51 @@
          }
          return { hours: 0, minutes: 0, seconds: 0, total: 0 };
       }
-
-      // Mencari waktu sholat yang baru saja berlalu dan waktu berikutnya
+   
       function findCurrentAndNextSholat(waktuSholat) {
          const now = new Date();
          const currentTime = now.getHours() + ":" + now.getMinutes().toString().padStart(2, '0');
          let previousSholat = null;
          let nextSholat = null;
-
-         // Cari sholat yang baru saja berlalu dan yang berikutnya
+   
          for (const [sholat, waktu] of Object.entries(waktuSholat)) {
             if (currentTime >= waktu) {
-               previousSholat = { sholat, waktu }; // Waktu sholat yang sudah berlalu
+               previousSholat = { sholat, waktu }; 
             } else if (!nextSholat && currentTime < waktu) {
-               nextSholat = { sholat, waktu }; // Waktu sholat berikutnya
+               nextSholat = { sholat, waktu }; 
             }
          }
-
-         // Jika waktu sholat berikutnya tidak ditemukan (setelah Isha), kembali ke Fajr esok hari
+   
          if (!nextSholat) {
             const tomorrowFajr = new Date();
             tomorrowFajr.setDate(tomorrowFajr.getDate() + 1);
             nextSholat = { sholat: 'Fajr', waktu: waktuSholat.Fajr + ' (esok)' };
          }
-
+   
          return { previousSholat, nextSholat };
       }
-
-      // Memperbarui countdown dari sholat sebelumnya ke sholat berikutnya
+   
       function updateSholatCountdown(waktuSholat) {
          const { previousSholat, nextSholat } = findCurrentAndNextSholat(waktuSholat);
          const countdownTextElement = document.getElementById('countdown');
          const sholatBerikutnyaElement = document.getElementById('sholat-berikutnya');
          const circleForeground = document.querySelector('.circle-foreground');
-
+   
          if (previousSholat && nextSholat) {
             sholatBerikutnyaElement.textContent = `Sholat berikutnya: ${nextSholat.sholat} - ${nextSholat.waktu}`;
-
+   
             const now = new Date();
             const target = new Date(now.toDateString() + ' ' + nextSholat.waktu);
             const initialDifference = target - now;
-
-            // Mulai countdown dari waktu sholat sebelumnya ke waktu sholat berikutnya
+   
             const interval = setInterval(() => {
                const remainingTime = getRemainingTime(nextSholat.waktu);
                countdownTextElement.textContent = `${remainingTime.hours.toString().padStart(2, '0')}:${remainingTime.minutes.toString().padStart(2, '0')}:${remainingTime.seconds.toString().padStart(2, '0')}`;
-
-               // Update animasi lingkaran
+   
                const percentRemaining = remainingTime.total / initialDifference;
                const circleOffset = 408 * percentRemaining;
                circleForeground.style.strokeDashoffset = circleOffset;
-
-               // Jika countdown selesai, reset untuk sholat berikutnya
+   
                if (remainingTime.total <= 0) {
                   clearInterval(interval);
                   updateSholatCountdown(waktuSholat);
@@ -467,13 +452,12 @@
             }, 1000);
          }
       }
-
-      // Mengambil lokasi pengguna
-      if (navigator.geolocation) {
+   
+      document.addEventListener("deviceready", function() {
          navigator.geolocation.getCurrentPosition(async (position) => {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
-
+   
             const waktuSholat = await getPrayerTimes(latitude, longitude);
             displayPrayerTimes(waktuSholat);
             updateSholatCountdown(waktuSholat);
@@ -481,11 +465,8 @@
             console.error("Geolocation error:", error);
             alert("Gagal mendapatkan lokasi. Pastikan izin lokasi telah diaktifkan.");
          });
-      } else {
-         alert("Geolocation tidak didukung oleh browser ini.");
-      }
-
-      // Menampilkan waktu sholat ke dalam tabel
+      }, false);
+   
       function displayPrayerTimes(waktuSholat) {
          const tbody = document.getElementById('waktu-sholat');
          tbody.innerHTML = '';
@@ -495,8 +476,8 @@
             tbody.appendChild(row);
          }
       }
-
    </script>
+   
 
    <!-- Library Bundle Script -->
    <script src="../assets/js/core/libs.min.js"></script>
