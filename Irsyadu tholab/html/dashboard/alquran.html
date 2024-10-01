@@ -229,6 +229,8 @@
                   color: blue;
                   transition: .4s ease;
                }
+
+           
             </style>
             <div class="row">
 
@@ -2087,7 +2089,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/107" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/alma'un107.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2104,7 +2106,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/108" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/alkausar108.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2121,7 +2123,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/109" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/alkafirun109.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2138,7 +2140,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/110" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/annasr110.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2155,7 +2157,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/111" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/allahab111.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2172,7 +2174,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/112" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/alikhlas112.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2189,7 +2191,7 @@
                               </div>
                            </div>
                         </a></div>
-                     <div class="col-md-4 mb-4"><a href="surat_alquran/113" class="text-dark text-decoration-none">
+                     <div class="col-md-4 mb-4"><a href="surat_alquran/alfalaq113.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2207,7 +2209,7 @@
                            </div>
                         </a></div>
                      <div class="col-md-4 mb-4">
-                        <a href="surat_alquran/114" class="text-dark text-decoration-none">
+                        <a href="surat_alquran/annas114.html" class="text-dark text-decoration-none">
                            <div class="card h-100 border-0 rounded-3 shadow">
                               <div class="card-body">
                                  <div class="d-flex align-items-center">
@@ -2265,24 +2267,24 @@
          let noResults = document.getElementById('noResults');
          let found = false;
 
-         // Loop melalui setiap elemen surat
+        
          for (let i = 0; i < cards.length; i++) {
             let cardContent = cards[i].innerText.toLowerCase();
 
-            // Cek apakah teks input ada di dalam konten kartu
+        
             if (cardContent.indexOf(input) > -1) {
-                  cards[i].style.display = ""; // Tampilkan kartu jika cocok
-                  found = true; // Tandai bahwa setidaknya ada 1 kartu yang cocok
+                  cards[i].style.display = ""; 
+                  found = true; 
             } else {
-                  cards[i].style.display = "none"; // Sembunyikan kartu jika tidak cocok
+                  cards[i].style.display = "none"; 
             }
          }
 
-         // Jika tidak ada hasil yang ditemukan, tampilkan pesan
+         /
          if (!found) {
             noResults.classList.remove('d-none');
          } else {
-            noResults.classList.add('d-none'); // Sembunyikan pesan jika hasil ditemukan
+            noResults.classList.add('d-none'); 
          }
       }
 
