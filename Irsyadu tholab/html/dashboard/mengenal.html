@@ -91,16 +91,16 @@
       }
 
       footer {
-                text-align: center;
-                align-items: center;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                background-color: #007BFF;
-                color: white;
-                position: relative;
-                width: 100%;
-                border-radius: 15px;
-            }
+         text-align: center;
+         align-items: center;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         background-color: #007BFF;
+         color: white;
+         position: relative;
+         width: 100%;
+         border-radius: 15px;
+      }
 
       footer p {
          margin: 0;
@@ -108,24 +108,22 @@
 
 
       .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         padding: 10px;
+         background-color: #007BFF;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+         transition: background-color 0.3s;
+      }
 
-.scroll-to-top:hover {
-    background-color: #0056b3;
-}
-
-      
+      .scroll-to-top:hover {
+         background-color: #0056b3;
+      }
    </style>
 
 
@@ -341,8 +339,8 @@
                      <span class="item-name">Praktek Ibadah</span>
                   </a>
                </li>
-               
-                  <hr class="hr-horizontal">
+
+               <hr class="hr-horizontal">
                </li>
                <li class="nav-item static-item">
                   <a class="nav-link static-item disabled" href="#" tabindex="-1">
@@ -380,6 +378,8 @@
    <main class="main-content">
       <div class="position-relative iq-banner">
          <!--Nav Start-->
+         <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+            style="display: none; bottom: 20px; right:20px; z-index: 999;">↑</button>
          <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
             <div class="container-fluid navbar-inner">
                <a href="../dashboard/index.html" class="navbar-brand ms-auto me-auto">
@@ -398,11 +398,15 @@
                   <!--logo End-->
                </a>
                <audio id="backgroundMusic" loop autoplay>
-                <source src="audio/solawatnabi.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <button style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);" id="playButton">🎵تشغيل الموسيقى🎵</button>
-            <button style="border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);"><a href="sunnah.html">Kembali</a></button>
+                  <source src="audio/solawatnabi.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+               </audio>
+               <button
+                  style="margin-left: 380px;border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);"
+                  id="playButton">🎵تشغيل الموسيقى🎵</button>
+               <button
+                  style="border: none;border-radius: 15px;padding: 10px;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);"><a
+                     href="sunnah.html">Kembali</a></button>
             </div>
          </nav>
 
@@ -440,463 +444,521 @@
          <nav>
             <ul>
                <a href="shalat.html">Shalat Sunnah</a>
-               <a href="mengenal.html" style="box-shadow: 0 2px 8px black;">Mengenal Nabi Muhammad Sallallahu 'Alaihi Wasallam</a>
+               <a href="mengenal.html" style="box-shadow: 0 2px 8px black;">Mengenal Nabi Muhammad Sallallahu 'Alaihi
+                  Wasallam</a>
                <a href="puasa.html">Puasa Sunnah</a>
             </ul>
-         </nav>  
-        
-        
-        <main><section>
-        <div class="section" id="awal">
-            <h2>Kehidupan Awal</h2>
-            <div class="content">
-                <h3>Kelahiran dan Keluarga</h3>
-                <p>Nabi Muhammad SAW lahir pada tanggal 12 Rabiul Awal tahun Gajah di Mekkah...</p>
-                <h3>Masa Kecil dan Asuhan</h3>
-                <p>Setelah ibunya wafat, beliau diasuh oleh kakeknya, Abdul Muttalib, dan kemudian pamannya, Abu Talib...</p>
-            </div>
-        </div>
-    </section></main>
-    <main><section>
-        <div class="section" id="kenabian">
-            <h2>Kenabian dan Dakwah</h2>
-            <div class="content">
-                <h3>Wahyu Pertama dan Awal Dakwah</h3>
-                <p>Pada usia 40 tahun, beliau menerima wahyu pertama dari Allah melalui malaikat Jibril di Gua Hira...</p>
-                <h3>Hijrah ke Madinah</h3>
-                <p>Untuk menghindari penindasan di Mekkah, beliau dan pengikutnya melakukan hijrah ke Madinah pada tahun 622 Masehi...</p>
-            </div>
-        </div>
-    </section></main>
-    <main><section>
-        <div class="section" id="karakter">
-            <h2>Karakter dan Akhlak</h2>
-            <div class="content">
-                <h3>Kebaikan dan Kasih Sayang</h3>
-                <p>Beliau sangat penyayang terhadap keluarga dan umat. Allah berfirman dalam Al-Qur'an bahwa beliau adalah rahmat bagi seluruh alam...</p>
-                <h3>Keadilan dan Keberanian</h3>
-                <p>Nabi Muhammad SAW menegakkan keadilan dan menunjukkan keberanian dalam menghadapi berbagai tantangan...</p>
-            </div>
-        </div>
-    </section></main>
-    <main><section>
-        <div class="section" id="kepemimpinan">
-            <h2>Kepemimpinan dan Diplomasi</h2>
-            <div class="content">
-                <h3>Kepemimpinan di Madinah</h3>
-                <p>Di Madinah, Nabi Muhammad SAW membentuk komunitas Muslim yang solid dan mengembangkan sistem pemerintahan yang adil...</p>
-                <h3>Diplomasi dan Perjanjian</h3>
-                <p>Perjanjian Hudaibiyah adalah contoh kecerdasan diplomatik Nabi Muhammad SAW...</p>
-            </div>
-        </div>
-    </section></main>
-    <main><section>
-        <div class="section" id="warisan">
-            <h2>Warisan dan Pengaruh</h2>
-            <div class="content">
-                <h3>Al-Qur'an</h3>
-                <p>Al-Qur'an adalah wahyu terakhir yang diberikan oleh Allah melalui Nabi Muhammad SAW...</p>
-                <h3>Hadits dan Sunnah</h3>
-                <p>Hadits dan sunnah adalah sumber hukum dan pedoman hidup dalam Islam...</p>
-            </div>
-        </div></section></main>
-        <nav class="toc" id="tocMenu">
-            <main><section>
-            <h2>Mengenal Lebih Pribadi Agung Nabi Muhammad Shallallahu 'Alaihi Wasallam</h2></section></main>
+         </nav>
+
+
+         <main>
+            <section>
+               <div class="section" id="awal">
+                  <h2>Kehidupan Awal</h2>
+                  <div class="content">
+                     <h3>Kelahiran dan Keluarga</h3>
+                     <p>Nabi Muhammad SAW lahir pada tanggal 12 Rabiul Awal tahun Gajah di Mekkah...</p>
+                     <h3>Masa Kecil dan Asuhan</h3>
+                     <p>Setelah ibunya wafat, beliau diasuh oleh kakeknya, Abdul Muttalib, dan kemudian pamannya, Abu
+                        Talib...</p>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <main>
+            <section>
+               <div class="section" id="kenabian">
+                  <h2>Kenabian dan Dakwah</h2>
+                  <div class="content">
+                     <h3>Wahyu Pertama dan Awal Dakwah</h3>
+                     <p>Pada usia 40 tahun, beliau menerima wahyu pertama dari Allah melalui malaikat Jibril di Gua
+                        Hira...</p>
+                     <h3>Hijrah ke Madinah</h3>
+                     <p>Untuk menghindari penindasan di Mekkah, beliau dan pengikutnya melakukan hijrah ke Madinah pada
+                        tahun 622 Masehi...</p>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <main>
+            <section>
+               <div class="section" id="karakter">
+                  <h2>Karakter dan Akhlak</h2>
+                  <div class="content">
+                     <h3>Kebaikan dan Kasih Sayang</h3>
+                     <p>Beliau sangat penyayang terhadap keluarga dan umat. Allah berfirman dalam Al-Qur'an bahwa beliau
+                        adalah rahmat bagi seluruh alam...</p>
+                     <h3>Keadilan dan Keberanian</h3>
+                     <p>Nabi Muhammad SAW menegakkan keadilan dan menunjukkan keberanian dalam menghadapi berbagai
+                        tantangan...</p>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <main>
+            <section>
+               <div class="section" id="kepemimpinan">
+                  <h2>Kepemimpinan dan Diplomasi</h2>
+                  <div class="content">
+                     <h3>Kepemimpinan di Madinah</h3>
+                     <p>Di Madinah, Nabi Muhammad SAW membentuk komunitas Muslim yang solid dan mengembangkan sistem
+                        pemerintahan yang adil...</p>
+                     <h3>Diplomasi dan Perjanjian</h3>
+                     <p>Perjanjian Hudaibiyah adalah contoh kecerdasan diplomatik Nabi Muhammad SAW...</p>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <main>
+            <section>
+               <div class="section" id="warisan">
+                  <h2>Warisan dan Pengaruh</h2>
+                  <div class="content">
+                     <h3>Al-Qur'an</h3>
+                     <p>Al-Qur'an adalah wahyu terakhir yang diberikan oleh Allah melalui Nabi Muhammad SAW...</p>
+                     <h3>Hadits dan Sunnah</h3>
+                     <p>Hadits dan sunnah adalah sumber hukum dan pedoman hidup dalam Islam...</p>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <nav class="toc" id="tocMenu">
+            <main>
+               <section>
+                  <h2>Mengenal Lebih Pribadi Agung Nabi Muhammad Shallallahu 'Alaihi Wasallam</h2>
+               </section>
+            </main>
             <ul>
-                <a href="#section1">Fisik</a></li>
-                <a href="#section2">Khatam</a></li>
-                <a href="#section3">Rambut</a></li>
-                <a href="#section4">Bersisir</a></li>
-                <a href="#section5">Uban</a></li>
-                <a href="#section6">Semir</a></li>
-                <a href="#section7">Celak</a></li>
-                <a href="#section8">Pakaian</a></li>
-                <a href="#section9">Kehidupan</a></li>
-                <a href="#section10">Sepatu</a></li>
-                <a href="#section11">Khuf</a></li>
-                <a href="#section12">Cincin</a></li>
-                <a href="#section13">Pedang</a></li>
-                <a href="#section14">Baju Perang</a></li>
-                <a href="#section15">Heml Besi</a></li>
-                <a href="#section16">Sorban</a></li>
-                <a href="#section17">Izar</a></li>
-                <a href="#section18">Berjalan</a></li>
-                <a href="#section19">Menutupi Kepala</a></li>
-                <a href="#section20">Duduk</a></li>
-                <a href="#section21">Tempat Bersandar</a></li>
-                <a href="#section22">Makan</a></li>
-                <a href="#section23">Jenis Roti</a></li>
-                <a href="#section24">Jenis Lauk</a></li>
-                <a href="#section25">Wudhu Saat Makan</a></li>
-                <a href="#section26">Doa Makan</a></li>
-                <a href="#section27">Tempat Minum</a></li>
-                <a href="#section28">Buah-Buahan</a></li>
-                <a href="#section29">Minuman</a></li>
-                <a href="#section30">Minum</a></li>
-                <a href="#section31">Wewangian</a></li>
-                <a href="#section32">Bicara</a></li>
-                <a href="#section33">Tertawa</a></li>
-                <a href="#section34">Bercanda</a></li>
-                <a href="#section35">Membaca Sya'ir</a></li>
-                <a href="#section36">Percakapan Malam</a></li>
-                <a href="#section37">Hadits Ummu Zar'i</a></li>
-                <a href="#section38">Tidur</a></li>
-                <a href="#section39">Ibadah</a></li>
-                <a href="#section40">Shalat Dhuha</a></li>
-                <a href="#section41">Shalat Tathawu'</a></li>
-                <a href="#section42">Puasa</a></li>
-                <a href="#section43">Qira'ah</a></li>
-                <a href="#section44">Tangisan</a></li>
-                <a href="#section45">Kasur</a></li>
-                <a href="#section46">Ketawadhu'an</a></li>
-                <a href="#section47">Akhlak</a></li>
-                <a href="#section48">Rasa Malu</a></li>
-                <a href="#section49">Berbekam</a></li>
-                <a href="#section50">Nama-Nama</a></li>
-                <a href="#section51">Kehidupan</a></li>
-                <a href="#section52">Umur</a></li>
-                <a href="#section53">Wafat</a></li>
-                <a href="#section54">Harta Waris</a></li>
-                <a href="#section55">Mimpi Melihat</a></li>
+               <a href="#section1">Fisik</a></li>
+               <a href="#section2">Khatam</a></li>
+               <a href="#section3">Rambut</a></li>
+               <a href="#section4">Bersisir</a></li>
+               <a href="#section5">Uban</a></li>
+               <a href="#section6">Semir</a></li>
+               <a href="#section7">Celak</a></li>
+               <a href="#section8">Pakaian</a></li>
+               <a href="#section9">Kehidupan</a></li>
+               <a href="#section10">Sepatu</a></li>
+               <a href="#section11">Khuf</a></li>
+               <a href="#section12">Cincin</a></li>
+               <a href="#section13">Pedang</a></li>
+               <a href="#section14">Baju Perang</a></li>
+               <a href="#section15">Heml Besi</a></li>
+               <a href="#section16">Sorban</a></li>
+               <a href="#section17">Izar</a></li>
+               <a href="#section18">Berjalan</a></li>
+               <a href="#section19">Menutupi Kepala</a></li>
+               <a href="#section20">Duduk</a></li>
+               <a href="#section21">Tempat Bersandar</a></li>
+               <a href="#section22">Makan</a></li>
+               <a href="#section23">Jenis Roti</a></li>
+               <a href="#section24">Jenis Lauk</a></li>
+               <a href="#section25">Wudhu Saat Makan</a></li>
+               <a href="#section26">Doa Makan</a></li>
+               <a href="#section27">Tempat Minum</a></li>
+               <a href="#section28">Buah-Buahan</a></li>
+               <a href="#section29">Minuman</a></li>
+               <a href="#section30">Minum</a></li>
+               <a href="#section31">Wewangian</a></li>
+               <a href="#section32">Bicara</a></li>
+               <a href="#section33">Tertawa</a></li>
+               <a href="#section34">Bercanda</a></li>
+               <a href="#section35">Membaca Sya'ir</a></li>
+               <a href="#section36">Percakapan Malam</a></li>
+               <a href="#section37">Hadits Ummu Zar'i</a></li>
+               <a href="#section38">Tidur</a></li>
+               <a href="#section39">Ibadah</a></li>
+               <a href="#section40">Shalat Dhuha</a></li>
+               <a href="#section41">Shalat Tathawu'</a></li>
+               <a href="#section42">Puasa</a></li>
+               <a href="#section43">Qira'ah</a></li>
+               <a href="#section44">Tangisan</a></li>
+               <a href="#section45">Kasur</a></li>
+               <a href="#section46">Ketawadhu'an</a></li>
+               <a href="#section47">Akhlak</a></li>
+               <a href="#section48">Rasa Malu</a></li>
+               <a href="#section49">Berbekam</a></li>
+               <a href="#section50">Nama-Nama</a></li>
+               <a href="#section51">Kehidupan</a></li>
+               <a href="#section52">Umur</a></li>
+               <a href="#section53">Wafat</a></li>
+               <a href="#section54">Harta Waris</a></li>
+               <a href="#section55">Mimpi Melihat</a></li>
             </ul>
-        </nav>
-        <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
+         </nav>
+         <button id="scrollToTop" class="scroll-to-top" style="display: none;"></button>
 
-    <main>
-        <section id="section1">
-            <h2>Fisik</h2>
-            <p>Bab Tentang Fisik Rasulullah Shallallahu 'Alaihi Wasallam itu perwakannya tidak terlalu tinggi,juga tidak terlalu pendek.Tidak putih sekali kulitnya,juga tidak kecoklatan.Rambutnya ikal, tidak terlalu keriting daan tidak pula lurus kaku.Pada kepala dan jenggotnya tidak terdapat sampai dua puluh helai rambut berwarna putih uban.</p>
-        </section>
-        <section id="section2">
-            <h2>Khatam</h2>
-            <p>Khatam adalah praktik dan tradisi penting dalam budaya kita, terutama dalam konteks pembacaan Al-Qur'an dan penutupan pelajaran agama.</p>
-        </section>
-        <section id="section3">
-            <h2>Rambut</h2>  
-            <p>Rambut Rasulullah SAW adalah simbol keindahan dan perhatian terhadap kebersihan. Beliau dikenal memiliki rambut hitam dan tebal.</p>
-        </section>
-        <section id="section4">
-            <h2>Bersisir</h2>
-            <p>Beliau selalu merawat rambutnya dengan baik dan memiliki kebiasaan menyisir rambut sebelum bertemu orang lain.</p>
-        </section>
-        <section id="section5">
-            <h2>Uban</h2>
-            <p>Uban di rambut Rasulullah SAW menggambarkan kebijaksanaan dan pengalaman hidup yang dimiliki beliau.</p>
-        </section>
-        <section id="section6">
-            <h2>Semir</h2>
-            <p>Semir adalah praktik penggunaan minyak atau bahan lain untuk merawat rambut, yang juga dilakukan oleh Rasulullah SAW.</p>
-        </section>
-        <section id="section7">
-            <h2>Celak</h2>
-            <p>Celak adalah pewarna alami yang digunakan untuk mempercantik mata, dan Rasulullah SAW menganjurkan penggunaannya.</p>
-        </section>
-        <section id="section8">
-            <h2>Pakaian</h2>
-            <p>Pakaian Rasulullah SAW sederhana namun rapi, mencerminkan kesederhanaan dan ketawadhu'an beliau.</p>
-        </section>
-        <section id="section9">
-            <h2>Kehidupan</h2>
-            <p>Kehidupan Rasulullah SAW dipenuhi dengan teladan yang baik dalam berinteraksi dengan masyarakat dan menjalani ajaran Islam.</p>
-        </section>
-        <section id="section10">
-            <h2>Sepatu</h2>
-            <p>Sepatu yang dikenakan Rasulullah SAW umumnya berupa sandal sederhana yang nyaman digunakan.</p>
-        </section>
-        <section id="section11">
-            <h2>Khuf</h2>
-            <p>Khuf adalah jenis alas kaki yang dipakai dalam perjalanan, dan Rasulullah SAW menggunakannya saat bepergian.</p>
-        </section>
-        <section id="section12">
-            <h2>Cincin</h2>
-            <p>Cincin Rasulullah SAW adalah simbol kekuasaan dan kepemimpinan, dan sering dikenakan sebagai perhiasan.</p>
-        </section>
-        <section id="section13">
-            <h2>Pedang</h2>
-            <p>Pedang digunakan oleh Rasulullah SAW dalam konteks pertahanan diri dan membela agama Islam.</p>
-        </section>
-        <section id="section14">
-            <h2>Baju Perang</h2>
-            <p>Baju perang Rasulullah SAW dirancang untuk melindungi beliau dalam peperangan, menunjukkan keberanian dan kepemimpinan.</p>
-        </section>
-        <section id="section15">
-            <h2>Heml Besi</h2>
-            <p>Heml besi adalah perlengkapan yang digunakan Rasulullah SAW saat berperang, menggambarkan kesiapan dalam menghadapi musuh.</p>
-        </section>
-        <section id="section16">
-            <h2>Sorban</h2>
-            <p>Sorban adalah penutup kepala yang dikenakan Rasulullah SAW, melambangkan identitas dan budaya.</p>
-        </section>
-        <section id="section17">
-            <h2>Izar</h2>
-            <p>Izar adalah kain yang dipakai sebagai pakaian bawah, mencerminkan kesederhanaan dalam berpakaian.</p>
-        </section>
-        <section id="section18">
-            <h2>Berjalan</h2>
-            <p>Gaya berjalan Rasulullah SAW penuh percaya diri dan menunjukkan ketenangan, menjadi teladan bagi umatnya.</p>
-        </section>
-        <section id="section19">
-            <h2>Menutupi Kepala</h2>
-            <p>Menutupi kepala merupakan tradisi yang dilakukan Rasulullah SAW untuk menjaga kesopanan dan kebersihan.</p>
-        </section>
-        <section id="section20">
-            <h2>Duduk</h2>
-            <p>Rasulullah SAW dikenal dengan cara duduk yang santun dan menghormati orang lain.</p>
-        </section>
-        <section id="section21">
-            <h2>Tempat Bersandar</h2>
-            <p>Tempat bersandar yang nyaman dan sederhana menjadi salah satu ciri khas dalam kehidupan Rasulullah SAW.</p>
-        </section>
-        <section id="section22">
-            <h2>Makan</h2>
-            <p>Beliau memiliki cara makan yang sederhana dan bersyukur, selalu mengingat nikmat dari Allah.</p>
-        </section>
-        <section id="section23">
-            <h2>Jenis Roti</h2>
-            <p>Roti menjadi bagian penting dari makanan sehari-hari Rasulullah SAW, dengan berbagai variasi yang sederhana.</p>
-        </section>
-        <section id="section24">
-            <h2>Jenis Lauk</h2>
-            <p>Rasulullah SAW mengonsumsi lauk yang sehat, menyeimbangkan antara protein dan sayuran.</p>
-        </section>
-        <section id="section25">
-            <h2>Wudhu Saat Makan</h2>
-            <p>Rasulullah SAW menganjurkan untuk berwudhu sebelum dan sesudah makan sebagai bagian dari kebersihan.</p>
-        </section>
-        <section id="section26">
-            <h2>Doa Makan</h2>
-            <p>Beliau mengajarkan doa sebelum dan sesudah makan sebagai bentuk syukur kepada Allah.</p>
-        </section>
-        <section id="section27">
-            <h2>Tempat Minum</h2>
-            <p>Tempat minum yang digunakan Rasulullah SAW sederhana dan bersih, menggambarkan kebersihan dalam konsumsi.</p>
-        </section>
-        <section id="section28">
-            <h2>Buah-Buahan</h2>
-            <p>Buah-buahan menjadi bagian penting dalam pola makan Rasulullah SAW, yang kaya akan vitamin dan gizi.</p>
-        </section>
-        <section id="section29">
-            <h2>Minuman</h2>
-            <p>Rasulullah SAW memilih minuman yang menyehatkan, seperti air dan madu, untuk menjaga kesehatan tubuh.</p>
-        </section>
-        <section id="section30">
-            <h2>Minum</h2>
-            <p>Cara minum Rasulullah SAW selalu dengan baik dan sopan, di antaranya adalah dengan duduk dan mengucap doa.</p>
-        </section>
-        <section id="section31">
-            <h2>Wewangian</h2>
-            <p>Beliau menyukai wewangian yang alami dan bersih, mencerminkan kesucian dan kebersihan hati.</p>
-        </section>
-        <section id="section32">
-            <h2>Bicara</h2>
-            <p>Rasulullah SAW dikenal sebagai pembicara yang bijak, berbicara dengan lembut dan jelas untuk menyampaikan pesan.</p>
-        </section>
-        <section id="section33">
-            <h2>Tertawa</h2>
-            <p>Tertawa Rasulullah SAW menunjukkan keceriaan dan ketenangan, tanpa berlebihan.</p>
-        </section>
-        <section id="section34">
-            <h2>Bercanda</h2>
-            <p>Beliau bercanda dengan sahabat-sahabatnya dengan cara yang sopan, membangun keakraban dan persahabatan.</p>
-        </section>
-        <section id="section35">
-            <h2>Membaca Sya'ir</h2>
-            <p>Rasulullah SAW menyukai puisi dan sya'ir, sering membacanya untuk menyemarakkan suasana.</p>
-        </section>
-        <section id="section36">
-            <h2>Percakapan Malam</h2>
-            <p>Percakapan malam Rasulullah SAW dengan sahabat adalah momen berharga untuk berbagi ilmu dan pengalaman.</p>
-        </section>
-        <section id="section37">
-            <h2>Hadits Ummu Zar'i</h2>
-            <p>Hadits Ummu Zar'i menjadi salah satu sumber pelajaran penting dalam kehidupan Rasulullah SAW.</p>
-        </section>
-        <section id="section38">
-            <h2>Tidur</h2>
-            <p>Tidur Rasulullah SAW dilakukan dengan cara yang sehat, selalu mengucap doa sebelum tidur.</p>
-        </section>
-        <section id="section39">
-            <h2>Ibadah</h2>
-            <p>Ibadah menjadi fokus utama dalam kehidupan Rasulullah SAW, mencerminkan hubungan dekat dengan Allah.</p>
-        </section>
-        <section id="section40">
-            <h2>Shalat Dhuha</h2>
-            <p>Shalat Dhuha adalah sunnah yang sering dikerjakan oleh Rasulullah SAW sebagai bentuk syukur kepada Allah.</p>
-        </section>
-        <section id="section41">
-            <h2>Shalat Tathawu'</h2>
-            <p>Shalat Tathawu' adalah ibadah sunnah yang dikerjakan Rasulullah SAW untuk mendekatkan diri kepada Allah.</p>
-        </section>
-        <section id="section42">
-            <h2>Puasa</h2>
-            <p>Puasa dilaksanakan oleh Rasulullah SAW sebagai bentuk pengendalian diri dan kedekatan kepada Allah.</p>
-        </section>
-        <section id="section43">
-            <h2>Qira'ah</h2>
-            <p>Qira'ah atau membaca Al-Qur'an menjadi kebiasaan sehari-hari Rasulullah SAW untuk memperdalam ilmu agama.</p>
-        </section>
-        <section id="section44">
-            <h2>Tangisan</h2>
-            <p>Tangisan Rasulullah SAW merupakan ungkapan kasih sayang dan empati terhadap umatnya.</p>
-        </section>
-        <section id="section45">
-            <h2>Kasur</h2>
-            <p>Kasur Rasulullah SAW sederhana, menunjukkan bahwa beliau tidak terikat pada kemewahan dunia.</p>
-        </section>
-        <section id="section46">
-            <h2>Ketawadhu'an</h2>
-            <p>Ketawadhu'an adalah sikap rendah hati yang selalu diterapkan Rasulullah SAW dalam setiap interaksi.</p>
-        </section>
-        <section id="section47">
-            <h2>Akhlak</h2>
-            <p>Akhlak Rasulullah SAW adalah teladan bagi umatnya, mencerminkan karakter yang mulia dan penuh kasih.</p>
-        </section>
-        <section id="section48">
-            <h2>Rasa Malu</h2>
-            <p>Rasa malu Rasulullah SAW mencerminkan kesopanan dan kehormatan dalam perilaku sehari-hari.</p>
-        </section>
-        <section id="section49">
-            <h2>Berbekam</h2>
-            <p>Berbekam merupakan salah satu metode pengobatan yang dianjurkan oleh Rasulullah SAW untuk menjaga kesehatan.</p>
-        </section>
-        <section id="section50">
-            <h2>Nama-Nama</h2>
-            <p>Nama-nama yang diberikan kepada Rasulullah SAW memiliki makna yang dalam dan mencerminkan sifat-sifat beliau.</p>
-        </section>
-        <section id="section51">
-            <h2>Kehidupan</h2>
-            <p>Kehidupan Rasulullah SAW adalah contoh teladan bagi umat Islam dalam berbagai aspek.</p>
-        </section>
-        <section id="section52">
-            <h2>Umur</h2>
-            <p>Umur Rasulullah SAW memberikan banyak pelajaran tentang kebijaksanaan dan kepemimpinan.</p>
-        </section>
-        <section id="section53">
-            <h2>Wafat</h2>
-            <p>Wafatnya Rasulullah SAW adalah peristiwa penting yang mengubah sejarah umat Islam.</p>
-        </section>
-        <section id="section54">
-            <h2>Harta Waris</h2>
-            <p>Harta waris Rasulullah SAW memberikan pelajaran tentang keadilan dan kebijaksanaan dalam mengelola harta.</p>
-        </section>
-        <section id="section55">
-            <h2>Mimpi Melihat</h2>
-            <p>Mimpi melihat Rasulullah SAW adalah pengalaman spiritual yang sangat berharga bagi umat Islam.</p>
-        </section>
-        
-        </section>
-    </main>
+         <main>
+            <section id="section1">
+               <h2>Fisik</h2>
+               <p>Bab Tentang Fisik Rasulullah Shallallahu 'Alaihi Wasallam itu perwakannya tidak terlalu tinggi,juga
+                  tidak terlalu pendek.Tidak putih sekali kulitnya,juga tidak kecoklatan.Rambutnya ikal, tidak terlalu
+                  keriting daan tidak pula lurus kaku.Pada kepala dan jenggotnya tidak terdapat sampai dua puluh helai
+                  rambut berwarna putih uban.</p>
+            </section>
+            <section id="section2">
+               <h2>Khatam</h2>
+               <p>Khatam adalah praktik dan tradisi penting dalam budaya kita, terutama dalam konteks pembacaan
+                  Al-Qur'an dan penutupan pelajaran agama.</p>
+            </section>
+            <section id="section3">
+               <h2>Rambut</h2>
+               <p>Rambut Rasulullah SAW adalah simbol keindahan dan perhatian terhadap kebersihan. Beliau dikenal
+                  memiliki rambut hitam dan tebal.</p>
+            </section>
+            <section id="section4">
+               <h2>Bersisir</h2>
+               <p>Beliau selalu merawat rambutnya dengan baik dan memiliki kebiasaan menyisir rambut sebelum bertemu
+                  orang lain.</p>
+            </section>
+            <section id="section5">
+               <h2>Uban</h2>
+               <p>Uban di rambut Rasulullah SAW menggambarkan kebijaksanaan dan pengalaman hidup yang dimiliki beliau.
+               </p>
+            </section>
+            <section id="section6">
+               <h2>Semir</h2>
+               <p>Semir adalah praktik penggunaan minyak atau bahan lain untuk merawat rambut, yang juga dilakukan oleh
+                  Rasulullah SAW.</p>
+            </section>
+            <section id="section7">
+               <h2>Celak</h2>
+               <p>Celak adalah pewarna alami yang digunakan untuk mempercantik mata, dan Rasulullah SAW menganjurkan
+                  penggunaannya.</p>
+            </section>
+            <section id="section8">
+               <h2>Pakaian</h2>
+               <p>Pakaian Rasulullah SAW sederhana namun rapi, mencerminkan kesederhanaan dan ketawadhu'an beliau.</p>
+            </section>
+            <section id="section9">
+               <h2>Kehidupan</h2>
+               <p>Kehidupan Rasulullah SAW dipenuhi dengan teladan yang baik dalam berinteraksi dengan masyarakat dan
+                  menjalani ajaran Islam.</p>
+            </section>
+            <section id="section10">
+               <h2>Sepatu</h2>
+               <p>Sepatu yang dikenakan Rasulullah SAW umumnya berupa sandal sederhana yang nyaman digunakan.</p>
+            </section>
+            <section id="section11">
+               <h2>Khuf</h2>
+               <p>Khuf adalah jenis alas kaki yang dipakai dalam perjalanan, dan Rasulullah SAW menggunakannya saat
+                  bepergian.</p>
+            </section>
+            <section id="section12">
+               <h2>Cincin</h2>
+               <p>Cincin Rasulullah SAW adalah simbol kekuasaan dan kepemimpinan, dan sering dikenakan sebagai
+                  perhiasan.</p>
+            </section>
+            <section id="section13">
+               <h2>Pedang</h2>
+               <p>Pedang digunakan oleh Rasulullah SAW dalam konteks pertahanan diri dan membela agama Islam.</p>
+            </section>
+            <section id="section14">
+               <h2>Baju Perang</h2>
+               <p>Baju perang Rasulullah SAW dirancang untuk melindungi beliau dalam peperangan, menunjukkan keberanian
+                  dan kepemimpinan.</p>
+            </section>
+            <section id="section15">
+               <h2>Heml Besi</h2>
+               <p>Heml besi adalah perlengkapan yang digunakan Rasulullah SAW saat berperang, menggambarkan kesiapan
+                  dalam menghadapi musuh.</p>
+            </section>
+            <section id="section16">
+               <h2>Sorban</h2>
+               <p>Sorban adalah penutup kepala yang dikenakan Rasulullah SAW, melambangkan identitas dan budaya.</p>
+            </section>
+            <section id="section17">
+               <h2>Izar</h2>
+               <p>Izar adalah kain yang dipakai sebagai pakaian bawah, mencerminkan kesederhanaan dalam berpakaian.</p>
+            </section>
+            <section id="section18">
+               <h2>Berjalan</h2>
+               <p>Gaya berjalan Rasulullah SAW penuh percaya diri dan menunjukkan ketenangan, menjadi teladan bagi
+                  umatnya.</p>
+            </section>
+            <section id="section19">
+               <h2>Menutupi Kepala</h2>
+               <p>Menutupi kepala merupakan tradisi yang dilakukan Rasulullah SAW untuk menjaga kesopanan dan
+                  kebersihan.</p>
+            </section>
+            <section id="section20">
+               <h2>Duduk</h2>
+               <p>Rasulullah SAW dikenal dengan cara duduk yang santun dan menghormati orang lain.</p>
+            </section>
+            <section id="section21">
+               <h2>Tempat Bersandar</h2>
+               <p>Tempat bersandar yang nyaman dan sederhana menjadi salah satu ciri khas dalam kehidupan Rasulullah
+                  SAW.</p>
+            </section>
+            <section id="section22">
+               <h2>Makan</h2>
+               <p>Beliau memiliki cara makan yang sederhana dan bersyukur, selalu mengingat nikmat dari Allah.</p>
+            </section>
+            <section id="section23">
+               <h2>Jenis Roti</h2>
+               <p>Roti menjadi bagian penting dari makanan sehari-hari Rasulullah SAW, dengan berbagai variasi yang
+                  sederhana.</p>
+            </section>
+            <section id="section24">
+               <h2>Jenis Lauk</h2>
+               <p>Rasulullah SAW mengonsumsi lauk yang sehat, menyeimbangkan antara protein dan sayuran.</p>
+            </section>
+            <section id="section25">
+               <h2>Wudhu Saat Makan</h2>
+               <p>Rasulullah SAW menganjurkan untuk berwudhu sebelum dan sesudah makan sebagai bagian dari kebersihan.
+               </p>
+            </section>
+            <section id="section26">
+               <h2>Doa Makan</h2>
+               <p>Beliau mengajarkan doa sebelum dan sesudah makan sebagai bentuk syukur kepada Allah.</p>
+            </section>
+            <section id="section27">
+               <h2>Tempat Minum</h2>
+               <p>Tempat minum yang digunakan Rasulullah SAW sederhana dan bersih, menggambarkan kebersihan dalam
+                  konsumsi.</p>
+            </section>
+            <section id="section28">
+               <h2>Buah-Buahan</h2>
+               <p>Buah-buahan menjadi bagian penting dalam pola makan Rasulullah SAW, yang kaya akan vitamin dan gizi.
+               </p>
+            </section>
+            <section id="section29">
+               <h2>Minuman</h2>
+               <p>Rasulullah SAW memilih minuman yang menyehatkan, seperti air dan madu, untuk menjaga kesehatan tubuh.
+               </p>
+            </section>
+            <section id="section30">
+               <h2>Minum</h2>
+               <p>Cara minum Rasulullah SAW selalu dengan baik dan sopan, di antaranya adalah dengan duduk dan mengucap
+                  doa.</p>
+            </section>
+            <section id="section31">
+               <h2>Wewangian</h2>
+               <p>Beliau menyukai wewangian yang alami dan bersih, mencerminkan kesucian dan kebersihan hati.</p>
+            </section>
+            <section id="section32">
+               <h2>Bicara</h2>
+               <p>Rasulullah SAW dikenal sebagai pembicara yang bijak, berbicara dengan lembut dan jelas untuk
+                  menyampaikan pesan.</p>
+            </section>
+            <section id="section33">
+               <h2>Tertawa</h2>
+               <p>Tertawa Rasulullah SAW menunjukkan keceriaan dan ketenangan, tanpa berlebihan.</p>
+            </section>
+            <section id="section34">
+               <h2>Bercanda</h2>
+               <p>Beliau bercanda dengan sahabat-sahabatnya dengan cara yang sopan, membangun keakraban dan
+                  persahabatan.</p>
+            </section>
+            <section id="section35">
+               <h2>Membaca Sya'ir</h2>
+               <p>Rasulullah SAW menyukai puisi dan sya'ir, sering membacanya untuk menyemarakkan suasana.</p>
+            </section>
+            <section id="section36">
+               <h2>Percakapan Malam</h2>
+               <p>Percakapan malam Rasulullah SAW dengan sahabat adalah momen berharga untuk berbagi ilmu dan
+                  pengalaman.</p>
+            </section>
+            <section id="section37">
+               <h2>Hadits Ummu Zar'i</h2>
+               <p>Hadits Ummu Zar'i menjadi salah satu sumber pelajaran penting dalam kehidupan Rasulullah SAW.</p>
+            </section>
+            <section id="section38">
+               <h2>Tidur</h2>
+               <p>Tidur Rasulullah SAW dilakukan dengan cara yang sehat, selalu mengucap doa sebelum tidur.</p>
+            </section>
+            <section id="section39">
+               <h2>Ibadah</h2>
+               <p>Ibadah menjadi fokus utama dalam kehidupan Rasulullah SAW, mencerminkan hubungan dekat dengan Allah.
+               </p>
+            </section>
+            <section id="section40">
+               <h2>Shalat Dhuha</h2>
+               <p>Shalat Dhuha adalah sunnah yang sering dikerjakan oleh Rasulullah SAW sebagai bentuk syukur kepada
+                  Allah.</p>
+            </section>
+            <section id="section41">
+               <h2>Shalat Tathawu'</h2>
+               <p>Shalat Tathawu' adalah ibadah sunnah yang dikerjakan Rasulullah SAW untuk mendekatkan diri kepada
+                  Allah.</p>
+            </section>
+            <section id="section42">
+               <h2>Puasa</h2>
+               <p>Puasa dilaksanakan oleh Rasulullah SAW sebagai bentuk pengendalian diri dan kedekatan kepada Allah.
+               </p>
+            </section>
+            <section id="section43">
+               <h2>Qira'ah</h2>
+               <p>Qira'ah atau membaca Al-Qur'an menjadi kebiasaan sehari-hari Rasulullah SAW untuk memperdalam ilmu
+                  agama.</p>
+            </section>
+            <section id="section44">
+               <h2>Tangisan</h2>
+               <p>Tangisan Rasulullah SAW merupakan ungkapan kasih sayang dan empati terhadap umatnya.</p>
+            </section>
+            <section id="section45">
+               <h2>Kasur</h2>
+               <p>Kasur Rasulullah SAW sederhana, menunjukkan bahwa beliau tidak terikat pada kemewahan dunia.</p>
+            </section>
+            <section id="section46">
+               <h2>Ketawadhu'an</h2>
+               <p>Ketawadhu'an adalah sikap rendah hati yang selalu diterapkan Rasulullah SAW dalam setiap interaksi.
+               </p>
+            </section>
+            <section id="section47">
+               <h2>Akhlak</h2>
+               <p>Akhlak Rasulullah SAW adalah teladan bagi umatnya, mencerminkan karakter yang mulia dan penuh kasih.
+               </p>
+            </section>
+            <section id="section48">
+               <h2>Rasa Malu</h2>
+               <p>Rasa malu Rasulullah SAW mencerminkan kesopanan dan kehormatan dalam perilaku sehari-hari.</p>
+            </section>
+            <section id="section49">
+               <h2>Berbekam</h2>
+               <p>Berbekam merupakan salah satu metode pengobatan yang dianjurkan oleh Rasulullah SAW untuk menjaga
+                  kesehatan.</p>
+            </section>
+            <section id="section50">
+               <h2>Nama-Nama</h2>
+               <p>Nama-nama yang diberikan kepada Rasulullah SAW memiliki makna yang dalam dan mencerminkan sifat-sifat
+                  beliau.</p>
+            </section>
+            <section id="section51">
+               <h2>Kehidupan</h2>
+               <p>Kehidupan Rasulullah SAW adalah contoh teladan bagi umat Islam dalam berbagai aspek.</p>
+            </section>
+            <section id="section52">
+               <h2>Umur</h2>
+               <p>Umur Rasulullah SAW memberikan banyak pelajaran tentang kebijaksanaan dan kepemimpinan.</p>
+            </section>
+            <section id="section53">
+               <h2>Wafat</h2>
+               <p>Wafatnya Rasulullah SAW adalah peristiwa penting yang mengubah sejarah umat Islam.</p>
+            </section>
+            <section id="section54">
+               <h2>Harta Waris</h2>
+               <p>Harta waris Rasulullah SAW memberikan pelajaran tentang keadilan dan kebijaksanaan dalam mengelola
+                  harta.</p>
+            </section>
+            <section id="section55">
+               <h2>Mimpi Melihat</h2>
+               <p>Mimpi melihat Rasulullah SAW adalah pengalaman spiritual yang sangat berharga bagi umat Islam.</p>
+            </section>
 
-    </div>
+            </section>
+         </main>
+
+      </div>
 </body>
+
 </html>
 
-    
+
 </main>
-    <footer>
-        <p>&copy; 2024 Sunnah-Sunnah Nabi. All rights reserved.</p>
-    </footer>
-
-                        
-                                 
-      
-      <!-- Footer Section Start -->
-      <footer class="footer">
-         <div class="footer-body">
-            <ul class="left-panel list-inline mb-0 p-0">
-               <li class="list-inline-item">
-                  <a href="../dashboard/extra/privacy-policy.html">Privacy Policy</a>
-               </li>
-               <li class="list-inline-item">
-                  <a href="../dashboard/extra/terms-of-service.html">Terms of Use</a>
-               </li>
-            </ul>
-            <div class="right-panel">
-               ©
-               <script>
-                  document.write(new Date().getFullYear());
-               </script>
-               Tefatie, Made with
-               <span class="">
-                  <svg class="icon-15" width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M15.85 2.50065C16.481 2.50065 17.111 2.58965 17.71 2.79065C21.401 3.99065 22.731 8.04065 21.62 11.5806C20.99 13.3896 19.96 15.0406 18.611 16.3896C16.68 18.2596 14.561 19.9196 12.28 21.3496L12.03 21.5006L11.77 21.3396C9.48102 19.9196 7.35002 18.2596 5.40102 16.3796C4.06102 15.0306 3.03002 13.3896 2.39002 11.5806C1.26002 8.04065 2.59002 3.99065 6.32102 2.76965C6.61102 2.66965 6.91002 2.59965 7.21002 2.56065H7.33002C7.61102 2.51965 7.89002 2.50065 8.17002 2.50065H8.28002C8.91002 2.51965 9.52002 2.62965 10.111 2.83065H10.17C10.21 2.84965 10.24 2.87065 10.26 2.88965C10.481 2.96065 10.69 3.04065 10.89 3.15065L11.27 3.32065C11.3618 3.36962 11.4649 3.44445 11.554 3.50912C11.6104 3.55009 11.6612 3.58699 11.7 3.61065C11.7163 3.62028 11.7329 3.62996 11.7496 3.63972C11.8354 3.68977 11.9247 3.74191 12 3.79965C13.111 2.95065 14.46 2.49065 15.85 2.50065ZM18.51 9.70065C18.92 9.68965 19.27 9.36065 19.3 8.93965V8.82065C19.33 7.41965 18.481 6.15065 17.19 5.66065C16.78 5.51965 16.33 5.74065 16.18 6.16065C16.04 6.58065 16.26 7.04065 16.68 7.18965C17.321 7.42965 17.75 8.06065 17.75 8.75965V8.79065C17.731 9.01965 17.8 9.24065 17.94 9.41065C18.08 9.58065 18.29 9.67965 18.51 9.70065Z"
-                        fill="currentColor"></path>
-                  </svg>
-               </span>
-               by <a href="https://iqonic.design/">IQONIC Design</a>.
-            </div>
-         </div>
-      </footer>
-      <!-- Footer Section End -->
-   </main>
-   
-   <!-- Wrapper End-->
-   <!-- offcanvas start -->
-   
+<footer>
+   <p>&copy; 2024 Sunnah-Sunnah Nabi. All rights reserved.</p>
+</footer>
 
 
-   <!-- Library Bundle Script -->
-   <script src="../assets/js/core/libs.min.js"></script>
 
-   <!-- External Library Bundle Script -->
-   <script src="../assets/js/core/external.min.js"></script>
 
-   <!-- Widgetchart Script -->
-   <script src="../assets/js/charts/widgetcharts.js"></script>
+<!-- Footer Section Start -->
+<footer class="footer">
+   <div class="footer-body">
+      <ul class="left-panel list-inline mb-0 p-0">
+         <li class="list-inline-item">
+            <a href="../dashboard/extra/privacy-policy.html">Privacy Policy</a>
+         </li>
+         <li class="list-inline-item">
+            <a href="../dashboard/extra/terms-of-service.html">Terms of Use</a>
+         </li>
+      </ul>
+      <div class="right-panel">
+         ©
+         <script>
+            document.write(new Date().getFullYear());
+         </script>
+         Tefatie, Made with
+         <span class="">
+            <svg class="icon-15" width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.85 2.50065C16.481 2.50065 17.111 2.58965 17.71 2.79065C21.401 3.99065 22.731 8.04065 21.62 11.5806C20.99 13.3896 19.96 15.0406 18.611 16.3896C16.68 18.2596 14.561 19.9196 12.28 21.3496L12.03 21.5006L11.77 21.3396C9.48102 19.9196 7.35002 18.2596 5.40102 16.3796C4.06102 15.0306 3.03002 13.3896 2.39002 11.5806C1.26002 8.04065 2.59002 3.99065 6.32102 2.76965C6.61102 2.66965 6.91002 2.59965 7.21002 2.56065H7.33002C7.61102 2.51965 7.89002 2.50065 8.17002 2.50065H8.28002C8.91002 2.51965 9.52002 2.62965 10.111 2.83065H10.17C10.21 2.84965 10.24 2.87065 10.26 2.88965C10.481 2.96065 10.69 3.04065 10.89 3.15065L11.27 3.32065C11.3618 3.36962 11.4649 3.44445 11.554 3.50912C11.6104 3.55009 11.6612 3.58699 11.7 3.61065C11.7163 3.62028 11.7329 3.62996 11.7496 3.63972C11.8354 3.68977 11.9247 3.74191 12 3.79965C13.111 2.95065 14.46 2.49065 15.85 2.50065ZM18.51 9.70065C18.92 9.68965 19.27 9.36065 19.3 8.93965V8.82065C19.33 7.41965 18.481 6.15065 17.19 5.66065C16.78 5.51965 16.33 5.74065 16.18 6.16065C16.04 6.58065 16.26 7.04065 16.68 7.18965C17.321 7.42965 17.75 8.06065 17.75 8.75965V8.79065C17.731 9.01965 17.8 9.24065 17.94 9.41065C18.08 9.58065 18.29 9.67965 18.51 9.70065Z"
+                  fill="currentColor"></path>
+            </svg>
+         </span>
+         by <a href="https://iqonic.design/">IQONIC Design</a>.
+      </div>
+   </div>
+</footer>
+<!-- Footer Section End -->
+</main>
 
-   <!-- mapchart Script -->
-   <script src="../assets/js/charts/vectore-chart.js"></script>
-   <script src="../assets/js/charts/dashboard.js"></script>
+<!-- Wrapper End-->
+<!-- offcanvas start -->
 
-   <!-- fslightbox Script -->
-   <script src="../assets/js/plugins/fslightbox.js"></script>
 
-   <!-- Settings Script -->
-   <script src="../assets/js/plugins/setting.js"></script>
 
-   <!-- Slider-tab Script -->
-   <script src="../assets/js/plugins/slider-tabs.js"></script>
+<!-- Library Bundle Script -->
+<script src="../assets/js/core/libs.min.js"></script>
 
-   <!-- Form Wizard Script -->
-   <script src="../assets/js/plugins/form-wizard.js"></script>
+<!-- External Library Bundle Script -->
+<script src="../assets/js/core/external.min.js"></script>
 
-   <!-- AOS Animation Plugin-->
-   <script src="../assets/vendor/aos/dist/aos.js"></script>
+<!-- Widgetchart Script -->
+<script src="../assets/js/charts/widgetcharts.js"></script>
 
-   <!-- App Script -->
-   <script src="../assets/js/hope-ui.js" defer></script>
+<!-- mapchart Script -->
+<script src="../assets/js/charts/vectore-chart.js"></script>
+<script src="../assets/js/charts/dashboard.js"></script>
 
-   <script>
-    const audio = document.getElementById('backgroundMusic');
-    const playButton = document.getElementById('playButton');
+<!-- fslightbox Script -->
+<script src="../assets/js/plugins/fslightbox.js"></script>
 
-    playButton.addEventListener('click', function() {
-        audio.play();
-        playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
-    });
+<!-- Settings Script -->
+<script src="../assets/js/plugins/setting.js"></script>
+
+<!-- Slider-tab Script -->
+<script src="../assets/js/plugins/slider-tabs.js"></script>
+
+<!-- Form Wizard Script -->
+<script src="../assets/js/plugins/form-wizard.js"></script>
+
+<!-- AOS Animation Plugin-->
+<script src="../assets/vendor/aos/dist/aos.js"></script>
+
+<!-- App Script -->
+<script src="../assets/js/hope-ui.js" defer></script>
+
+<script>
+   const audio = document.getElementById('backgroundMusic');
+   const playButton = document.getElementById('playButton');
+
+   playButton.addEventListener('click', function () {
+      audio.play();
+      playButton.style.display = 'none'; // Sembunyikan tombol setelah diputar
+   });
 </script>
 
 <script>
-    const scrollToTopButton = document.getElementById('scrollToTop');
+   const scrollToTopButton = document.getElementById('scrollToTop');
 
-    // Tampilkan tombol ketika halaman di-scroll ke bawah
-    window.onscroll = function() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            scrollToTopButton.style.display = "block";
-        } else {
-            scrollToTopButton.style.display = "none";
-        }
-    };
+   // Tampilkan tombol ketika halaman di-scroll ke bawah
+   window.onscroll = function () {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+         scrollToTopButton.style.display = "block";
+      } else {
+         scrollToTopButton.style.display = "none";
+      }
+   };
 
-    // Saat tombol diklik, scroll ke atas
-    scrollToTopButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+   // Saat tombol diklik, scroll ke atas
+   scrollToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      });
+   });
 </script>
 
 </body>
