@@ -196,125 +196,97 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
-            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 60px; right:20px; z-index: 999;">↑</button>
+            <a class="btn btn-primary btn-sm position-fixed text-light px-2 mt-2"
+                style="bottom: 20px;right: 20px; z-index: 1000;"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=destaomen1@gmail.com&su=%20Subjek&body=Isi%20pesan"
+                data-bs-toggle="tooltip" data-bs-placement="right" title="Hubungi Kami">
+                <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" class="icon-20"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #ffffff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.91px;
+                                }
+                            </style>
+                        </defs>
+                        <rect class="cls-1" x="6.27" y="5.32" width="11.45" height="15.27" rx="5.73"></rect>
+                        <path class="cls-1"
+                            d="M17.73,9.14h1.91A2.86,2.86,0,0,1,22.5,12v1.91a2.86,2.86,0,0,1-2.86,2.86H17.73a0,0,0,0,1,0,0V9.14A0,0,0,0,1,17.73,9.14Z">
+                        </path>
+                        <path class="cls-1"
+                            d="M1.5,9.14H3.41A2.86,2.86,0,0,1,6.27,12v1.91a2.86,2.86,0,0,1-2.86,2.86H1.5a0,0,0,0,1,0,0V9.14A0,0,0,0,1,1.5,9.14Z"
+                            transform="translate(7.77 25.91) rotate(180)"></path>
+                        <path class="cls-1" d="M4.36,9.14h0A7.64,7.64,0,0,1,12,1.5h0a7.64,7.64,0,0,1,7.64,7.64h0">
+                        </path>
+                        <path class="cls-1" d="M19.64,16.77v1a4.78,4.78,0,0,1-4.78,4.77"></path>
+                    </g>
+                </svg></a>
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
                 <div class="container-fluid navbar-inner">
-                    <a href="../../../dashboard/index.html" class="navbar-brand">
-                        <!--Logo start-->
-                        <!--logo End-->
+                    <a href="../../../dashboard/index.html" class="navbar-brand ms-auto me-auto">
 
                         <!--Logo start-->
                         <div class="logo-main">
                             <div class="logo-normal">
-                                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2"
-                                        transform="rotate(-45 -0.757324 19.2427)" fill="currentColor" />
-                                    <rect x="7.72803" y="27.728" width="28" height="4" rx="2"
-                                        transform="rotate(-45 7.72803 27.728)" fill="currentColor" />
-                                    <rect x="10.5366" y="16.3945" width="16" height="4" rx="2"
-                                        transform="rotate(45 10.5366 16.3945)" fill="currentColor" />
-                                    <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2"
-                                        transform="rotate(45 10.5562 -0.556152)" fill="currentColor" />
-                                </svg>
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                             <div class="logo-mini">
-                                <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2"
-                                        transform="rotate(-45 -0.757324 19.2427)" fill="currentColor" />
-                                    <rect x="7.72803" y="27.728" width="28" height="4" rx="2"
-                                        transform="rotate(-45 7.72803 27.728)" fill="currentColor" />
-                                    <rect x="10.5366" y="16.3945" width="16" height="4" rx="2"
-                                        transform="rotate(45 10.5366 16.3945)" fill="currentColor" />
-                                    <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2"
-                                        transform="rotate(45 10.5562 -0.556152)" fill="currentColor" />
-                                </svg>
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                         </div>
                         <!--logo End-->
 
-                        <h4 class="logo-title">Irsyadu Thulab</h4>
+                        <h4 class="logo-title irsyad">Irsyadu Thulab</h4>
                     </a>
                     <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                         <i class="icon">
-                            <svg width="20px" class="icon-20" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-                            </svg>
+                            <img src="../../../assets/icon/bar.png" class="icon-20" alt="" />
                         </i>
                     </div>
                 </div>
             </nav>
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 200px">
+            <div class="iq-navbar-header" style="margin-top: 70px">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="flex-wrap text-center">
                                 <div class="d-flex justify-content-center gap-2 align-items-center">
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
-                                    <h2 class="mx-lg-5 fs-lg-1">Sunnah-Sunnah Nabi SAW</h2>
+                                    <h2 class="mx-lg-5 fs-lg-1" style="text-shadow: black 2px 2px;">Sunnah Sunnah Nabi
+                                        SAW</h2>
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <style>
-                    .link {
-                        color: rgb(255, 255, 255);
-                    }
-
-                    .link:hover {
-                        color: blue;
-                        transition: 0.4s ease;
-                    }
-                    .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-.scroll-to-top:hover {
-    background-color: #0056b3;
-}
-                </style>
-                <div class="row">
-                    <div class="flext-wrap text-center mb-2">
-                        <h5 class="text-white">
-                            <b><br /> </b>
-                        </h5>
-                    </div>
-                </div>
-                <div class="iq-navbar-header" style="height: 215px">
+                <div class="iq-navbar-header">
                     <div class="iq-header-img">
-                        <img src="../../../assets/images/dashboard/top-header.png" alt="header"
-                            class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header1.png" alt="header"
-                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header2.png" alt="header"
-                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header3.png" alt="header"
-                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header4.png" alt="header"
-                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header5.png" alt="header"
-                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-default-img img-fluid w-100 h-70 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
                     </div>
-                </div>
-                <!-- Nav Header Component End -->
+                </div> <!-- Nav Header Component End -->
                 <!--Nav End-->
             </div>
-            <!-- Nav Header Component End -->
 
             <div class="conatiner-fluid content-inner">
                 <button id="scrollToTop" class="scroll-to-top" style="display: none;">↑طيران↑</button>
@@ -331,30 +303,44 @@
                                             TIDAK TERIKAT
                                             WAKTU</h3>
                                         <div class="col-md-12 col-lg-12">
-                                    
-                                            </div>
-                                            <div class="col-md-12 col-lg-12">
-                                            
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <ul id="list-example" class="list-group">
-                        <li class="list-group-item list-group-item-light text-center">
-                            <h4 class="text-dark"><b>Sunnah-sunnah ketika bersin dan menguap</b></h4>
-                        </li>
-                        <li class="list-group-item list-group-item-light">
-                            <h6 class="text-dark"><b>Disunnahkan bagi orang yang bersin untuk mengucapkan Alhamdulillah.</b></h6>
-                            <p>Setelah bersin, mengucapkan "Alhamdulillah" adalah bentuk syukur kepada Allah atas nikmat yang diberikan, seperti kesehatan dan kemampuan untuk bersin. Ini juga menunjukkan rasa syukur atas fitrah tubuh yang berfungsi dengan baik.</p>
-                        </li>
-                        <li class="list-group-item list-group-item-light">
-                            <a class="text-dark" href="#list-item-1">Disunnahkan kepada pendengar orang yang bersin untuk tidak mendoakan orang itu jika ia tidak mengucapkan hamdalah.</a>
-                            <p>Pendengar sebaiknya tidak mendoakan orang yang bersin jika dia tidak mengucapkan "Alhamdulillah" setelah bersin, karena hal ini mengajarkan pentingnya menghargai sunnah dan tindakan positif dalam interaksi sosial.</p>
-                        </li>
-                        <li class="list-group-item list-group-item-light">
-                            <a class="text-dark" href="#list-item-2">Disunnahkan menutup mulut ketika menguap atau menghalanginya dengan tangan.</a>
-                            <p>Menutup mulut saat menguap adalah tindakan adab yang baik dan menunjukkan rasa hormat terhadap orang lain di sekitar. Ini juga mencegah penyebaran kuman dan menjaga kesopanan dalam berinteraksi.</p>
-                        </li>
-                    </ul>
-                    
+
+                                        </div>
+                                        <div class="col-md-12 col-lg-12">
+
+                                        </div>
+                                        <div class="col-md-12 col-lg-12">
+                                            <ul id="list-example" class="list-group">
+                                                <li class="list-group-item list-group-item-light text-center">
+                                                    <h4 class="text-dark"><b>Sunnah-sunnah ketika bersin dan menguap</b>
+                                                    </h4>
+                                                </li>
+                                                <li class="list-group-item list-group-item-light">
+                                                    <h6 class="text-dark"><b>Disunnahkan bagi orang yang bersin untuk
+                                                            mengucapkan Alhamdulillah.</b></h6>
+                                                    <p>Setelah bersin, mengucapkan "Alhamdulillah" adalah bentuk syukur
+                                                        kepada Allah atas nikmat yang diberikan, seperti kesehatan dan
+                                                        kemampuan untuk bersin. Ini juga menunjukkan rasa syukur atas
+                                                        fitrah tubuh yang berfungsi dengan baik.</p>
+                                                </li>
+                                                <li class="list-group-item list-group-item-light">
+                                                    <a class="text-dark" href="#list-item-1">Disunnahkan kepada
+                                                        pendengar orang yang bersin untuk tidak mendoakan orang itu jika
+                                                        ia tidak mengucapkan hamdalah.</a>
+                                                    <p>Pendengar sebaiknya tidak mendoakan orang yang bersin jika dia
+                                                        tidak mengucapkan "Alhamdulillah" setelah bersin, karena hal ini
+                                                        mengajarkan pentingnya menghargai sunnah dan tindakan positif
+                                                        dalam interaksi sosial.</p>
+                                                </li>
+                                                <li class="list-group-item list-group-item-light">
+                                                    <a class="text-dark" href="#list-item-2">Disunnahkan menutup mulut
+                                                        ketika menguap atau menghalanginya dengan tangan.</a>
+                                                    <p>Menutup mulut saat menguap adalah tindakan adab yang baik dan
+                                                        menunjukkan rasa hormat terhadap orang lain di sekitar. Ini juga
+                                                        mencegah penyebaran kuman dan menjaga kesopanan dalam
+                                                        berinteraksi.</p>
+                                                </li>
+                                            </ul>
+
 
                                         </div>
                                     </div>
