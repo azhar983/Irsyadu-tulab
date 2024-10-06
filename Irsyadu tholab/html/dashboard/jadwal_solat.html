@@ -199,11 +199,11 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="kalender.html">
+                  <a class="nav-link" aria-current="page" href="sholawat.html">
                      <i class="icon">
-                        <img class="icon-20" src="../assets/icon/sidebar/kalender.png" style="opacity: 70%;">
+                        <img class="icon-20" src="../assets/icon/sidebar/sholawat.png" style="opacity: 70%;">
                      </i>
-                     <span class="item-name">Kalender</span>
+                     <span class="item-name">Sholawat</span>
                   </a>
                </li>
                <li class="nav-item">
@@ -333,7 +333,7 @@
          <!-- Nav Header Component End -->
          <!--Nav End-->
       </div>
-      <div class="container mt-n5 p-0">
+      <div class="container mt-n5 p-2">
          <div class="overflow-hidden d-slider1">
             <ul class="container p-0 m-0  mb-2">
                <li class="swiper-slide card card-slide" data-aos="fade-up" data-aos-delay="700">
@@ -357,17 +357,12 @@
                            <h1 class="text-primary fw-bold">Waktu Sholat Hari Ini</h1>
                            <p class="lead fw-bolder">Waktu sholat berdasarkan lokasi Anda</p>
                            <div class="row justify-content-center">
-                              <table class="table mb-0 border-2">
-                                 <thead>
-                                    <tr>
-                                       <th scope="col">Sholat</th>
-                                       <th scope="col">Waktu</th>
-                                    </tr>
-                                 </thead>
-                                 <tbody id="waktu-sholat">
-                                    <!-- Waktu Sholat akan ditambahkan oleh JavaScript -->
-                                 </tbody>
-                              </table>
+                              <div id="waktu-sholat"></div>
+
+
+
+                              <div id="countdown"></div>
+                              <div id="sholat-berikutnya"></div>
                            </div>
                         </div>
 
@@ -410,11 +405,11 @@
          const data = await response.json();
 
          const filteredTimes = {
-            Fajr: data.data.timings.Fajr,
-            Dhuhr: data.data.timings.Dhuhr,
-            Asr: data.data.timings.Asr,
+            Subuh: data.data.timings.Fajr,
+            Dzuhur: data.data.timings.Dhuhr,
+            Ashar: data.data.timings.Asr,
             Maghrib: data.data.timings.Maghrib,
-            Isha: data.data.timings.Isha
+            Isya: data.data.timings.Isha
          };
 
          return filteredTimes;
@@ -486,7 +481,7 @@
          }
       }
 
-      document.addEventListener("deviceready", function () {
+      if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(async (position) => {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
@@ -498,18 +493,28 @@
             console.error("Geolocation error:", error);
             alert("Gagal mendapatkan lokasi. Pastikan izin lokasi telah diaktifkan.");
          });
-      }, false);
+      } else {
+         alert("Geolocation tidak didukung oleh browser ini.");
+      }
 
       function displayPrayerTimes(waktuSholat) {
-         const tbody = document.getElementById('waktu-sholat');
-         tbody.innerHTML = '';
+         const container = document.getElementById('waktu-sholat');
+         container.innerHTML = ''; // Kosongkan kontainer sebelum menambahkan waktu sholat
+
          for (const [sholat, waktu] of Object.entries(waktuSholat)) {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td class="fw-bold">${sholat}</td><td class="fw-bold">${waktu}</td>`;
-            tbody.appendChild(row);
+            const sholatDiv = document.createElement('div');
+            sholatDiv.classList.add('sholat-item');
+            sholatDiv.innerHTML = `<div class="rounded border-3 shadow d-flex border p-4"><h5 class="fw-bold">${sholat}:</h5> <h5 class="fw-bold ms-auto">${waktu}</h5></div>`;
+            container.appendChild(sholatDiv);
          }
       }
    </script>
+
+
+<div class="justify-content-arround"></div>
+   
+
+
 
 
    <!-- Library Bundle Script -->
