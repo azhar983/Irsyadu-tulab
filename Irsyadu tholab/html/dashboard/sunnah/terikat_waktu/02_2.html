@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sunnah Ibadah | Sunnah Nabi</title>
+    <title>Irsyadu Thulab | Sunnah Ibadah | Sunnah Nabi</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
@@ -134,12 +134,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../kalender.html">
+                        <a class="nav-link" aria-current="page" href="../../sholawat.html">
                             <i class="icon">
-                                <img class="icon-20" src="../../../assets/icon/sidebar/kalender.png"
+                                <img class="icon-20" src="../../../assets/icon/sidebar/sholawat.png"
                                     style="opacity: 70%" />
                             </i>
-                            <span class="item-name">Kalender</span>
+                            <span class="item-name">Sholawat</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -178,19 +178,50 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
-            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 60px; right:20px; z-index: 999;">↑</button>
+            <a class="btn btn-primary btn-sm position-fixed text-light px-2 mt-2"
+                style="bottom: 20px;right: 20px; z-index: 1000;"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=destaomen1@gmail.com&su=%20Subjek&body=Isi%20pesan"
+                data-bs-toggle="tooltip" data-bs-placement="right" title="Hubungi Kami">
+                <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" class="icon-20"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #ffffff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.91px;
+                                }
+                            </style>
+                        </defs>
+                        <rect class="cls-1" x="6.27" y="5.32" width="11.45" height="15.27" rx="5.73"></rect>
+                        <path class="cls-1"
+                            d="M17.73,9.14h1.91A2.86,2.86,0,0,1,22.5,12v1.91a2.86,2.86,0,0,1-2.86,2.86H17.73a0,0,0,0,1,0,0V9.14A0,0,0,0,1,17.73,9.14Z">
+                        </path>
+                        <path class="cls-1"
+                            d="M1.5,9.14H3.41A2.86,2.86,0,0,1,6.27,12v1.91a2.86,2.86,0,0,1-2.86,2.86H1.5a0,0,0,0,1,0,0V9.14A0,0,0,0,1,1.5,9.14Z"
+                            transform="translate(7.77 25.91) rotate(180)"></path>
+                        <path class="cls-1" d="M4.36,9.14h0A7.64,7.64,0,0,1,12,1.5h0a7.64,7.64,0,0,1,7.64,7.64h0">
+                        </path>
+                        <path class="cls-1" d="M19.64,16.77v1a4.78,4.78,0,0,1-4.78,4.77"></path>
+                    </g>
+                </svg></a>
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
                 <div class="container-fluid navbar-inner">
-                    <a href="../../../dashboard/index.html" class="navbar-brand">
-                        <!--Logo start-->
-                        <!--logo End-->
+                    <a href="../../../dashboard/index.html" class="navbar-brand ms-auto me-auto">
 
                         <!--Logo start-->
                         <div class="logo-main">
                             <div class="logo-normal">
-                                <img src="../../assets/logo.png" height="40px" alt="">
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                             <div class="logo-mini">
-                                <img src="../../assets/logo.png" height="40px" alt="">
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                         </div>
                         <!--logo End-->
@@ -199,663 +230,694 @@
                     </a>
                     <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                         <i class="icon">
-                            <img src="../../../assets/icon/bar.png" class="icon-20" alt="">
+                            <img src="../../../assets/icon/bar.png" class="icon-20" alt="" />
                         </i>
                     </div>
                 </div>
             </nav>
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 250px; margin-top: 70px;">
+            <div class="iq-navbar-header" style="margin-top: 70px">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="flex-wrap text-center">
                                 <div class="d-flex justify-content-center gap-2 align-items-center">
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
-                                    <h2 class="mx-lg-5 fs-lg-1">Sunnah-Sunnah Nabi SAW</h2>
+                                    <h2 class="mx-lg-5 fs-lg-1" style="text-shadow: black 2px 2px;">Sunnah Sunnah Nabi
+                                        SAW</h2>
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <style>
-                    .link {
-                        color: rgb(255, 255, 255);
-                    }
-
-                    .link:hover {
-                        color: blue;
-                        transition: 0.4s ease;
-                    }
-                </style>
-                <div class="row">
-                    <div class="flext-wrap text-center mb-2">
-                        <h5 class="text-white">
-                            <b><br /> </b>
-                        </h5>
-                    </div>
-                </div>
-                <div class="iq-navbar-header" style="height: 215px">
+                <div class="iq-navbar-header">
                     <div class="iq-header-img">
-                        <img src="../../../assets/images/dashboard/top-header.png" alt="header"
-                            class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header1.png" alt="header"
-                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header2.png" alt="header"
-                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header3.png" alt="header"
-                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header4.png" alt="header"
-                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header5.png" alt="header"
-                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-default-img img-fluid w-100 h-70 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
                     </div>
-                </div>
-                <!-- Nav Header Component End -->
+                </div> <!-- Nav Header Component End -->
                 <!--Nav End-->
             </div>
-            <!-- Nav Header Component End -->
+            <div class="m-0">
+                <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
+                    <h3 class="card-header text-center  fw-bold mb-4">Sunnah di Waktu Shubuh dan
+                        setelahnya</h3>
+                    <div class="col-md-12 col-lg-12">
+                        <ul id="list-example" class="list-group text-center ">
+                            <li class="list-group-item list-group-item-light text-center">
+                                <h4 class="text-dark"><b>Daftar list</b></h4>
+                            </li>
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_0.html">
+                                    <h6 class="text-dark text-center"><b>Bagian Pertama</b></h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_1.html">
+                                    <h6 class="text-dark text-center"><b>Sunnah Sunnah Ketika Melangkah
+                                            Menuju Masjid</b></h6>
+                            </li>
+                            <!-- Section 0 -->
+                            <li class="list-group-item list-group-item-gray-dark">
+                                <h6 class="text-dark text-center" data-bs-toggle="collapse" href="#collapseSection0"
+                                    role="button" aria-expanded="true" aria-controls="collapseSection0">
+                                    <b>Sunnah Sunnah di Dalam
+                                        Shalat</b>
+                                </h6>
+                            </li>
+                            <div class="collapse show" id="collapseSection0">
+                                <!-- Section 1 -->
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-1">
+                                        <h6 class="text-gray text-center">
+                                            <b>Meletakan Sutrah</b>
+                                        </h6>
+                                    </a>
+                                </li>
 
-            <div class="conatiner-fluid content-inner">
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-2">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah Sunnah Saat Berdiri</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-3">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah Sunnah Saat Ruku’</b>
+                                        </h6>
+                                    </a>
+                                </li>
 
-                <div data-bs-spy="" data-bs-target="#list-example" data-bs-offset="" tabindex="0">
-
-                    <div class="mt-5">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-12">
-                                <div class="row">
-                                    <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
-                                        <h3 class="card-header text-center  fw-bold mb-4">Sunnah di Waktu Shubuh dan
-                                            setelahnya</h3>
-                                        <div class="col-md-12 col-lg-12">
-                                            <ul id="list-example" class="list-group">
-                                                <li class="list-group-item list-group-item-light text-center">
-                                                    <h4 class="text-dark"><b>Daftar list</b></h4>
-                                                </li>
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_0.html">
-                                                        <h6 class="text-dark text-center"><b>Bagian Pertama</b></h6>
-                                                    </a>
-                                                </li>
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_1.html"></a>
-                                                    <h6 class="text-dark text-center"><b>Sunnah Sunnah Ketika Melangkah
-                                                            Menuju Masjid</b></h6>
-                                                </li>
-                                                <!-- Section 0 -->
-                                                <li class="list-group-item list-group-item-gray-dark">
-                                                    <h6 class="text-dark text-center" data-bs-toggle="collapse"
-                                                        href="#collapseSection0" role="button" aria-expanded="true"
-                                                        aria-controls="collapseSection0">
-                                                        <b>Sunnah Sunnah di Dalam
-                                                            Shalat</b>
-                                                    </h6>
-                                                </li>
-                                                <div class="collapse show" id="collapseSection0">
-                                                    <!-- Section 1 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection1" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection1">
-                                                            <b>Meletakkan Sutrah</b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection1">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-1">Sunnah menggunakan
-                                                                sutrah</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-2">Disunnahkan agar
-                                                                jarak sutrah dekat dengan
-                                                                tempat
-                                                                shalat</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-3">Menghentikan orang
-                                                                yang lewat di hadapan
-                                                                orang
-                                                                yang sedang shalat</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-4">Bersiwak pada
-                                                                setiap kali hendak melakukan
-                                                                shalat</a>
-                                                        </li>
-                                                    </div>
-
-                                                    <!-- Section 2 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection2" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection2">
-                                                            <b>Sunnah Sunnah Saat Berdiri</b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection2">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-5">Mengangkat tangan
-                                                                saat mengucapkan
-                                                                takbiratul
-                                                                ihram</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-6">Ketika mengangkat
-                                                                tangan disunnahkan agar
-                                                                seluruh jari jemari dalam keadaan tegak dan memberi
-                                                                jarak antara satu jari dengan jari yang lain</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-7">Menempatkan kedua
-                                                                tangan yang diangkat di
-                                                                tempat
-                                                                yang dianjurkan</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-8">Disunnahkan agar
-                                                                tangan yang kanan
-                                                                diletakkan di
-                                                                atas tangan yang kiri setelah bertakbiratul ihram</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-9">Disunnahkan pula
-                                                                agar tangan yang kanan
-                                                                menggenggam tangan kiri</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-10">Disunnahkan untuk
-                                                                membaca doa iftitah</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-11">Berta’awudz</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-12">Membaca
-                                                                basmalah</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-13">Mengucapkan amin
-                                                                bersama imam</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-14">Membaca surah
-                                                                lain setelah surah
-                                                                Al-Fatihah</a></li>
-                                                    </div>
-
-                                                    <!-- Section 3 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection3" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection3">
-                                                            <b>Sunnah Sunnah Saat Ruku’ </b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection3">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-15">Disunnahkan agar
-                                                                kedua tangan diletakkan
-                                                                pada
-                                                                lutut, hampir seperti menggenggamnya, lalu merenggangkan
-                                                                jemarinya</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-16"> Disunnahkan agar
-                                                                punggung dalam keadaan
-                                                                lurus
-                                                                saat ruku’</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-17">Disunnahkan agar
-                                                                menjauhkan siku dari sisi
-                                                                tubuh
-                                                                saat ruku’ </a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-18">Disunnahkan
-                                                                membaca doa-doa yang diajarkan
-                                                                oleh
-                                                                Nabi saat ruku’</a></li>
-                                                    </div>
-
-                                                    <!-- Section 4 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection4" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection4">
-                                                            <b>Sunnah Sunnah Setelah Bangkit dari Ruku’ </b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection4">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-19">Memperpanjang
-                                                                pelaksanaan rukun ini</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-20">Memvariasikan
-                                                                ucapan rabbana wa lakal-hamd
-                                                                saat
-                                                                i’tidal</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-21">Membaca doa yang
-                                                                diajarkan oleh Nabi saat
-                                                                i’tidal</a></li>
-                                                    </div>
-
-                                                    <!-- Section 5 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection5" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection5">
-                                                            <b>Sunnah Sunnah Ketika Sujud</b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection5">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-22">Disunnahkan agar
-                                                                lengan dijauhkan dari sisi
-                                                                tubuh
-                                                                dan perut dari paha.</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-23">Disunnahkan agar
-                                                                jari jemari kaki
-                                                                dihadapkan ke
-                                                                arah kiblat saat bersujud</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-24">Disunnahkan agar
-                                                                membaca doa yang diajarkan
-                                                                oleh
-                                                                Nabi ketika bersujud</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-25">Disunnahkan agar
-                                                                memperbanyak doa saat
-                                                                bersujud</a></li>
-                                                    </div>
-
-                                                    <!-- Section 6 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection6" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection6">
-                                                            <b>Sunnah-sunnah yang terkait pada saat duduk di antara dua
-                                                                sujud</b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection6">
-                                                        <li class="list-group-item list-group-item-light">
-                                                            <a class="text-dark" href="#list-item-26">Disunnahkan agar
-                                                                merebahkan kaki kirinya dan mendudukinya, sedangkan kaki
-                                                                kanan ditegakkan</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light">
-                                                            <a class="text-dark" href="#list-item-27">Memperpanjang
-                                                                waktu
-                                                                pelaksanaan rukun ini</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light">
-                                                            <a class="text-dark" href="#list-item-28">Disunnahkan untuk
-                                                                duduk sejenak setelah sujud kedua sebelum bangkit
-                                                                kembali
-                                                                guna melaksanakan rakaat kedua atau keempat</a>
-                                                        </li>
-                                                    </div>
-
-                                                    <!-- Section 7 -->
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <h6 class="text-gray text-center" data-bs-toggle="collapse"
-                                                            href="#collapseSection7" role="button" aria-expanded="false"
-                                                            aria-controls="collapseSection7">
-                                                            <b>Sunnah-sunnah yang terkait dengan tasyahud</b>
-                                                        </h6>
-                                                    </li>
-                                                    <div class="collapse" id="collapseSection7">
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-29">Disunnahkan
-                                                                merebahkan kaki kirinya ketika
-                                                                tasyahud, sedangkan kaki kanan ditegakkan</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-30">Memvariasikan
-                                                                cara-cara yang disunnahkan
-                                                                saat
-                                                                meletakkan jari jemari ketika bertasyahud</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-31">Memvariasikan
-                                                                bacaan
-                                                                yang diajarkan oleh
-                                                                Nabi SAW ketika bertasyahud</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-32">Duduk dengan cara
-                                                                tawarruk pada saat
-                                                                tasyahud akhir
-                                                                untuk shalat-shalat yang rakaatnya tiga dan empat</a>
-                                                        </li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-33">Memvariasikan
-                                                                bacaan
-                                                                shalawat yang
-                                                                diajarkan oleh
-                                                                Nabi SAW</a></li>
-                                                        <li class="list-group-item list-group-item-light"><a
-                                                                class="text-dark" href="#list-item-34">Disunnahkan
-                                                                berta’awudz (mohon dihindarkan)
-                                                                dari
-                                                                empat hal sebelum mengucapkan salam</a></li>
-                                                    </div>
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <a href="#list-item-35">
-                                                            <h6 class="text-gray text-center">
-                                                                <b>Berdzikir Setelah Selesai Melaksanakan Shalat
-                                                                    Fardhu</b>
-                                                            </h6>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item list-group-item-light">
-                                                        <a href="#list-item-36">
-                                                            <h6 class="text-gray text-center">
-                                                                <b>Duduk di Tempat Shalat Hingga Matahari Terbit</b>
-                                                            </h6>
-                                                        </a>
-                                                    </li>
-                                                </div>
-
-
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_3.html">
-                                                        <h6 class="text-dark text-center"><b>Zikir pagi</b></h6>
-                                                    </a>
-                                                </li>
-                                            </ul>
-
-                                            <div class="scrollspy-example h-auto"
-                                                style="position: relative; overflow-y: auto;">
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-1" class=""><b>Menggosok atau membersihkan
-                                                            gigi dengan siwak</b></li>
-                                                    <p>Sunnah ini disebutkan pada riwayat Hudzaifah -Radhiyallahu Anhu-,
-                                                        ia berkata, <b>“Setiap kali Nabi -Shallallahu Alaihi wa Sallam-
-                                                            bangkit dari tidurnya, beliau selalu membersihkan mulutnya
-                                                            dengan siwak.”</b> (HR. Bukhari no.245, Muslim no.255) Lafaz
-                                                        pada
-                                                        riwayat imam Muslim adalah, “Setiap kali Nabi -Shallallahu
-                                                        Alaihi wa Sallam- bangun untuk melaksanakan shalat tahajjud,
-                                                        beliau selalu membersihkan mulutnya dengan siwak.” (HR. Muslim
-                                                        no.255)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-2" class="">
-                                                        <b>Membaca wirid dan zikir ketika
-                                                            bangun dari tidur</b>
-                                                    </li>
-                                                    <p>Sunnah ini disebutkan dalam kitab Shahih Bukhari riwayat
-                                                        Hudzaifah, ia berkata,
-                                                        “Setiap kali Nabi -Shallallahu Alaihi wa
-                                                        Sallam- hendak beranjak tidur, beliau selalu
-                                                        mengucapkan, ‘<b>bismikallahumma amutu
-                                                            wa ahya</b> (dengan nama-Mu ya Allah aku
-                                                        hidup dan aku mati).’ Lalu jika beliau bangun dari tidurnya,
-                                                        beliau mengucapkan, ‘<b>Alhamdulillahil-ladzi ahyana ba’da ma
-                                                            amatana wa ilaihin-nusyur</b> (segala puji bagi
-                                                        Allah yang telah menghidupkan kami kembali setelah mati, dan
-                                                        kepada-Nya
-                                                        lah kami kembali).’” (HR. Bukhari no.6324, Muslim no.2711
-                                                        melalui riwayat
-                                                        Al-Barra)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body ">
-                                                    <li id="list-item-3" class="">
-                                                        <b>Menyeka wajah dari rasa kantuk.</b>
-                                                    </li>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-4" class="">
-                                                        <b>Memandang ke arah langit.</b>
-                                                    </li>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-35" class=""><b>Membaca sepuluh ayat terakhir
-                                                            surah Ali Imran</b></li>
-                                                    <p>Ketiga sunnah Nabi ini disebutkan dalam sebuah hadits muttafaq
-                                                        alaih
-                                                        yang diriwayatkan Ibnu Abbas, bahwa pada suatu malam ia pernah
-                                                        menginap di kediaman Maimunah, istri Nabi yang sekaligus juga
-                                                        bibi Ibnu Abbas
-                                                        sendiri. Ia berkisah, <b>“Ketika itu aku berbaring di bagian
-                                                            bantal
-                                                            sisi yang lebar,
-                                                            sedangkan Rasulullah -Shallallahu Alaihi wa Sallam- dan
-                                                            istrinya
-                                                            tidur di
-                                                            bagian bantal sisi yang panjang. Ketika itu Rasulullah
-                                                            -Shallallahu Alaihi
-                                                            wa Sallam- tidur hingga tengah malam, atau kurang sedikit
-                                                            atau
-                                                            lebih sedikit. Lalu Rasulullah -Shallallahu Alaihi wa
-                                                            Sallam-
-                                                            bangun dari tidurnya
-                                                            dan langsung duduk seraya mengusap wajah beliau dari sisa
-                                                            rasa
-                                                            kantuknya
-                                                            dengan tangan. Kemudian beliau membaca sepuluh ayat terakhir
-                                                            surah Ali
-                                                            Imran. Setelah itu beliau bangkit untuk menuju ke geriba
-                                                            (tempat
-                                                            air) yang
-                                                            tergantung untuk mengambil wudhu. Setelah menyelesaikan
-                                                            wudhunya
-                                                            dengan sebaik-baik wudhu, maka beliau pun segera
-                                                            melaksanakan
-                                                            shalat.”</b> (HR.
-                                                        Bukhari no.183, Muslim no.763)</p>
-                                                    <p>Imam Muslim juga menyebutkan riwayat lainnya (no.256), <b>“..Lalu
-                                                            Nabi
-                                                            -Shallallahu Alaihi wa Sallam- bangun dari tidurnya ketika
-                                                            hampir di penghujung malam. Setelah itu beliau keluar rumah
-                                                            dan
-                                                            melihat ke atas langit
-                                                            seraya membaca ayat berikut ini dari surah Ali Imran,
-                                                            ‘Sesungguhnya dalam
-                                                            penciptaan langit dan bumi, dan pergantian malam dan siang
-                                                            terdapat
-                                                            tanda-tanda (kebesaran Allah) bagi orang yang berakal.’ (Ali
-                                                            Imran:190)”</b></p>
-                                                    <p>Yang dimaksud dengan menyeka wajah dari rasa kantuk adalah,
-                                                        mengusap
-                                                        kedua mata untuk menghilangkan bekas-bekas tidur dengan
-                                                        menggunakan
-                                                        kedua tangan</p>
-                                                    <p>Adapun yang dimaksud dengan geriba adalah, kantong kulit yang
-                                                        biasa
-                                                        digunakan untuk menyimpan air pada zaman dahulu</p>
-                                                    <p>Pada riwayat Imam Muslim yang terpisah, ada penjelasan bagi
-                                                        mereka
-                                                        yang ingin menerapkan sunnah ini secara sempurna. Yaitu dengan
-                                                        memulai
-                                                        bacaan ayatnya dari firman Allah, <b>“Sesungguhnya dalam
-                                                            penciptaan
-                                                            langit
-                                                            dan bumi, dan pergantian malam dan siang..”</b> dan
-                                                        seterusnya
-                                                        hingga akhir
-                                                        surah tersebut.</p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-6" class="">
-                                                        <b>Membasuh tangan sebanyak tiga kali.</b>
-                                                    </li>
-                                                    <p>Sunnah ini disebutkan dalam hadits yang diriwayatkan dari Abu
-                                                        Hurairah
-                                                        -Radhiyallahu Anhu-, bahwasanya Nabi -Shallallahu Alaihi wa
-                                                        Sallam- pernah bersabda, <b>“Apabila salah seorang dari kalian
-                                                            bangun dari tidurnya,
-                                                            maka janganlah ia memasukkan tangannya secara langsung ke
-                                                            dalam
-                                                            bejana air hingga ia membasuh tangannya itu sebanyak tiga
-                                                            kali.
-                                                            Karena ia
-                                                            tidak menyadari kemana kah tangannya berlabuh saat ia sedang
-                                                            tidur.”</b>
-                                                        (HR. Bukhari no.162, Muslim no.278)</p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-7" class="">
-                                                        <b>Membasahi hidung bagian dalam dengan air dan
-                                                            menghembuskannya sebanyak tiga kali.</b>
-                                                    </li>
-                                                    <p>Sunnah ini disebutkan dalam sebuah hadits yang diriwayatkan dari
-                                                        Abu
-                                                        Hurairah -Radhiyallahu Anhu-, bahwasanya Nabi -Shallallahu
-                                                        Alaihi wa
-                                                        Sallam- pernah bersabda, <b>“Apabila salah seorang di antara
-                                                            kalian
-                                                            bangun
-                                                            dari tidurnya, maka hendaknya ia membasahi hidungnya dengan
-                                                            air
-                                                            sebanyak tiga kali. Karena syaitan telah menginap di dalam
-                                                            hidungnya
-                                                            selama ia tidur.”</b> (HR. Bukhari no.3295, Muslim no.238)
-                                                        Lafaz pada riwayat Imam Bukhari disebutkan, <b>“Apabila salah
-                                                            seorang di
-                                                            antara kalian bangun dari tidurnya, lalu ia berwudhu maka
-                                                            hendaknya ia
-                                                            membasahi hidungnya dengan air sebanyak tiga kali..”</b>
-                                                        (HR.
-                                                        Bukhari no.3295)</p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-8" class="">
-                                                        <b>Berwudhu</b>
-                                                    </li>
-                                                    <p>Sunnah ini disebutkan pada riwayat Ibnu Abbas -Radhiyallahu
-                                                        Anhumayang telah kami sampaikan sebelumnya, yaitu ketika Nabi
-                                                        -Shallallahu Alaihi
-                                                        wa Sallam- bangun dari tidurnya dan hendak melaksanakan shalat.
-                                                        Beliau
-                                                        pergi menuju geraba yang tergantung untuk mengambil wudhu.</p>
-                                                </div>
-                                                <hr class="border">
-                                                <div class="card-body text-dark">
-                                                    <a href="../terikat_waktu/01_1.html">
-                                                        <h3 id="list-item-9" class=" text-center">
-                                                            <b>Sunnah-sunnah dalam berwudhu</b>
-                                                        </h3>
-                                                    </a>
-                                                </div>
-                                                <hr class="border">
-                                                <div class="card-body text-dark">
-                                                    <a href="../terikat_waktu/01_2.html">
-                                                        <h3 id="list-item-10" class=" text-center">
-                                                            <b>Shalat tahajjud dan witir</b>
-                                                        </h3>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-4">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah Sunnah Setelah Bangkit dari Ruku’</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-5">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah Sunnah Ketika Sujud</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-6">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah-sunnah yang terkait pada saat duduk di antara dua
+                                                sujud</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-7">
+                                        <h6 class="text-gray text-center">
+                                            <b>Sunnah-sunnah yang terkait dengan tasyahud</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-8">
+                                        <h6 class="text-gray text-center">
+                                            <b>Berdzikir Setelah Selesai Melaksanakan Shalat
+                                                Fardhu</b>
+                                        </h6>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-light">
+                                    <a href="#list-item-9">
+                                        <h6 class="text-gray text-center">
+                                            <b>Duduk di Tempat Shalat Hingga Matahari Terbit</b>
+                                        </h6>
+                                    </a>
+                                </li>
                             </div>
+
+
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_3.html">
+                                    <h6 class="text-dark text-center"><b>Zikir pagi</b></h6>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="card-body text-dark">
+                            <li id="list-item-1" class="text-center">
+                                <b>Meletakkan sutrah (pembatas atau penanda yang diletakkan
+                                    tepat di depan tempat sujud). Ada beberapa sunnah lain yang
+                                    terkait dengan sutrah ini, yaitu:</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li class="fw-bold">Sunnah menggunakan sutrah</li>
+                                <p class="text-center">
+                                    Penggunaan sutrah ini disunnahkan hanya bagi imam atau munfarid (orang
+                                    yang shalat sendirian) saja, sedangkan makmum sudah terwakilkan dengan
+                                    sutrahnya imam.
+                                </p>
+                                <li class="fw-bold">Disunnahkan agar jarak sutrah dekat dengan tempat shalat</li>
+                                <p class="text-center">
+                                    Jarak yang dekat antara tempat shalat
+                                    dan sutrah menurut sunnah adalah selebar
+                                    tempat jalan untuk kambing.
+                                </p>
+                                <li class="fw-bold">Menghentikan orang yang lewat di
+                                    hadapan orang yang sedang shalat</li>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan
+                                    dari Abu Sa’id RA ia berkata,
+                                    Rasulullah SAW pernah bersabda, <b>“Apabila seorang di antara
+                                        kalian sedang shalat dengan menggunakan
+                                        sutrah sebagai pembatas, tetapi masih saja
+                                        ada orang yang lewat di hadapannya, maka
+                                        halangilah jalannya (dengan tangan).
+                                        Jika orang itu masih melakukannya, maka
+                                        lawanlah ia, karena itu adalah syaitan.”</b> (HR.
+                                    Muslim no.505)
+                                </p>
+                                <li class="fw-bold">Bersiwak setiap kali hendak melakukan shalat</li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-2" class="text-center">
+                                <b>Sunnah-sunnah saat berdiri. Berikut ini adalah beberapa sunnah
+                                    saat berdiri hendak memulai shalat:</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Mengangkat tangan ketika mengucapkan takbiratul ihram, hendak ruku, hendak bangun
+                                    dari ruku, dan ketika bangun dari tasyashud awal</li>
+                                <li>Ketika mengangkat tangan disunnahkan agar seluruh jari jemari dalam keadaan tegak
+                                    dan memberi jarak antara satu jari dengan jari yang lain</li>
+                                <li>Menempatkan kedua tangan yang diangkat di tempat yang dianjurkan</li>
+                                <img src="../../img/s-takbir.png" alt="" class="img-fluid">
+                                <li>Disunnahkan agar tangan yang kanan diletakkan di atas tangan
+                                    yang kiri setelah bertakbiratul ihram</li>
+                                <li>Disunnahkan pula agar tangan yang kanan menggenggam tangan
+                                    kiri</li>
+                                <img src="../../img/s-tangan.png" alt="" class="img-fluid">
+                                <li>Disunnahkan untuk membaca doa iftitah</li>
+                                <p class="text-center">
+                                    Doa iftitah ini ada beberapa opsi, maka dianjurkan agar pembacaannya
+                                    divariasikan antara doa yang satu dengan doa yang lainnya. Berikut ini adalah
+                                    doa-doa tersebut:
+                                <ul>
+                                    <li>Alhamdulillahi hamdan katsiran thayyiban mubarakan fih</li>
+                                    <li>Allahumma ba’id bayni wa bayna khathayaya kama ba’atta baynalmasyriqi
+                                        wal-magrib, Allahumma naqqini min khathayaya kama
+                                        yunaqqats-tsaubul-abyadhu minad-danas, Allahummagsilni min
+                                        khathayaya bits-tsalji wal-ma`I wal-barad</li>
+                                    <li>Allahu akbar kabira, wal-hamdulillahi katsira, wa subhanallahi
+                                        bukratan wa ashila</li>
+                                </ul>
+                                </p>
+                                <li>Berta’awudz (mengucapkan a’udzubillahi minasy-syaithanir-rajim)</li>
+                                <li>Membaca basmalah (yakni bismillahirrahmanirrahim)</li>
+                                <li>Mengucapkan amin bersama imam</li>
+                                <li>Membaca surah lain setelah surah Al-Fatihah</li>
+                                <p class="text-center">
+                                    Sunnah ini dilakukan pada rakaat yang pertama dan kedua bagi imam, orang
+                                    yang shalat sendirian, dan makmum pada shalat sirr (tidak bersuara, seperti
+                                    shalat zhuhur dan ashar). Inilah pendapat mayoritas ulama –Rahimahumullah
+                                </p>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-3" class="text-center">
+                                <b>Sunnah-sunnah saat ruku’. Berikut ini adalah beberapa sunnah
+                                    saat ruku’:</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Disunnahkan agar kedua tangan diletakkan pada lutut, hampir
+                                    seperti menggenggamnya, lalu merenggangkan jemarinya</li>
+                                <img src="../../img/s-ruku-1.png" alt="" class="img-fluid">
+                                <li>Disunnahkan agar punggung dalam keadaan lurus saat ruku’</li>
+                                <img src="../../img/s-ruku-2.png" alt="" class="img-fluid">
+                                <li>Disunnahkan agar menjauhkan siku dari sisi tubuh saat ruku’</li>
+                                <img src="../../img/s-ruku-3.png" alt="" class="img-fluid">
+                                <li>Disunnahkan mengucapkan bacaan-bacaan yang diajarkan oleh
+                                    Nabi saat ruku’</li>
+                                <p class="text-center">
+                                    Hendaknya orang yang shalat menambahkan bacaan lain yang diajarkan
+                                    Nabi selain bacaan subhana rabbiyal-azhim (Mahasuci Allah, Tuhanku Yang
+                                    Mahaagung). Di antaranya:
+                                <ul>
+                                    <li>Subhanakallahumma rabbana wa bihamdika, allahummaghfir li</li>
+                                    <li>Subbuhun quddusun rabbul-malaikati war-ruh</li>
+                                    <li>Allahumma laka raka’tu wa bika amantu wa laka aslamtu,
+                                        khasya’a laka sam’i wa bashari wa mukhkhi wa azhmi wa ashabi</li>
+                                    <li>Subhana dzil-jabaruti wal-malakuti wal-kibriyai wal-azhamati</li>
+                                </ul>
+                                </p>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-4" class="text-center">
+                                <b>Sunnah-sunnah setelah bangkit dari ruku’. Berikut ini adalah
+                                    beberapa sunnah saat i’tidal:</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Memperpanjang pelaksanaan rukun ini</li>
+                                <img src="../../img/s-ruku-after.png" alt="" class="img-fluid">
+                                <li>Memvariasikan ucapan rabbana wa lakal-hamd saat i’tidal (saat
+                                    bangkit dari ruku’):</li>
+                                <p class="text-center">
+                                <ul>
+                                    <li>Allahumma rabbana wa lakal-hamd</li>
+                                    <li>Allahumma rabbana lakal-hamd</li>
+                                    <li>Rabbana wa lakal-hamd</li>
+                                    <li>Rabbana lakal-hamd</li>
+                                </ul>
+                                <br>
+                                <p class="text-center">
+                                    Semua bacaan ini boleh diselang-seling pengucapan, sesekali mengucapkan
+                                    satu bacaan dan di waktu lain mengucapkan bacaan yang lainnya.
+                                </p>
+                                </p>
+                                <li>Membaca doa yang diajarkan oleh Nabi saat i’tidal</li>
+                                <p class="text-center">
+                                    Zikir yang diajarkan dalam syariat saat i’tidal antara lain adalah:
+                                <ul>
+                                    <li>Rabbana lakal hamdu mil`us-samawati wal-ardhi wa mil`u ma
+                                        syi`ta min syai`in ba’du, ahluts-tsana wal-majdi, ahaqqu ma qalalabdu, wa
+                                        kulluna laka abdun, allahumma la mani’a lima a’thayta
+                                        wala mu’thiya lima mana’ta, wala yanfa’u dzal-jaddi minkal-jad</li>
+                                    <li>Al-hamdulillahi hamdan katsiran thayyiban mubarakan fih</li>
+                                    <li>Allahumma thahhirni bits-tsalji wal-baradi wal-ma`il-barid,
+                                        allahumma thahhirni minadz-dzunubi wal-khathaya kama
+                                        yunaqqats-tsaubul-abyadhu minal-wasakh</li>
+                                </ul>
+                                <br>
+                                Doa-doa ini memang bisa dijadikan opsi untuk dibaca, namun akan
+                                lebih baik jika doa-doa ini dibaca semua agar dapat memperpanjang waktu
+                                pelaksanaan rukun beri’tidal.
+                                </p>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-5" class="text-center">
+                                <b>Bersujud. Ada beberapa sunnah yang terkait dengan sujud, di
+                                    antaranya:</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Disunnahkan agar lengan dijauhkan dari sisi tubuh dan perut dari
+                                    paha</li>
+                                <img src="../../img/s-sujud-1.png" alt="" class="img-fluid">
+                                <li>Disunnahkan agar jari jemari kaki dihadapkan ke arah kiblat saat
+                                    bersujud</li>
+                                <img src="../../img/s-sujud-2.png" alt="" class="img-fluid">
+                                <li>Disunnahkan agar membaca bacaan yang diajarkan oleh Nabi
+                                    ketika bersujud</li>
+                                <p class="text-center">
+                                <ul>
+                                    <li>Subhanakallahumma rabbana wa bihamdika, allahummagfir li</li>
+                                    <li>Subbuhun quddusun rabbul malaikati war-ruh</li>
+                                    <li>Allahumma laka sajadtu wa bika amantu wa laka aslamtu, sajada
+                                        wajhiya lil-ladzi khalaqahu wa shawwarahu wa syaqqa sam’ahu
+                                        wa basharahu, tabarakallahu ahsanul-khaliqin</li>
+                                    <li>Allahummagfir li dzanbi kullahu diqqahu wa jillahu wa awwalalhu
+                                        wa akhirahu wa alaniyatahu wa sirrahu</li>
+                                    <li>Allahumma a’udzu bi ridhaka min sakhatika wa bimu’afatika min
+                                        uqubatika wa a’udzu bika minka, la uhshi tsana`an alaika anta
+                                        kama atsnaita ala nafsik/li>
+                                </ul>
+                                </p>
+                                <p class="text-center">
+                                    Hendaknya orang yang shalat membaca bacaan-bacaan tersebut saat
+                                    bersujud sekaligus atau satu persatu secara bervariasi.
+                                </p>
+                                <p class="text-center">
+                                    Sebagaimana diketahui, bahwa bacaan yang wajib diucapkan saat ruku’
+                                    hanyalah subhana rabbiyal-azhim sebanyak satu kali, namun disunnahkan
+                                    untuk membacanya lebih dari itu. Begitu pun saat bersujud, bacaan subhana
+                                    rabbiyal-a’la hanya wajib dibaca sekali, sedangkan yang kedua dan ketiga
+                                    hukumnya sunnah
+                                </p>
+                                <li>Disunnahkan agar memperbanyak doa saat bersujud</li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-6" class="text-center">
+                                <b>Sunnah-sunnah yang terkait pada saat duduk di antara dua
+                                    sujud</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Disunnahkan agar orang yang shalat merebahkan kaki kirinya dan
+                                    mendudukinya, sedangkan kaki kanan ditegakkan</li>
+                                <img src="../../img/s-sujud-3.png" alt="" class="img-fluid">
+                                <li>Memperpanjang waktu pelaksanaan rukun ini</li>
+                                <li>Disunnahkan duduk sejenak setelah sujud kedua sebelum bangkit
+                                    ke rakaat kedua atau keempat.</li>
+                                <p class="text-center">
+                                    Duduk ini dinamai dengan duduk istirahat. Tidak ada bacaan apapun
+                                    yang dibaca pada saat itu.
+                                </p>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-7" class="text-center">
+                                <b>Sunnah-sunnah yang terkait dengan tasyahud (duduk tahiyat)</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                            <ol>
+                                <li>Disunnahkan merebahkan kaki kiri
+                                    ketika tasyahud, sedangkan kaki kanan
+                                    ditegakkan</li>
+                                <img src="../../img/s-tahiyat.png" alt="" class="img-fluid">
+                                <p class="text-center">
+                                    Tasyahud ini dilakukan setelah orang yang
+                                    shalat menyelesaikan ruku’, sujud, berdiri, dan
+                                    duduk di antara dua sujudnya di rakaat yang
+                                    kedua, baik itu pada shalat yang berjumlah empat
+                                    rakaat, tiga, ataupun dua. Intinya, pada setiap
+                                    selesai dua rakaat, disunnahkan untuk melakukan
+                                    duduk tasyahud yang seperti itu
+                                </p>
+                                <li>Memvariasikan cara-cara yang disunnahkan saat meletakkan kedua
+                                    tangan ketika bertasyahud.</li>
+                                <img src="../../img/s-tahiyat-1.png" alt="" class="img-fluid">
+                                <p class="text-center">
+                                    Ada dua cara yang disunnahkan saat meletakkan kedua tangan ketika
+                                    bertasyahud, yaitu:
+                                </p>
+                                <li>Memvariasikan cara-cara yang disunnahkan saat meletakkan jari
+                                    jemari ketika bertasyahud.</li>
+                                <img src="../../img/s-tahiyat-p.png" alt="" class="img-fluid">
+                                <img src="../../img/s-tahiyat-2.png" alt="" class="img-fluid">
+                                <li>Memvariasikan bacaan-bacaan yang diajarkan oleh Nabi –
+                                    Shallallahu Alaihi wa Sallam- ketika bertasyahud.</li>
+                                <p class="text-center">
+                                <ul>
+                                    <li>At-tahiyyatu lillah wash-shalawatu wath-thayyibat, as-salamu alaika
+                                        ayyuhan-nabiyyu warahmatullahi wa barakatuh, as-salamu alaina
+                                        wa ala ibadillahish-shalihin, asyhadu anla ilaha illallah, wa asyhadu
+                                        anna muhammadan abduhu wa rasuluh</li>
+                                    <li>At-tahiyyatul-mubarakatush-shalawatuth-thayyibatu lillah, assalamu alaika
+                                        ayyuhan-nabiyyu warahmatullahi wa barakatuh,
+                                        as-salamu alaina wa ala ibadillahish-shalihin, asyhadu anla ilaha
+                                        illallah, wa asyhadu anna muhammadan abduhu wa rasuluh</li>
+                                    <li>At-tahiyyatuth-thayyibatush-shalawatu lillah, as-salamu alaika
+                                        ayyuhan-nabiyyu warahmatullahi wa barakatuh, as-salamu
+                                        alaina wa ala ibadillahish-shalihin, asyhadu anla ilaha illallah,
+                                        wa asyhadu anna muhammadan abduhu wa rasuluh </li>
+                                </ul>
+                                </p>
+                                <li>Duduk dengan cara tawarruk pada saat tasyahud akhir untuk
+                                    shalat-shalat yang rakaatnya tiga dan empat</li>
+                                <br>
+                                <p class="text-center">
+                                    Maksudnya adalah, ketika seseorang melakukan tasyahud akhir pada shalat
+                                    empat rakaat atau tiga (misalnya maghrib dan isya), hendaknya ia dudukkan
+                                    pantat di atas lantai.
+                                <p class="text-center">Tawarruk sendiri sebenarnya memiliki dua opsi, oleh karena itu
+                                    sebaiknya
+                                    sesekali melakukan salah satu tawarruk yang disunnahkan itu dan kali yang
+                                    lain melakukan opsi tawarruk yang disunnahkan lainnya secara berkala.</p>
+                                <ul>
+                                    <li>Merebahkan kaki kiri dan
+                                        menyilangkannya hingga keluar
+                                        di sisi kanan, sedangkan kaki
+                                        kanan ditegakkan, dengan pantat
+                                        yang menempel dengan lantai.</li>
+                                    <img src="../../img/s-tawaruk-1.png" alt="" class="img-fluid">
+                                    <li>Merebahkan kedua kakinya dan
+                                        meletakkan kedua tumitnya di
+                                        sisi kanan, dengan pantat yang
+                                        menempel dengan lantai.</li>
+                                    <img src="../../img//s-tawaruk-2.png" alt="" class="img-fluid">
+                                </ul>
+                                </p>
+                                <li>Memvariasikan bacaan-bacaan shalawat yang diajarkan oleh Nabi
+                                    SAW</li>
+                                <p class="text-center">
+                                    Ada beberapa bacaan shalawat yang diajarkan oleh Nabi SAW, yaitu:
+                                <ul>
+                                    <li>Allahumma shalli ala sayyidina muhammadin wa ala ali sayyidina muhammad, kama
+                                        shallayta ala sayyidina ibrahima wa ala ali sayyidina ibrahim, innaka
+                                        hamidum-majid,
+                                        allahumma barik ala sayyidina muhammadin wa ala ali sayyidina muhammad, kama
+                                        barakta ala ibrahima wa ala ali ibrahim, innaka hamidum-majid</li>
+                                    <li>Allahumma shalli ala sayyidina muhammadin wa ala ali sayyidina muhammad, kama
+                                        shallayta ala sayyidina ibrahima wa ala ali sayyidina ibrahim, allahumma barik
+                                        ala sayyidina
+                                        muhammadin wa ala ali sayyidina muhammad, kama barakta ala sayyidina ibrahima
+                                        wa ala ali ibrahim, fil alamina, innaka hamidum-majid</li>
+                                    <li>Allahumma shalli ala muhammadin wa ala azwajihi wa
+                                        sayyidina muhammadin wa ala azwajihi wa dzurriyyatih, kama barakta ala ali
+                                        sayyidina ibrahim, innaka hamidum-majid</li>
+
+                                </ul>
+                                </p>
+                                <li>Disunnahkan berta’awudz (mohon dihindarkan) dari empat hal
+                                    berta’awudz mengucapkan salam</li>
+                                <p class="text-center">
+                                <ul>
+                                    <li>Allahumma inni a’udzu bika minal-ma`tsami wal-maghram</li>
+                                    <li>Allahumma inni as`alukal-jannata wa a’udzu bika minan-nar</li>
+                                    <li>Allahumma inni zhalamtu nafsi zhulman katsiran wala yaghfirudzdzunuba illa anta,
+                                        faghfir li maghfiratan min indika warhamni,
+                                        innaka antal-ghafurur-rahim </li>
+                                    <li>Allahumma a’inni ala dzikrika wa syukrika wa husni ibadatik</li>
+                                    <li>Allahumma inni a’udzu bika minal-bukhli, wa a’udzu bika minaljubni, wa a’udzu
+                                        bika an uradda ila ardzalil-umuri, wa a’udzu bika
+                                        min fitnatid-dunya, wa a’udzu bika min adzabil-qabri</li>
+                                    <li>Allahumma hasibni hisaban yasira</li>
+                                </ul>
+                                </p>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-8" class="text-center">
+                                <b>Sunnah-sunnah dalam berzikir yang diajarkan oleh Nabi SAW setelah selesai
+                                    melaksanakan
+                                    shalat fardhu</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+                                Imam An-Nawawi –Rahimahullah– mengatakan, “Para ulama bersepakat
+                                bahwa berzikir setelah shalat fardhu dianjurkan.” (lihat. Al-Adzkar hal.66).
+                                Dianjurkan pula untuk mengangkat suara saat berzikir
+                            </p>
+                            <p class="text-center">
+                                Di antara zikir tersebut adalah:
+                            <ol>
+                                <li>Beristighfar sebanyak tiga kali (yakni mengucapkan astaghfirullahalazhim). Kemudian
+                                    mengucapkan allahumma antas-salam wa
+                                    minkas-salam tabarakta dzal-jalali wal-ikram</li>
+                                <li>La ilaha illallah wahdahu la syarika lah, lahul-mulku wa lahulhamdu wa huwa ala
+                                    kulli syai`in qadir, la hawla wala quwwata
+                                    illa billah, la ilaha illallah, wala na’budu illa iyyah, lahunni’matu wa
+                                    lahul-fadhl, wa lahuts-tsana`ul-hasan, la ilaha
+                                    illallahu mukhlishina lahud-din, walaw karihal-kafirun</li>
+                                <li>La ilaha illallah wahdahu la syarika lah, lahul-mulku wa lahulhamdu wa huwa ala
+                                    kulli syai`in qadir, allahumma la mani’a lima
+                                    a’thaita wa mu’thiya lima mana’ta wala yanfa’u dzal-jaddi minkaljad</li>
+                                <li>
+                                    Membaca tasbih tahmid dan takbir. Ada beberapa opsi yang
+                                    mungkin dibaca terkait dengan sunnah ini, yaitu:
+                                    <ul>
+                                        <li><b>Pertama:</b> Subhanallah 33 kali, alhamdulillah 33 kali, allahu akbar 33
+                                            kali, dan menyempurnakannya menjadi 100 dengan membaca la ilaha
+                                            illallahu wahdahu la syarika lah, lahul-mulku wa lahul-hamdu wa
+                                            huwa ala kulli syai`in qadir</li>
+                                        <br>
+                                        <li><b>Kedua:</b> Subhanallah 33 kali, alhamdulillah 33 kali, allahu akbar 34
+                                            kali.</li>
+                                        <br>
+                                        <li><b>Ketiga:</b> Subhanallah 25 kali, alhamdulillah 25 kali, allahu akbar 25
+                                            kali dan la ilaha illallah 25 kali.</li>
+                                        <br>
+                                        <li><b>Keempat:</b> Subhanallah 10 kali, alhamdulillah 10 kali, allahu akbar 10
+                                            kali.</li>
+
+                                    </ul>
+                                    <p class="text-center">
+                                        Disunnahkan pula agar tasbih tahmid dan takbir ini dihitung dengan
+                                        menggunakan jari jemari, sebagaimana diriwayatkan oleh Imam Ahmad dan
+                                        Imam At-Tirmidzi, bahwasanya Nabi SAW pernah
+                                        bersabda, <b>“Bertasbihlah dan hitunglah dengan jemari kalian, karena jemari
+                                            kalian itu yang akan ditanya dan menjawabnya.”</b> (HR. Ahmad no.27089,
+                                        At-Tirmidzi no.3486, dan dikategorikan sebagai hadits hasan oleh Al-Albani
+                                        dalam Shahih Al-Jami 2/753)
+                                    </p>
+                                <li>Membaca ayat kursi.</li>
+                                <li>Membaca mu’awwidzatain (surah Al-Falaq dan surah An-Nas).</li>
+                                <br>
+                                <p class="text-center">
+                                    Itulah sunnah-sunnah di dalam shalat untuk dilaksanakan oleh para
+                                    pelaksana shalat. Meskipun saat ini masih dalam pembahasan waktu shalat
+                                    shubuh, namun sunnah-sunnah tersebut berlaku untuk semua shalat fardhu
+                                    –wallahu a’lam–
+                                </p>
+                                </li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="card-body text-dark">
+                            <li id="list-item-9" class="text-center">
+                                <b>Sunnah lainnya yang dilakukan pada waktu fajar adalah duduk
+                                    di tempat shalat hingga matahari terbit</b>
+                            </li>
+                            <br>
+                            <p class="text-center">
+
+                            </p>
+                        </div>
+
+
+                        <hr class="border">
+                        <div class="card-body text-dark">
+                            <a href="../terikat_waktu/01_2.html">
+                                <h3 id="list-item-9" class=" text-center">
+                                    <b>Zikir Pagi</b>
+                                </h3>
+                            </a>
                         </div>
                     </div>
-
-                    <script>
-                        // Inisialisasi Scrollspy
-                        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-                            target: '#list-example',
-                            offset: 70
-                        });
-                    </script>
-
                 </div>
-
             </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            <button id="scrollToTop" class="scroll-to-top" style="display: none">
-                ↑طيران↑
-            </button>
+        <script>
+            // Inisialisasi Scrollspy
+            const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#list-example',
+                offset: 70
+            });
+        </script>
 
-            <!-- Footer Section Start -->
-            <footer class="footer">
-                <div class="footer-body">
-                    <ul class="left-panel list-inline mb-0 p-0">
-                        <li class="list-inline-item">
-                            <img src="../../../assets/logo altie putih.png" height="20px" alt="" />
-                            <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-                        </li>
-                    </ul>
-                    <div class="right-panel">
-                        Copyright ©
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
-                    </div>
+        </div>
+
+        </div>
+
+        <button id="scrollToTop" class="scroll-to-top" style="display: none">
+            ↑طيران↑
+        </button>
+
+        <!-- Footer Section Start -->
+        <footer class="footer">
+            <div class="footer-body">
+                <ul class="left-panel list-inline mb-0 p-0">
+                    <li class="list-inline-item">
+                        <img src="../../../assets/logo altie putih.png" height="20px" alt="" />
+                        <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+                    </li>
+                </ul>
+                <div class="right-panel">
+                    Copyright ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
                 </div>
-            </footer>
-            <!-- Footer Section End -->
+            </div>
+        </footer>
+        <!-- Footer Section End -->
 
-            <!-- Library Bundle Script -->
-            <script src="../../../assets/js/core/libs.min.js"></script>
+        <!-- Library Bundle Script -->
+        <script src="../../../assets/js/core/libs.min.js"></script>
 
-            <!-- External Library Bundle Script -->
-            <script src="../../../assets/js/core/external.min.js"></script>
+        <!-- External Library Bundle Script -->
+        <script src="../../../assets/js/core/external.min.js"></script>
 
-            <!-- Widgetchart Script -->
-            <script src="../../../assets/js/charts/widgetcharts.js"></script>
+        <!-- Widgetchart Script -->
+        <script src="../../../assets/js/charts/widgetcharts.js"></script>
 
-            <!-- mapchart Script -->
-            <script src="../../../assets/js/charts/vectore-chart.js"></script>
-            <script src="../../../assets/js/charts/dashboard.js"></script>
+        <!-- mapchart Script -->
+        <script src="../../../assets/js/charts/vectore-chart.js"></script>
+        <script src="../../../assets/js/charts/dashboard.js"></script>
 
-            <!-- fslightbox Script -->
-            <script src="../../../assets/js/plugins/fslightbox.js"></script>
+        <!-- fslightbox Script -->
+        <script src="../../../assets/js/plugins/fslightbox.js"></script>
 
-            <!-- Settings Script -->
-            <script src="../../../assets/js/plugins/setting.js"></script>
+        <!-- Settings Script -->
+        <script src="../../../assets/js/plugins/setting.js"></script>
 
-            <!-- Slider-tab Script -->
-            <script src="../../../assets/js/plugins/slider-tabs.js"></script>
+        <!-- Slider-tab Script -->
+        <script src="../../../assets/js/plugins/slider-tabs.js"></script>
 
-            <!-- Form Wizard Script -->
-            <script src="../../../assets/js/plugins/form-wizard.js"></script>
+        <!-- Form Wizard Script -->
+        <script src="../../../assets/js/plugins/form-wizard.js"></script>
 
-            <!-- AOS Animation Plugin-->
-            <script src="../../../assets/vendor/aos/dist/aos.js"></script>
+        <!-- AOS Animation Plugin-->
+        <script src="../../../assets/vendor/aos/dist/aos.js"></script>
 
-            <!-- App Script -->
-            <script src="../../../assets/js/hope-ui.js" defer></script>
-            <script>
-                const scrollToTopButton = document.getElementById("scrollToTop");
+        <!-- App Script -->
+        <script src="../../../assets/js/hope-ui.js" defer></script>
+        <script>
+            const scrollToTopButton = document.getElementById("scrollToTop");
 
-                // Tampilkan tombol ketika halaman di-scroll ke bawah
-                window.onscroll = function () {
-                    if (
-                        document.body.scrollTop > 200 ||
-                        document.documentElement.scrollTop > 200
-                    ) {
-                        scrollToTopButton.style.display = "block";
-                    } else {
-                        scrollToTopButton.style.display = "none";
-                    }
-                };
+            // Tampilkan tombol ketika halaman di-scroll ke bawah
+            window.onscroll = function () {
+                if (
+                    document.body.scrollTop > 200 ||
+                    document.documentElement.scrollTop > 200
+                ) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            };
 
-                // Saat tombol diklik, scroll ke atas
-                scrollToTopButton.addEventListener("click", function () {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                    });
+            // Saat tombol diklik, scroll ke atas
+            scrollToTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
                 });
-            </script>
-            <!-- Google Tag Manager -->
-            <script>
-                (function (w, d, s, l, i) {
-                    w[l] = w[l] || [];
-                    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-                    var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s),
-                        dl = l != "dataLayer" ? "&l=" + l : "";
-                    j.async = true;
-                    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                    f.parentNode.insertBefore(j, f);
-                })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
-                window.tag_manager_event = "dashboard-free-preview";
-                window.tag_manager_product = "HopeUI";
-            </script>
-            <!-- End Google Tag Manager -->
+            });
+        </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
+            window.tag_manager_event = "dashboard-free-preview";
+            window.tag_manager_product = "HopeUI";
+        </script>
+        <!-- End Google Tag Manager -->
         </div>
     </main>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sunnah Ibadah | Sunnah Nabi</title>
+    <title>Irsyadu Thulab | Sunnah Ibadah | Sunnah Nabi</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../../assets/images/favicon.ico" />
@@ -134,12 +134,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../kalender.html">
+                        <a class="nav-link" aria-current="page" href="../../sholawat.html">
                             <i class="icon">
-                                <img class="icon-20" src="../../../assets/icon/sidebar/kalender.png"
+                                <img class="icon-20" src="../../../assets/icon/sidebar/sholawat.png"
                                     style="opacity: 70%" />
                             </i>
-                            <span class="item-name">Kalender</span>
+                            <span class="item-name">Sholawat</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -178,19 +178,50 @@
     <main class="main-content">
         <div class="position-relative iq-banner">
             <!--Nav Start-->
-            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0;">
+            <button id="scrollToTop" class="scroll-to-top btn btn-sm btn-primary z-index-5 position-fixed"
+                style="display: none; bottom: 60px; right:20px; z-index: 999;">↑</button>
+            <a class="btn btn-primary btn-sm position-fixed text-light px-2 mt-2"
+                style="bottom: 20px;right: 20px; z-index: 1000;"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=destaomen1@gmail.com&su=%20Subjek&body=Isi%20pesan"
+                data-bs-toggle="tooltip" data-bs-placement="right" title="Hubungi Kami">
+                <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" class="icon-20"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #ffffff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.91px;
+                                }
+                            </style>
+                        </defs>
+                        <rect class="cls-1" x="6.27" y="5.32" width="11.45" height="15.27" rx="5.73"></rect>
+                        <path class="cls-1"
+                            d="M17.73,9.14h1.91A2.86,2.86,0,0,1,22.5,12v1.91a2.86,2.86,0,0,1-2.86,2.86H17.73a0,0,0,0,1,0,0V9.14A0,0,0,0,1,17.73,9.14Z">
+                        </path>
+                        <path class="cls-1"
+                            d="M1.5,9.14H3.41A2.86,2.86,0,0,1,6.27,12v1.91a2.86,2.86,0,0,1-2.86,2.86H1.5a0,0,0,0,1,0,0V9.14A0,0,0,0,1,1.5,9.14Z"
+                            transform="translate(7.77 25.91) rotate(180)"></path>
+                        <path class="cls-1" d="M4.36,9.14h0A7.64,7.64,0,0,1,12,1.5h0a7.64,7.64,0,0,1,7.64,7.64h0">
+                        </path>
+                        <path class="cls-1" d="M19.64,16.77v1a4.78,4.78,0,0,1-4.78,4.77"></path>
+                    </g>
+                </svg></a>
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar position-fixed" style="width: 100%; top: 0">
                 <div class="container-fluid navbar-inner">
-                    <a href="../../../dashboard/index.html" class="navbar-brand">
-                        <!--Logo start-->
-                        <!--logo End-->
+                    <a href="../../../dashboard/index.html" class="navbar-brand ms-auto me-auto">
 
                         <!--Logo start-->
                         <div class="logo-main">
                             <div class="logo-normal">
-                                <img src="../../assets/logo.png" height="40px" alt="">
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                             <div class="logo-mini">
-                                <img src="../../assets/logo.png" height="40px" alt="">
+                                <img src="../../../assets/logo.png" height="40px" alt="" />
                             </div>
                         </div>
                         <!--logo End-->
@@ -199,553 +230,525 @@
                     </a>
                     <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                         <i class="icon">
-                            <img src="../../../assets/icon/bar.png" class="icon-20" alt="">
+                            <img src="../../../assets/icon/bar.png" class="icon-20" alt="" />
                         </i>
                     </div>
                 </div>
             </nav>
             <!-- Nav Header Component Start -->
-            <div class="iq-navbar-header" style="height: 250px; margin-top: 70px;">
+            <div class="iq-navbar-header" style="margin-top: 70px">
                 <div class="container-fluid iq-container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="flex-wrap text-center">
                                 <div class="d-flex justify-content-center gap-2 align-items-center">
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
-                                    <h2 class="mx-lg-5 fs-lg-1">Sunnah-Sunnah Nabi SAW</h2>
+                                    <h2 class="mx-lg-5 fs-lg-1" style="text-shadow: black 2px 2px;">Sunnah Sunnah Nabi
+                                        SAW</h2>
                                     <img src="../../../assets/icon/bulan.png" height="40px" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <style>
-                    .link {
-                        color: rgb(255, 255, 255);
-                    }
-
-                    .link:hover {
-                        color: blue;
-                        transition: 0.4s ease;
-                    }
-                </style>
-                <div class="row">
-                    <div class="flext-wrap text-center mb-2">
-                        <h5 class="text-white">
-                            <b><br /> </b>
-                        </h5>
-                    </div>
-                </div>
-                <div class="iq-navbar-header" style="height: 215px">
+                <div class="iq-navbar-header">
                     <div class="iq-header-img">
-                        <img src="../../../assets/images/dashboard/top-header.png" alt="header"
-                            class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header1.png" alt="header"
-                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header2.png" alt="header"
-                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header3.png" alt="header"
-                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header4.png" alt="header"
-                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX" />
-                        <img src="../../../assets/images/dashboard/top-header5.png" alt="header"
-                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX" />
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-default-img img-fluid w-100 h-70 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+                        <img src="../../../dashboard/img/nabi.jpg" alt="header"
+                            class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
                     </div>
-                </div>
-                <!-- Nav Header Component End -->
+                </div> <!-- Nav Header Component End -->
                 <!--Nav End-->
             </div>
-            <!-- Nav Header Component End -->
 
-            <div class="conatiner-fluid content-inner">
+            <div class="m-0">
+                <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
+                    <h3 class="card-header text-center  fw-bold mb-4">Sunnah di Waktu Shubuh dan
+                        setelahnya</h3>
+                    <div class="col-md-12 col-lg-12">
+                        <ul id="list-example" class="list-group text-center ">
+                            <li class="list-group-item list-group-item-light text-center">
+                                <h4 class="text-dark"><b>Daftar list</b></h4>
+                            </li>
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_0.html">
+                                    <h6 class="text-dark text-center"><b>Bagian Pertama</b></h6>
+                                </a>
+                            </li>
+                            <!-- Section 1 -->
+                            <li class="list-group-item list-group-item-gray-dark">
+                                <h6 class="text-dark text-center" data-bs-toggle="collapse" href="#collapseSection1"
+                                    role="button" aria-expanded="true" aria-controls="collapseSection1">
+                                    <b>Sunnah Sunnah Ketika Melangkah Menuju Masjid</b>
+                                </h6>
+                            </li>
+                            <div class="collapse show" id="collapseSection1">
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-1">Berangkat lebih awal
+                                        menuju masjid</a></li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-2">Keluar rumah dalam
+                                        keadaan suci</a></li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-3">Bergegas untuk shalat
+                                        dengan penuh ketenangan dan
+                                        tidak terburu-buru</a></li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-4">Mendahulukan kaki yang
+                                        kanan ketika masuk ke
+                                        dalam masjid, dan mendahulukan kaki yang kiri ketika
+                                        keluar.</a></li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-5">Mengucapkan kalimat
+                                        yang diajarkan dalam sunnah
+                                        ketika masuk ke dalam masjid dan ketika keluar.</a>
+                                </li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-6">Melakukan shalat
+                                        sunnah tahiyat masjid dua rakaat</a>
+                                </li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-7">Lelaki menempati shaf
+                                        pertama dan perempuan menempati shaf yang paling
+                                        belakang</a>
+                                </li>
+                                <li class="list-group-item list-group-item-light"><a class="text-dark"
+                                        href="#list-item-8">Disunnahkan bagi
+                                        makmum untuk berada dekat
+                                        dengan imam</a></li>
+                            </div>
 
-                <div data-bs-spy="" data-bs-target="#list-example" data-bs-offset="" tabindex="0">
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_2.html">
+                                    <h6 class="text-dark text-center"><b>Sunnah Sunnah di Dalam
+                                            Shalat</b></h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-light">
+                                <a href="../terikat_waktu/02_3.html">
+                                    <h6 class="text-dark text-center"><b>Zikir Pagi</b></h6>
+                                </a>
+                            </li>
+                        </ul>
 
-                    <div class="mt-5">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-12">
-                                <div class="row">
-                                    <div class="text-dark card p-3" data-aos="fade-up" data-aos-delay="900">
-                                        <h3 class="card-header text-center  fw-bold mb-4">Sunnah di Waktu Shubuh dan
-                                            setelahnya</h3>
-                                        <div class="col-md-12 col-lg-12">
-                                            <ul id="list-example" class="list-group">
-                                                <li class="list-group-item list-group-item-light text-center">
-                                                    <h4 class="text-dark"><b>Daftar list</b></h4>
-                                                </li>
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_0.html">
-                                                        <h6 class="text-dark text-center"><b>Bagian Pertama</b></h6>
-                                                    </a>
-                                                </li>
-                                                <!-- Section 1 -->
-                                                <li class="list-group-item list-group-item-gray-dark">
-                                                    <h6 class="text-dark text-center" data-bs-toggle="collapse"
-                                                        href="#collapseSection1" role="button" aria-expanded="true"
-                                                        aria-controls="collapseSection1">
-                                                        <b>Sunnah Sunnah Ketika Melangkah Menuju Masjid</b>
-                                                    </h6>
-                                                </li>
-                                                <div class="collapse show" id="collapseSection1">
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-1">Berangkat lebih awal
-                                                            menuju masjid</a></li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-2">Keluar rumah dalam
-                                                            keadaan suci</a></li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-3">Bergegas untuk shalat
-                                                            dengan penuh ketenangan dan
-                                                            tidak terburu-buru</a></li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-4">Mendahulukan kaki yang
-                                                            kanan ketika masuk ke
-                                                            dalam masjid, dan mendahulukan kaki yang kiri ketika
-                                                            keluar.</a></li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-5">Mengucapkan kalimat
-                                                            yang diajarkan dalam sunnah
-                                                            ketika masuk ke dalam masjid dan ketika keluar.</a>
-                                                    </li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-6">Melakukan shalat
-                                                            sunnah tahiyat masjid dua rakaat</a>
-                                                    </li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-7">Lelaki menempati shaf
-                                                            pertama dan perempuan menempati shaf yang paling
-                                                            belakang</a>
-                                                    </li>
-                                                    <li class="list-group-item list-group-item-light"><a
-                                                            class="text-dark" href="#list-item-8">Disunnahkan bagi
-                                                            makmum untuk berada dekat
-                                                            dengan imam</a></li>
-                                                </div>
-
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_2.html">
-                                                        <h6 class="text-dark text-center"><b>Sunnah Sunnah di Dalam
-                                                                Shalat</b></h6>
-                                                    </a>
-                                                </li>
-                                                <li class="list-group-item list-group-item-light">
-                                                    <a href="../terikat_waktu/02_3.html">
-                                                        <h6 class="text-dark text-center"><b>Zikir Pagi</b></h6>
-                                                    </a>
-                                                </li>
-                                            </ul>
-
-                                            <div class="scrollspy-example h-auto"
-                                                style="position: relative; overflow-y: auto;">
-                                                <div class="card-body text-dark">
-                                                    <h5 class="text-center fw-bold">Melangkah pergi menuju masjid. Ada
-                                                        beberapa sunnah saat
-                                                        berangkat menuju masjid untuk shalat shubuh</h5>
-                                                    <br>
-                                                    <p>
-                                                        Dikarenakan shalat fajar adalah shalat pertama pada hari itu
-                                                        untuk
-                                                        melangkahkan kaki menuju masjid, maka ada beberapa sunnah yang
-                                                        harus
-                                                        diperhatikan, yaitu:
-                                                    </p>
-                                                    <li id="list-item-1" class=""><b>Berangkat lebih awal menuju
-                                                            masjid</b></li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
-                                                        RA ia berkata, Rasulullah SAW
-                                                        pernah bersabda,
-                                                        <b>“Andai saja mereka tahu apa akan mereka dapatkan dengan
-                                                            bersegera menuju
-                                                            masjid, maka mereka pasti akan berlomba-lomba untuk
-                                                            menyegerakannya.”</b>
-                                                        (HR. Bukhari no.615, dan Muslim no.437)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-2" class="">
-                                                        <b>Keluar rumah dalam keadaan suci (sudah berwudhu), agar ia
-                                                            mendapatkan pahala dari setiap langkahnya menuju masjid</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan
-                                                        dari Abu Hurairah RA ia
-                                                        berkata, Rasulullah SAW pernah bersabda, <b>“Shalat
-                                                            (fardhu) yang dilakukan seseorang secara
-                                                            berjamaah akan ditambahkan derajatnya
-                                                            dibanding shalatnya di rumah atau di
-                                                            pasar sebesar dua puluh derajat lebih.
-                                                            Yaitu ketika salah seorang di antara kalian
-                                                            memulainya dengan berwudhu dengan
-                                                            sebaik-baik wudhu, lalu ia berangkat
-                                                            menuju ke masjid, tanpa ada tujuan lain
-                                                            kecuali untuk melaksanakan shalat, tidak
-                                                            ada keinginan lain kecuali untuk shalat berjamaah, maka
-                                                            setiap
-                                                            langkah
-                                                            yang ia jejakkan akan menambah satu derajat lebih tinggi dan
-                                                            dihapuskan
-                                                            baginya satu dosa yang pernah ia lakukan, hingga ia masuk ke
-                                                            dalam
-                                                            masjid. Apabila ia sudah berada di dalam masjid, maka ia
-                                                            sudah
-                                                            dihitung
-                                                            dalam pahala shalat selama niatnya masih untuk melakukan
-                                                            shalat.
-                                                            Para
-                                                            malaikat pun akan selalu memanjatkan doa untuknya selama ia
-                                                            tidak
-                                                            berpindah tempat duduk di mana ia melaksanakan shalat, para
-                                                            malaikat
-                                                            itu memanjatkan, ‘Ya Allah kasihi dia, ampuni dia dan
-                                                            hapuskan
-                                                            dosadosanya,’ selama ia tidak berhadats dan tidak batal
-                                                            wudhunya.”</b> (HR.
-                                                        Muslim no.649)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body ">
-                                                    <li id="list-item-3" class="">
-                                                        <b>Bergegas untuk shalat dengan penuh ketenangan dan tidak
-                                                            terburuburu</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
-                                                        RA, dari Nabi SAW beliau bersabda,
-                                                        <b>“Apabila
-                                                            kalian telah mendengar iqamah dikumandangkan, maka
-                                                            bergegaslah
-                                                            untuk melaksanakan shalat, namun dengan tetap menjaga
-                                                            ketenangan,
-                                                            keelokan, dan tidak terburu-buru. Pada rakaat berapa pun
-                                                            kamu
-                                                            tiba,
-                                                            mulailah shalatmu, dan kemudian sempurnakanlah rakaatmu yang
-                                                            tertinggal.”</b> (HR. Bukhari no.636, dan Muslim no.602)
-                                                    </p>
-                                                    <p>
-                                                        Imam An-Nawawi –Rahimahullah-menjelaskan, “Yang dimaksud dengan
-                                                        secara tenang adalah, bergerak secara perlahan dan menjauhi
-                                                        perbuatan yang
-                                                        tidak perlu. Sedangkan keelokan lebih condong pada sikap
-                                                        pembawaan
-                                                        anggota tubuh, seperti mata yang tidak liar, suara yang pelan,
-                                                        dan berwibawa.”
-                                                        Lihat. Kitab Syarh Muslim karya Imam An-Nawawi (602) pada bab
-                                                        anjuran
-                                                        dalam melangkah menuju shalat dengan penuh ketenangan dan
-                                                        keelokan,
-                                                        serta larangan untuk melakukannya dengan terburu-buru.
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-4" class="">
-                                                        <b>Mendahulukan kaki yang kanan ketika masuk ke dalam masjid,
-                                                            dan
-                                                            mendahulukan kaki yang kiri ketika
-                                                            keluar</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan
-                                                        dari Anas RA ia berkata,
-                                                        <b>“Salah satu tuntunan sunnah, apabila masuk
-                                                            ke dalam masjid maka hendaknya kamu
-                                                            mendahulukan kaki kanan, dan jika kamu
-                                                            keluar dari masjid maka dahulukanlah
-                                                            kaki kiri.”</b> (HR Al-Hakim 1/338, dan
-                                                        dikategorikan sebagai hadits shahih menurut syarat shahih Imam
-                                                        Muslim)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-5" class=""><b>Mengucapkan bacaan yang diajarkan
-                                                            dalam sunnah ketika masuk
-                                                            ke dalam masjid dan ketika keluar.</b></li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan Abu Hamid, atau Abu
-                                                        Asid, ia berkata,
-                                                        Rasulullah SAW pernah bersabda,
-                                                        “Apabila salah seorang
-                                                        di antara kalian masuk ke dalam masjid, maka ucapkanlah
-                                                        <b>Allahummaf-tah li
-                                                            abwaba rahmatik</b> (ya Allah bukakalah untukku pintu
-                                                        rahmat-Mu).
-                                                        Dan apabila
-                                                        keluar dari masjid maka ucapkanlah <b>Allahumma inni as`aluka
-                                                            min
-                                                            fadhlik</b> (ya
-                                                        Allah aku memohon karunia-Mu).” (HR. Muslim no.713)
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-6" class="">
-                                                        <b>Melakukan shalat sunnah tahiyat
-                                                            masjid dua rakaat</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Sunnah ini dilakukan apabila seseorang
-                                                        datang lebih awal sebelum waktu shalat tiba.
-                                                        Ia dianjurkan untuk tidak duduk terlebih
-                                                        dahulu sebelum melaksanakan shalat sunnah
-                                                        dua rakaat.
-                                                    </p>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan
-                                                        dari Abu Qatadah RA ia
-                                                        berkata, Nabi SAW pernah bersabda,
-                                                        <b>“Apabila salah seorang dari
-                                                            kalian masuk ke dalam masjid, maka janganlah duduk sebelum
-                                                            ia
-                                                            melakukan
-                                                            shalat sunnah dua rakaat.”</b> (HR. Bukhari no.1163, dan
-                                                        Muslim
-                                                        no.714)
-                                                    </p>
-                                                    <p>
-                                                        Namun jika ia tiba setelah adzan berkumandang, maka shalat
-                                                        sunnah
-                                                        tahiyat masjid ini sudah terwakilkan dengan pelaksanaan shalat
-                                                        sunnah
-                                                        qabliyah, jika shalat yang akan ia laksanakan adalah shalat
-                                                        fardhu yang
-                                                        memiliki sunnah qabliyah, seperti shalat shubuh ataupun shalat
-                                                        zhuhur. Juga
-                                                        terwakilkan dengan pelaksanaan shalat dhuha jika niatnya masuk
-                                                        ke dalam
-                                                        masjid untuk melaksanakan shalat dhuha, ataupun dengan shalat
-                                                        witir jika ia
-                                                        melakukan shalat sunnah tersebut di dalam masjid, atau bahkan
-                                                        dengan shalat
-                                                        fardhu. Pasalnya, maksud utama dari pelaksanaan shalat tahiyat
-                                                        masjid adalah
-                                                        tidak langsung duduk saat tiba di masjid tanpa melakukan shalat,
-                                                        sebab shalat
-                                                        itulah yang seharusnya menjadi alasan seseorang untuk datang ke
-                                                        masjid.
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-7" class="">
-                                                        <b>Disunnahkan bagi para lelaki untuk menempati shaf yang
-                                                            pertama,
-                                                            karena shaf itulah yang paling afdhal bagi kaum pria. Adapun
-                                                            untuk kaum wanita, shaf yang paling baik adalah shaf yang
-                                                            paling
-                                                            belakang.</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
-                                                        RA, bahwasanya Nabi SAW pernah
-                                                        bersabda,
-                                                        <b>“Sebaik-baik shaf bagi kaum pria adalah shaf pertama, dan
-                                                            seburukburuk shafnya adalah shaf paling terakhir. Sementara
-                                                            itu,
-                                                            sebaik-baik shaf
-                                                            bagi kaum wanita adalah shaf yang paling belakang, dan
-                                                            seburuk-buruk
-                                                            shafnya adalah shaf yang paling depan.”</b> (HR. Muslim
-                                                        no.440)
-                                                    </p>
-                                                    <p>
-                                                        Yang dimaksud paling baik pada hadits ini adalah paling banyak
-                                                        pahalanya
-                                                        dan keutamaannya. Sedangkan yang dimaksud paling buruk adalah
-                                                        paling
-                                                        sedikit pahalanya dan keutamaannya.
-                                                    </p>
-                                                    <p>
-                                                        Hadits ini berlaku dalam keadaan ketika kaum wanita ikut shalat
-                                                        berjamaah
-                                                        bersama kaum pria tanpa ada pembatas yang memisahkan antara
-                                                        keduanya,
-                                                        baik berbentuk tembok ataupun semacamnya. Jika seperti itu, maka
-                                                        shaf
-                                                        terbaik bagi kaum wanita adalah di bagian paling belakang,
-                                                        karena keadaan
-                                                        yang demikian akan lebih menjaga kaum wanita dari pandangan kaum
-                                                        pria
-                                                    </p>
-                                                    <p>
-                                                        Adapun jika di masjid tersebut terdapat pembatas yang memisahkan
-                                                        antara
-                                                        keduanya, misalnya seperti yang diterapkan pada sejumlah masjid
-                                                        di zaman
-                                                        sekarang, yaitu dengan mengkhususkan ruangan terpisah bagi kaum
-                                                        wanita, dalam
-                                                        keadaan demikian maka shaf terbaik bagi kaum wanita juga berada
-                                                        di paling depan,
-                                                        sebab sudah hilang penyebabnya untuk dapat dipandang oleh kaum
-                                                        lelaki. Pasalnya,
-                                                        hukum itu selalu bergantung pada penyebabnya, ada atau tiadanya
-                                                        penyebab itu
-                                                    </p>
-                                                </div>
-                                                <div class="card-body text-dark">
-                                                    <li id="list-item-8" class="">
-                                                        <b>Disunnahkan bagi makmum untuk berada dekat dengan imam</b>
-                                                    </li>
-                                                    <br>
-                                                    <p>
-                                                        Dari segi barisan shalat, yang lebih utama bagi seorang makmum
-                                                        untuk
-                                                        berada di barisan yang paling pertama seperti disebutkan pada
-                                                        poin sebelum
-                                                        ini, kemudian diusahakan pula agar pada barisan tersebut ia
-                                                        lebih mendekat
-                                                        kepada imam, sebab makmum yang paling dekat dengan imam baik
-                                                        dari sisi
-                                                        kiri ataupun kanan adalah makmum yang paling utama.
-                                                    </p>
-                                                    <p>
-                                                        <b>Dalilnya adalah:</b>
-                                                        Hadits yang diriwayatkan dari Abdullah bin Mas’ud RA ia berkata,
-                                                        Rasulullah SAW pernah
-                                                        bersabda,
-                                                        <b>“Mendekatlah (berbaris di shaf pertama) siapa saja di antara
-                                                            kalian dari
-                                                            kalangan orang dewasa yang berilmu.”</b> (HR. Abu Dawud
-                                                        no.674, dan
-                                                        AtTirmidzi no.228)
-                                                    </p>
-                                                </div>
-                                                <hr class="border">
-                                                <div class="card-body text-dark">
-                                                    <a href="../terikat_waktu/02_2.html">
-                                                        <h3 id="list-item-9" class=" text-center">
-                                                            <b>Sunnah Sunnah di Dalam
-                                                                Shalat</b>
-                                                        </h3>
-                                                    </a>
-                                                </div>
-                                                <hr class="border">
-                                                <div class="card-body text-dark">
-                                                    <a href="../terikat_waktu/02_3.html">
-                                                        <h3 id="list-item-10" class=" text-center">
-                                                            <b>Zikir Pagi</b>
-                                                        </h3>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="scrollspy-example h-auto" style="position: relative; overflow-y: auto;">
+                            <div class="card-body text-dark">
+                                <h5 class="text-center fw-bold">Melangkah pergi menuju masjid. Ada
+                                    beberapa sunnah saat
+                                    berangkat menuju masjid untuk shalat shubuh</h5>
+                                <br>
+                                <p class="text-center">
+                                    Dikarenakan shalat fajar adalah shalat pertama pada hari itu
+                                    untuk
+                                    melangkahkan kaki menuju masjid, maka ada beberapa sunnah yang
+                                    harus
+                                    diperhatikan, yaitu:
+                                </p>
+                                <li id="list-item-1" class="text-center"><b>Berangkat lebih awal menuju
+                                        masjid</b></li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
+                                    RA ia berkata, Rasulullah SAW
+                                    pernah bersabda,
+                                    <b>“Andai saja mereka tahu apa akan mereka dapatkan dengan
+                                        bersegera menuju
+                                        masjid, maka mereka pasti akan berlomba-lomba untuk
+                                        menyegerakannya.”</b>
+                                    (HR. Bukhari no.615, dan Muslim no.437)
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-2" class="text-center">
+                                    <b>Keluar rumah dalam keadaan suci (sudah berwudhu), agar ia
+                                        mendapatkan pahala dari setiap langkahnya menuju masjid</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan
+                                    dari Abu Hurairah RA ia
+                                    berkata, Rasulullah SAW pernah bersabda, <b>“Shalat
+                                        (fardhu) yang dilakukan seseorang secara
+                                        berjamaah akan ditambahkan derajatnya
+                                        dibanding shalatnya di rumah atau di
+                                        pasar sebesar dua puluh derajat lebih.
+                                        Yaitu ketika salah seorang di antara kalian
+                                        memulainya dengan berwudhu dengan
+                                        sebaik-baik wudhu, lalu ia berangkat
+                                        menuju ke masjid, tanpa ada tujuan lain
+                                        kecuali untuk melaksanakan shalat, tidak
+                                        ada keinginan lain kecuali untuk shalat berjamaah, maka
+                                        setiap
+                                        langkah
+                                        yang ia jejakkan akan menambah satu derajat lebih tinggi dan
+                                        dihapuskan
+                                        baginya satu dosa yang pernah ia lakukan, hingga ia masuk ke
+                                        dalam
+                                        masjid. Apabila ia sudah berada di dalam masjid, maka ia
+                                        sudah
+                                        dihitung
+                                        dalam pahala shalat selama niatnya masih untuk melakukan
+                                        shalat.
+                                        Para
+                                        malaikat pun akan selalu memanjatkan doa untuknya selama ia
+                                        tidak
+                                        berpindah tempat duduk di mana ia melaksanakan shalat, para
+                                        malaikat
+                                        itu memanjatkan, ‘Ya Allah kasihi dia, ampuni dia dan
+                                        hapuskan
+                                        dosadosanya,’ selama ia tidak berhadats dan tidak batal
+                                        wudhunya.”</b> (HR.
+                                    Muslim no.649)
+                                </p>
+                            </div>
+                            <div class="card-body ">
+                                <li id="list-item-3" class="text-center">
+                                    <b>Bergegas untuk shalat dengan penuh ketenangan dan tidak
+                                        terburuburu</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
+                                    RA, dari Nabi SAW beliau bersabda,
+                                    <b>“Apabila
+                                        kalian telah mendengar iqamah dikumandangkan, maka
+                                        bergegaslah
+                                        untuk melaksanakan shalat, namun dengan tetap menjaga
+                                        ketenangan,
+                                        keelokan, dan tidak terburu-buru. Pada rakaat berapa pun
+                                        kamu
+                                        tiba,
+                                        mulailah shalatmu, dan kemudian sempurnakanlah rakaatmu yang
+                                        tertinggal.”</b> (HR. Bukhari no.636, dan Muslim no.602)
+                                </p>
+                                <p class="text-center">
+                                    Imam An-Nawawi –Rahimahullah-menjelaskan, “Yang dimaksud dengan
+                                    secara tenang adalah, bergerak secara perlahan dan menjauhi
+                                    perbuatan yang
+                                    tidak perlu. Sedangkan keelokan lebih condong pada sikap
+                                    pembawaan
+                                    anggota tubuh, seperti mata yang tidak liar, suara yang pelan,
+                                    dan berwibawa.”
+                                    Lihat. Kitab Syarh Muslim karya Imam An-Nawawi (602) pada bab
+                                    anjuran
+                                    dalam melangkah menuju shalat dengan penuh ketenangan dan
+                                    keelokan,
+                                    serta larangan untuk melakukannya dengan terburu-buru.
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-4" class="text-center">
+                                    <b>Mendahulukan kaki yang kanan ketika masuk ke dalam masjid,
+                                        dan
+                                        mendahulukan kaki yang kiri ketika
+                                        keluar</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan
+                                    dari Anas RA ia berkata,
+                                    <b>“Salah satu tuntunan sunnah, apabila masuk
+                                        ke dalam masjid maka hendaknya kamu
+                                        mendahulukan kaki kanan, dan jika kamu
+                                        keluar dari masjid maka dahulukanlah
+                                        kaki kiri.”</b> (HR Al-Hakim 1/338, dan
+                                    dikategorikan sebagai hadits shahih menurut syarat shahih Imam
+                                    Muslim)
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-5" class="text-center"><b>Mengucapkan bacaan yang diajarkan
+                                        dalam sunnah ketika masuk
+                                        ke dalam masjid dan ketika keluar.</b></li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan Abu Hamid, atau Abu
+                                    Asid, ia berkata,
+                                    Rasulullah SAW pernah bersabda,
+                                    “Apabila salah seorang
+                                    di antara kalian masuk ke dalam masjid, maka ucapkanlah
+                                    <b>Allahummaf-tah li
+                                        abwaba rahmatik</b> (ya Allah bukakalah untukku pintu
+                                    rahmat-Mu).
+                                    Dan apabila
+                                    keluar dari masjid maka ucapkanlah <b>Allahumma inni as`aluka
+                                        min
+                                        fadhlik</b> (ya
+                                    Allah aku memohon karunia-Mu).” (HR. Muslim no.713)
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-6" class="text-center">
+                                    <b>Melakukan shalat sunnah tahiyat
+                                        masjid dua rakaat</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Sunnah ini dilakukan apabila seseorang
+                                    datang lebih awal sebelum waktu shalat tiba.
+                                    Ia dianjurkan untuk tidak duduk terlebih
+                                    dahulu sebelum melaksanakan shalat sunnah
+                                    dua rakaat.
+                                </p>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan
+                                    dari Abu Qatadah RA ia
+                                    berkata, Nabi SAW pernah bersabda,
+                                    <b>“Apabila salah seorang dari
+                                        kalian masuk ke dalam masjid, maka janganlah duduk sebelum
+                                        ia
+                                        melakukan
+                                        shalat sunnah dua rakaat.”</b> (HR. Bukhari no.1163, dan
+                                    Muslim
+                                    no.714)
+                                </p>
+                                <p class="text-center">
+                                    Namun jika ia tiba setelah adzan berkumandang, maka shalat
+                                    sunnah
+                                    tahiyat masjid ini sudah terwakilkan dengan pelaksanaan shalat
+                                    sunnah
+                                    qabliyah, jika shalat yang akan ia laksanakan adalah shalat
+                                    fardhu yang
+                                    memiliki sunnah qabliyah, seperti shalat shubuh ataupun shalat
+                                    zhuhur. Juga
+                                    terwakilkan dengan pelaksanaan shalat dhuha jika niatnya masuk
+                                    ke dalam
+                                    masjid untuk melaksanakan shalat dhuha, ataupun dengan shalat
+                                    witir jika ia
+                                    melakukan shalat sunnah tersebut di dalam masjid, atau bahkan
+                                    dengan shalat
+                                    fardhu. Pasalnya, maksud utama dari pelaksanaan shalat tahiyat
+                                    masjid adalah
+                                    tidak langsung duduk saat tiba di masjid tanpa melakukan shalat,
+                                    sebab shalat
+                                    itulah yang seharusnya menjadi alasan seseorang untuk datang ke
+                                    masjid.
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-7" class="text-center">
+                                    <b>Disunnahkan bagi para lelaki untuk menempati shaf yang
+                                        pertama,
+                                        karena shaf itulah yang paling afdhal bagi kaum pria. Adapun
+                                        untuk kaum wanita, shaf yang paling baik adalah shaf yang
+                                        paling
+                                        belakang.</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Dalilnya adalah hadits yang diriwayatkan dari Abu Hurairah
+                                    RA, bahwasanya Nabi SAW pernah
+                                    bersabda,
+                                    <b>“Sebaik-baik shaf bagi kaum pria adalah shaf pertama, dan
+                                        seburukburuk shafnya adalah shaf paling terakhir. Sementara
+                                        itu,
+                                        sebaik-baik shaf
+                                        bagi kaum wanita adalah shaf yang paling belakang, dan
+                                        seburuk-buruk
+                                        shafnya adalah shaf yang paling depan.”</b> (HR. Muslim
+                                    no.440)
+                                </p>
+                                <p class="text-center">
+                                    Yang dimaksud paling baik pada hadits ini adalah paling banyak
+                                    pahalanya
+                                    dan keutamaannya. Sedangkan yang dimaksud paling buruk adalah
+                                    paling
+                                    sedikit pahalanya dan keutamaannya.
+                                </p>
+                                <p class="text-center">
+                                    Hadits ini berlaku dalam keadaan ketika kaum wanita ikut shalat
+                                    berjamaah
+                                    bersama kaum pria tanpa ada pembatas yang memisahkan antara
+                                    keduanya,
+                                    baik berbentuk tembok ataupun semacamnya. Jika seperti itu, maka
+                                    shaf
+                                    terbaik bagi kaum wanita adalah di bagian paling belakang,
+                                    karena keadaan
+                                    yang demikian akan lebih menjaga kaum wanita dari pandangan kaum
+                                    pria
+                                </p>
+                                <p class="text-center">
+                                    Adapun jika di masjid tersebut terdapat pembatas yang memisahkan
+                                    antara
+                                    keduanya, misalnya seperti yang diterapkan pada sejumlah masjid
+                                    di zaman
+                                    sekarang, yaitu dengan mengkhususkan ruangan terpisah bagi kaum
+                                    wanita, dalam
+                                    keadaan demikian maka shaf terbaik bagi kaum wanita juga berada
+                                    di paling depan,
+                                    sebab sudah hilang penyebabnya untuk dapat dipandang oleh kaum
+                                    lelaki. Pasalnya,
+                                    hukum itu selalu bergantung pada penyebabnya, ada atau tiadanya
+                                    penyebab itu
+                                </p>
+                            </div>
+                            <div class="card-body text-dark">
+                                <li id="list-item-8" class="text-center">
+                                    <b>Disunnahkan bagi makmum untuk berada dekat dengan imam</b>
+                                </li>
+                                <br>
+                                <p class="text-center">
+                                    Dari segi barisan shalat, yang lebih utama bagi seorang makmum
+                                    untuk
+                                    berada di barisan yang paling pertama seperti disebutkan pada
+                                    poin sebelum
+                                    ini, kemudian diusahakan pula agar pada barisan tersebut ia
+                                    lebih mendekat
+                                    kepada imam, sebab makmum yang paling dekat dengan imam baik
+                                    dari sisi
+                                    kiri ataupun kanan adalah makmum yang paling utama.
+                                </p>
+                                <p class="text-center">
+                                    <b>Dalilnya adalah:</b>
+                                    Hadits yang diriwayatkan dari Abdullah bin Mas’ud RA ia berkata,
+                                    Rasulullah SAW pernah
+                                    bersabda,
+                                    <b>“Mendekatlah (berbaris di shaf pertama) siapa saja di antara
+                                        kalian dari
+                                        kalangan orang dewasa yang berilmu.”</b> (HR. Abu Dawud
+                                    no.674, dan
+                                    AtTirmidzi no.228)
+                                </p>
+                            </div>
+                            <hr class="border">
+                            <div class="card-body text-dark">
+                                <a href="../terikat_waktu/02_2.html">
+                                    <h3 id="list-item-9" class=" text-center">
+                                        <b>Sunnah Sunnah di Dalam
+                                            Shalat</b>
+                                    </h3>
+                                </a>
+                            </div>
+                            <hr class="border">
+                            <div class="card-body text-dark">
+                                <a href="../terikat_waktu/02_3.html">
+                                    <h3 id="list-item-10" class=" text-center">
+                                        <b>Zikir Pagi</b>
+                                    </h3>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <script>
-                        // Inisialisasi Scrollspy
-                        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-                            target: '#list-example',
-                            offset: 70
-                        });
-                    </script>
-
                 </div>
-
             </div>
+            </>
+            </>
+            </>
 
-            <button id="scrollToTop" class="scroll-to-top" style="display: none">
-                ↑طيران↑
-            </button>
-
-            <!-- Footer Section Start -->
-            <footer class="footer">
-                <div class="footer-body">
-                    <ul class="left-panel list-inline mb-0 p-0">
-                        <li class="list-inline-item">
-                            <img src="../../../assets/logo altie putih.png" height="20px" alt="" />
-                            <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
-                        </li>
-                    </ul>
-                    <div class="right-panel">
-                        Copyright ©
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
-                    </div>
-                </div>
-            </footer>
-            <!-- Footer Section End -->
-
-            <!-- Library Bundle Script -->
-            <script src="../../../assets/js/core/libs.min.js"></script>
-
-            <!-- External Library Bundle Script -->
-            <script src="../../../assets/js/core/external.min.js"></script>
-
-            <!-- Widgetchart Script -->
-            <script src="../../../assets/js/charts/widgetcharts.js"></script>
-
-            <!-- mapchart Script -->
-            <script src="../../../assets/js/charts/vectore-chart.js"></script>
-            <script src="../../../assets/js/charts/dashboard.js"></script>
-
-            <!-- fslightbox Script -->
-            <script src="../../../assets/js/plugins/fslightbox.js"></script>
-
-            <!-- Settings Script -->
-            <script src="../../../assets/js/plugins/setting.js"></script>
-
-            <!-- Slider-tab Script -->
-            <script src="../../../assets/js/plugins/slider-tabs.js"></script>
-
-            <!-- Form Wizard Script -->
-            <script src="../../../assets/js/plugins/form-wizard.js"></script>
-
-            <!-- AOS Animation Plugin-->
-            <script src="../../../assets/vendor/aos/dist/aos.js"></script>
-
-            <!-- App Script -->
-            <script src="../../../assets/js/hope-ui.js" defer></script>
             <script>
-                const scrollToTopButton = document.getElementById("scrollToTop");
-
-                // Tampilkan tombol ketika halaman di-scroll ke bawah
-                window.onscroll = function () {
-                    if (
-                        document.body.scrollTop > 200 ||
-                        document.documentElement.scrollTop > 200
-                    ) {
-                        scrollToTopButton.style.display = "block";
-                    } else {
-                        scrollToTopButton.style.display = "none";
-                    }
-                };
-
-                // Saat tombol diklik, scroll ke atas
-                scrollToTopButton.addEventListener("click", function () {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                    });
+                // Inisialisasi Scrollspy
+                const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                    target: '#list-example',
+                    offset: 70
                 });
             </script>
-            <!-- Google Tag Manager -->
-            <script>
-                (function (w, d, s, l, i) {
-                    w[l] = w[l] || [];
-                    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-                    var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s),
-                        dl = l != "dataLayer" ? "&l=" + l : "";
-                    j.async = true;
-                    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                    f.parentNode.insertBefore(j, f);
-                })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
-                window.tag_manager_event = "dashboard-free-preview";
-                window.tag_manager_product = "HopeUI";
-            </script>
-            <!-- End Google Tag Manager -->
+
+            </>
+
+        </div>
+
+        <button id="scrollToTop" class="scroll-to-top" style="display: none">
+            ↑طيران↑
+        </button>
+
+        <!-- Footer Section Start -->
+        <footer class="footer">
+            <div class="footer-body">
+                <ul class="left-panel list-inline mb-0 p-0">
+                    <li class="list-inline-item">
+                        <img src="../../../assets/logo altie putih.png" height="20px" alt="" />
+                        <a href="https://smk-alittihad.sch.id/">SMKS Al Ittihad</a>
+                    </li>
+                </ul>
+                <div class="right-panel">
+                    Copyright ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    SMK Al-Ittihad. by <a href="index.html">TEFATIE</a>.
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Library Bundle Script -->
+        <script src="../../../assets/js/core/libs.min.js"></script>
+
+        <!-- External Library Bundle Script -->
+        <script src="../../../assets/js/core/external.min.js"></script>
+
+        <!-- Widgetchart Script -->
+        <script src="../../../assets/js/charts/widgetcharts.js"></script>
+
+        <!-- mapchart Script -->
+        <script src="../../../assets/js/charts/vectore-chart.js"></script>
+        <script src="../../../assets/js/charts/dashboard.js"></script>
+
+        <!-- fslightbox Script -->
+        <script src="../../../assets/js/plugins/fslightbox.js"></script>
+
+        <!-- Settings Script -->
+        <script src="../../../assets/js/plugins/setting.js"></script>
+
+        <!-- Slider-tab Script -->
+        <script src="../../../assets/js/plugins/slider-tabs.js"></script>
+
+        <!-- Form Wizard Script -->
+        <script src="../../../assets/js/plugins/form-wizard.js"></script>
+
+        <!-- AOS Animation Plugin-->
+        <script src="../../../assets/vendor/aos/dist/aos.js"></script>
+
+        <!-- App Script -->
+        <script src="../../../assets/js/hope-ui.js" defer></script>
+        <script>
+            const scrollToTopButton = document.getElementById("scrollToTop");
+
+            // Tampilkan tombol ketika halaman di-scroll ke bawah
+            window.onscroll = function () {
+                if (
+                    document.body.scrollTop > 200 ||
+                    document.documentElement.scrollTop > 200
+                ) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            };
+
+            // Saat tombol diklik, scroll ke atas
+            scrollToTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WNGH9RL");
+            window.tag_manager_event = "dashboard-free-preview";
+            window.tag_manager_product = "HopeUI";
+        </script>
+        <!-- End Google Tag Manager -->
         </div>
     </main>
 </body>
