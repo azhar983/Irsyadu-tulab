@@ -504,15 +504,21 @@
          for (const [sholat, waktu] of Object.entries(waktuSholat)) {
             const sholatDiv = document.createElement('div');
             sholatDiv.classList.add('sholat-item');
-            sholatDiv.innerHTML = `<div class="rounded border-3 shadow d-flex border p-4"><h5 class="fw-bold">${sholat}:</h5> <h5 class="fw-bold ms-auto">${waktu}</h5></div>`;
+            sholatDiv.innerHTML = `
+                   <div class="rounded border-3 shadow d-flex border p-4">
+                       <h5 class="fw-bold">${sholat}:</h5>
+                       <h5 class="fw-bold ms-auto">${waktu}</h5>
+                   </div>`;
             container.appendChild(sholatDiv);
          }
       }
    </script>
 
 
-   <div class="justify-content-arround"></div>
 
+
+<div class="justify-content-arround"></div>
+   
 
 
 
