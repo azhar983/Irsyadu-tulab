@@ -391,6 +391,16 @@
 
   <!-- App Script -->
   <script src="../../assets/js/hope-ui.js" defer></script>
+
+  <script>
+    document.addEventListener('backbutton', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '../sholawat.html'
+      }
+    });
+  </script>
 </body>
 
 </html>
