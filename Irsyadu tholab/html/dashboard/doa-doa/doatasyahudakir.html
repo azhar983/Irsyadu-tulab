@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no shrink-to-fit=no">
   <title>Irsyadu Thulab | Doa Tasyahud Akhir</title>
 
   <!-- Favicon -->
@@ -30,6 +30,9 @@
   <!-- RTL Css -->
   <link rel="stylesheet" href="../../assets/css/rtl.min.css" />
 </head>
+
+<style>
+</style>
 
 <body class="  ">
   <!-- loader Start -->
@@ -98,11 +101,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../jadwal_solat.html">
+              <a class="nav-link" aria-current="page" href="../hadist.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/hadis.png" style="opacity: 70%" />
                 </i>
-                <span class="item-name">Jadwal Sholat</span>
+                <span class="item-name">Hadist Pilihan</span>
               </a>
             </li>
             <li class="nav-item">
@@ -140,9 +143,17 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../praktek.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%;">
                 </i>
                 <span class="item-name">Praktek Ibadah</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jadwal_solat.html">
+                <i class="icon">
+                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%;">
+                </i>
+                <span class="item-name">Waktu Sholat</span>
               </a>
             </li>
             <li>
@@ -272,7 +283,7 @@
       <!-- Nav Header Component End -->
       <!--Nav End-->
     </div>
-    <div class="mt-n5 p-0">
+    <div class="container mt-n5 p-0">
       <!-- doa -->
       <div class="container">
 
@@ -286,7 +297,7 @@
             <div class="card-body">
               <h4 class="d-flex text-dark text-centerdo">
                 <h4 class="text-end mb-4">
-                  <b>
+                  <b class="arabic-font" style="line-height: 2">
                     أَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ
                     الْقَبْرِ وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ
                     الْمَحْيَا وَالْمَمَاتِ وَمِنْ فِتْنَةِ الْمَسِيْحِ
@@ -311,7 +322,7 @@
     <!-- doa end -->
 
     <!-- Footer Section Start -->
-    <footer class="footer">
+    <footer class="footer ">
       <div class="footer-body">
         <ul class="left-panel list-inline mb-0 p-0">
           <li class="list-inline-item">
@@ -364,6 +375,16 @@
 
   <!-- App Script -->
   <script src="../../assets/js/hope-ui.js" defer></script>
+
+  <script>
+    document.addEventListener('backbutton', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '../doa.html'
+      }
+    });
+  </script>
 </body>
 
 </html>

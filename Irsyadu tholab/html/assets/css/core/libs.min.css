@@ -4,10 +4,19 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Amiri';
+  src: url('../../../assets/fonts/Amiri-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   font-family: 'Poppins', sans-serif;
+}
 
+.arabic-font{
+  font-family: 'Amiri';
 }
 
 .irsyad{

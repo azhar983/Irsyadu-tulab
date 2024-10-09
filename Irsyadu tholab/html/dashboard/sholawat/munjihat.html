@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no shrink-to-fit=no">
   <title>Irsyadu Thulab | Munjihat</title>
 
   <!-- Favicon -->
@@ -98,11 +98,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../jadwal_solat.html">
+              <a class="nav-link" aria-current="page" href="../hadist.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/hadis.png" style="opacity: 70%" />
                 </i>
-                <span class="item-name">Jadwal Sholat</span>
+                <span class="item-name">Hadist Pilihan</span>
               </a>
             </li>
             <li class="nav-item">
@@ -140,9 +140,17 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../praktek.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%;">
                 </i>
                 <span class="item-name">Praktek Ibadah</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jadwal_solat.html">
+                <i class="icon">
+                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%;">
+                </i>
+                <span class="item-name">Waktu Sholat</span>
               </a>
             </li>
             <li>
@@ -256,7 +264,7 @@
         </div>
         <div class="iq-header-img">
           <img src="../../assets/images/dashboard/altie.png" alt="header"
-          class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
+            class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
           <img src="../../assets/images/dashboard/top-header.png" alt="header"
             class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX" />
           <img src="../../assets/images/dashboard/top-header1.png" alt="header"
@@ -290,7 +298,7 @@
                   <div class="card-body">
                     <div class="d-flex text-end mb-4">
                       <h4 class="text-dark text-center">
-                        <b>
+                        <b style="line-height: 2" class=" text-center fw-bold arabic-font">
                           بِـسْمِ اللّــٰـهِ الرَّحْمٰــنِ الرَّحِيْمِ
                           <br /><br />
                           اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلاَةً
@@ -383,6 +391,16 @@
 
   <!-- App Script -->
   <script src="../../assets/js/hope-ui.js" defer></script>
+
+  <script>
+    document.addEventListener('backbutton', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '../sholawat.html'
+      }
+    });
+  </script>
 </body>
 
 </html>

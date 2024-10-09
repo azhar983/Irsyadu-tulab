@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no shrink-to-fit=no">
     <title>Irsyadu Thulab | Sunnah Ibadah | Sunnah Nabi</title>
 
     <!-- Favicon -->
@@ -99,12 +99,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../jadwal_solat.html">
+                        <a class="nav-link" aria-current="page" href="../../hadist.html">
                             <i class="icon">
-                                <img class="icon-20" src="../../../assets/icon/sidebar/jadwal.png"
+                                <img class="icon-20" src="../../../assets/icon/sidebar/hadis.png"
                                     style="opacity: 70%" />
                             </i>
-                            <span class="item-name">Jadwal Sholat</span>
+                            <span class="item-name">Hadist Pilihan</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -146,9 +146,18 @@
                         <a class="nav-link" aria-current="page" href="../../praktek.html">
                             <i class="icon">
                                 <img class="icon-20" src="../../../assets/icon/sidebar/praktek.png"
-                                    style="opacity: 70%" />
+                                    style="opacity: 70%;">
                             </i>
                             <span class="item-name">Praktek Ibadah</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../jadwal_solat.html">
+                            <i class="icon">
+                                <img class="icon-20" src="../../../assets/icon/sidebar/jadwal.png"
+                                    style="opacity: 70%;">
+                            </i>
+                            <span class="item-name">Waktu Sholat</span>
                         </a>
                     </li>
                     <li>
@@ -294,7 +303,7 @@
                                 <h6 class="text-dark text-center" data-bs-toggle="collapse" href="#collapseSection0"
                                     role="button" aria-expanded="true" aria-controls="collapseSection0">
                                     Sunnah Sunnah di Dalam
-                                        Shalat
+                                    Shalat
                                 </h6>
                             </li>
                             <div class="collapse show" id="collapseSection0">
@@ -339,30 +348,28 @@
                                     <a href="#list-item-6">
                                         <h6 class="">
                                             Sunnah-sunnah yang terkait pada saat duduk di antara dua
-                                                sujud
+                                            sujud
                                         </h6>
                                     </a>
                                 </li>
                                 <li class="list-group-item list-group-item-light">
                                     <a href="#list-item-7">
                                         <h6 class="">
-                                            Sunnah-sunnah yang terkait dengan tasyahud<
-                                        </h6>
+                                            Sunnah-sunnah yang terkait dengan tasyahud< </h6>
                                     </a>
                                 </li>
                                 <li class="list-group-item list-group-item-light">
                                     <a href="#list-item-8">
                                         <h6 class="">
                                             Berdzikir Setelah Selesai Melaksanakan Shalat
-                                                Fardhu
+                                            Fardhu
                                         </h6>
                                     </a>
                                 </li>
                                 <li class="list-group-item list-group-item-light">
                                     <a href="#list-item-9">
                                         <h6 class="">
-                                            Duduk di Tempat Shalat Hingga Matahari Terbit<
-                                        </h6>
+                                            Duduk di Tempat Shalat Hingga Matahari Terbit< </h6>
                                     </a>
                                 </li>
                             </div>
@@ -879,6 +886,16 @@
 
         <!-- App Script -->
         <script src="../../../assets/js/hope-ui.js" defer></script>
+
+        <script>
+            document.addEventListener('backbutton', function () {
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    window.location.href = '../../sunnah.html'
+                }
+            });
+        </script>
         <script>
             const scrollToTopButton = document.getElementById("scrollToTop");
 
