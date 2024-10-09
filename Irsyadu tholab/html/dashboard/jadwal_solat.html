@@ -245,7 +245,7 @@
             style="display: none; bottom: 60px; right:20px; z-index: 999;">↑</button>
          <a class="btn btn-primary btn-sm position-fixed text-light px-2 mt-2"
             style="bottom: 20px;right: 20px; z-index: 1000;"
-            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=destaomen1@gmail.com&su=%20Subjek&body=Isi%20pesan"
+            href=""
             data-bs-toggle="tooltip" data-bs-placement="right" title="Hubungi Kami">
             <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" class="icon-20" xmlns="http://www.w3.org/2000/svg"
                fill="#000000">
@@ -400,6 +400,17 @@
    <!-- Wrapper End-->
    <!-- offcanvas start -->
    <script>
+      if ('serviceWorker' in navigator) {
+         window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js')
+               .then(function (registration) {
+                  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+               }).catch(function (error) {
+                  console.log('ServiceWorker registration failed: ', error);
+               });
+         });
+      }
+
       async function getPrayerTimes(latitude, longitude) {
          const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`);
          const data = await response.json();
@@ -505,10 +516,10 @@
             const sholatDiv = document.createElement('div');
             sholatDiv.classList.add('sholat-item');
             sholatDiv.innerHTML = `
-                   <div class="rounded border-3 shadow d-flex border p-4">
-                       <h5 class="fw-bold">${sholat}:</h5>
-                       <h5 class="fw-bold ms-auto">${waktu}</h5>
-                   </div>`;
+            <div class="rounded border-3 shadow d-flex border p-4">
+                <h5 class="fw-bold">${sholat}:</h5>
+                <h5 class="fw-bold ms-auto">${waktu}</h5>
+            </div>`;
             container.appendChild(sholatDiv);
          }
       }
@@ -517,8 +528,8 @@
 
 
 
-<div class="justify-content-arround"></div>
-   
+   <div class="justify-content-arround"></div>
+
 
 
 
