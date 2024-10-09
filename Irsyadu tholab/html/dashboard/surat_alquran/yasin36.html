@@ -140,9 +140,17 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../praktek.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%;">
                 </i>
                 <span class="item-name">Praktek Ibadah</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jadwal_solat.html">
+                <i class="icon">
+                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%;">
+                </i>
+                <span class="item-name">Waktu Sholat</span>
               </a>
             </li>
             <li>
@@ -2368,6 +2376,16 @@
 
   <!-- App Script -->
   <script src="../../assets/js/hope-ui.js" defer></script>
+
+  <script>
+    document.addEventListener('backbutton', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '../alquran.html'
+      }
+    });
+  </script>
 </body>
 
 </html>

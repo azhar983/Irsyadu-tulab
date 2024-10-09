@@ -140,9 +140,17 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../praktek.html">
                 <i class="icon">
-                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%" />
+                  <img class="icon-20" src="../../assets/icon/sidebar/praktek.png" style="opacity: 70%;">
                 </i>
                 <span class="item-name">Praktek Ibadah</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jadwal_solat.html">
+                <i class="icon">
+                  <img class="icon-20" src="../../assets/icon/sidebar/jadwal.png" style="opacity: 70%;">
+                </i>
+                <span class="item-name">Waktu Sholat</span>
               </a>
             </li>
             <li>
@@ -274,38 +282,38 @@
     </div>
     <div class="container mt-n5 p-0">
       <!-- doa -->
-     
 
-        <div class="text-dark text-center card p-3" data-aos="fade-up" data-aos-delay="900">
-          <h3 class="card-header text-center fw-bold mb-4">
-            Doa Tasyahud Akhir
-          </h3>
-          <div class="col-md-12 col-lg-12">
-            <a href="../doa.html" class="btn btn-primary btn-sm mb-4">Kembali</a>
 
-            <div class="card-body">
-              <h4 class="d-flex text-dark text-centerdo">
-                <h4 class="text-end mb-4">
-                  <b>
-                    أَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ
-                    الْقَبْرِ وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ
-                    الْمَحْيَا وَالْمَمَاتِ وَمِنْ فِتْنَةِ الْمَسِيْحِ
-                    الدَّجَّالِ
-                  </b>
-                </h4>
+      <div class="text-dark text-center card p-3" data-aos="fade-up" data-aos-delay="900">
+        <h3 class="card-header text-center fw-bold mb-4">
+          Doa Tasyahud Akhir
+        </h3>
+        <div class="col-md-12 col-lg-12">
+          <a href="../doa.html" class="btn btn-primary btn-sm mb-4">Kembali</a>
+
+          <div class="card-body">
+            <h4 class="d-flex text-dark text-centerdo">
+              <h4 class="text-end mb-4">
+                <b>
+                  أَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ
+                  الْقَبْرِ وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ
+                  الْمَحْيَا وَالْمَمَاتِ وَمِنْ فِتْنَةِ الْمَسِيْحِ
+                  الدَّجَّالِ
+                </b>
               </h4>
+            </h4>
 
-              <p class="text-dark text-center">
-                Artinya : Ya Allah aku berlindung hanya kepada-Mu dari
-                siksaan neraka Jahannam, dari azab kubur, dari bencana
-                kehidupan dan kematian, dan dari keburukan fitnah
-                Dajjal.
-              </p>
-            </div>
+            <p class="text-dark text-center">
+              Artinya : Ya Allah aku berlindung hanya kepada-Mu dari
+              siksaan neraka Jahannam, dari azab kubur, dari bencana
+              kehidupan dan kematian, dan dari keburukan fitnah
+              Dajjal.
+            </p>
           </div>
         </div>
-
       </div>
+
+    </div>
     </div>
 
     <!-- doa end -->
@@ -364,6 +372,16 @@
 
   <!-- App Script -->
   <script src="../../assets/js/hope-ui.js" defer></script>
+
+  <script>
+    document.addEventListener('backbutton', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = '../doa.html'
+      }
+    });
+  </script>
 </body>
 
 </html>
