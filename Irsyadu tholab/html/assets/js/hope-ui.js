@@ -46,6 +46,27 @@ Index Of Script
 /*---------------------------------------------------------------------
               Sticky-Nav
 -----------------------------------------------------------------------*/
+function toggleDisplay() {
+  // Mendapatkan status checkbox
+  const showTranslation = document.getElementById("showTranslation").checked;
+  const showTransliteration = document.getElementById(
+    "showTransliteration"
+  ).checked;
+
+  // Mendapatkan elemen terjemahan dan transliterasi
+  const translations = document.querySelectorAll(".translation");
+  const transliterations = document.querySelectorAll(".transliteration");
+
+  // Menampilkan atau menyembunyikan terjemahan berdasarkan status checkbox
+  translations.forEach((el) => {
+    el.style.display = showTranslation ? "block" : "none";
+  });
+
+  // Menampilkan atau menyembunyikan transliterasi berdasarkan status checkbox
+  transliterations.forEach((el) => {
+    el.style.display = showTransliteration ? "block" : "none";
+  });
+}
 window.addEventListener('scroll', function () {
   let yOffset = document.documentElement.scrollTop;
   let navbar = document.querySelector(".navs-sticky")
