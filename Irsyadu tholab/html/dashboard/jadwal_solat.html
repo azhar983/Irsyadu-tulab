@@ -530,12 +530,160 @@
    </script>
 
 
+   <!-- untuk android -->
 
+   <!-- <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }).catch(function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+        });
+    }
 
-   <div class="justify-content-arround"></div>
+    // Fungsi untuk mendapatkan waktu sholat dari API
+    async function getPrayerTimes(latitude, longitude) {
+        const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`);
+        const data = await response.json();
 
+        const filteredTimes = {
+            Subuh: data.data.timings.Fajr,
+            Dzuhur: data.data.timings.Dhuhr,
+            Ashar: data.data.timings.Asr,
+            Maghrib: data.data.timings.Maghrib,
+            Isya: data.data.timings.Isha
+        };
 
+        return filteredTimes;
+    }
 
+    // Fungsi untuk menghitung waktu tersisa sebelum sholat berikutnya
+    function getRemainingTime(targetTime) {
+        const now = new Date();
+        const target = new Date(now.toDateString() + ' ' + targetTime);
+        const difference = target - now;
+
+        if (difference > 0) {
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            return { hours, minutes, seconds, total: difference };
+        }
+        return { hours: 0, minutes: 0, seconds: 0, total: 0 };
+    }
+
+    // Menemukan sholat berikutnya
+    function findCurrentAndNextSholat(waktuSholat) {
+        const now = new Date();
+        const currentTime = now.getHours() + ":" + now.getMinutes().toString().padStart(2, '0');
+        let nextSholat = null;
+
+        for (const [sholat, waktu] of Object.entries(waktuSholat)) {
+            if (currentTime <= waktu) {
+                nextSholat = { sholat, waktu };
+                break;
+            }
+        }
+
+        // Jika tidak ada sholat yang akan datang, set waktu sholat Fajr keesokan harinya
+        if (!nextSholat) {
+            nextSholat = { sholat: 'Subuh', waktu: waktuSholat.Subuh + ' (Besok)' };
+        }
+
+        return { nextSholat };
+    }
+
+    // Mengupdate hitung mundur ke sholat berikutnya
+    function updateSholatCountdown(waktuSholat) {
+        const { nextSholat } = findCurrentAndNextSholat(waktuSholat);
+        const countdownTextElement = document.getElementById('countdown');
+        const sholatBerikutnyaElement = document.getElementById('sholat-berikutnya');
+        const circleForeground = document.querySelector('.circle-foreground');
+
+        if (nextSholat) {
+            sholatBerikutnyaElement.textContent = `Sholat berikutnya: ${nextSholat.sholat} - ${nextSholat.waktu}`;
+
+            const now = new Date();
+            const target = new Date(now.toDateString() + ' ' + nextSholat.waktu);
+            const initialDifference = target - now;
+
+            const interval = setInterval(() => {
+                const remainingTime = getRemainingTime(nextSholat.waktu);
+                countdownTextElement.textContent = `${remainingTime.hours.toString().padStart(2, '0')}:${remainingTime.minutes.toString().padStart(2, '0')}:${remainingTime.seconds.toString().padStart(2, '0')}`;
+
+                const percentRemaining = remainingTime.total / initialDifference;
+                const circleOffset = 408 * percentRemaining;
+                circleForeground.style.strokeDashoffset = circleOffset;
+
+                if (remainingTime.total <= 0) {
+                    clearInterval(interval);
+                    updateSholatCountdown(waktuSholat);
+                }
+            }, 1000);
+        }
+    }
+
+    // Mendapatkan lokasi dengan izin menggunakan Cordova Diagnostic Plugin
+    document.addEventListener('deviceready', function () {
+        cordova.plugins.diagnostic.requestLocationAuthorization(function (status) {
+            switch (status) {
+                case cordova.plugins.diagnostic.permissionStatus.GRANTED:
+                    console.log("Izin lokasi diberikan");
+
+                    // Sekarang kita bisa memanggil geolocation
+                    navigator.geolocation.getCurrentPosition(async (position) => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+
+                        const waktuSholat = await getPrayerTimes(latitude, longitude);
+                        displayPrayerTimes(waktuSholat);
+                        updateSholatCountdown(waktuSholat);
+                    }, (error) => {
+                        console.error("Geolocation error:", error);
+                        alert("Gagal mendapatkan lokasi. Pastikan izin lokasi telah diaktifkan.");
+                    }, {
+                        enableHighAccuracy: true, // Akurasi tinggi
+                        timeout: 10000, // Timeout jika gagal mendapatkan lokasi
+                        maximumAge: 30000 // Cache lokasi maksimum 30 detik
+                    });
+                    break;
+
+                case cordova.plugins.diagnostic.permissionStatus.DENIED:
+                    console.log("Izin lokasi ditolak");
+                    alert("Izin lokasi ditolak. Tidak dapat melanjutkan tanpa akses lokasi.");
+                    break;
+
+                case cordova.plugins.diagnostic.permissionStatus.DENIED_ALWAYS:
+                    console.log("Izin lokasi ditolak secara permanen");
+                    alert("Izin lokasi ditolak secara permanen. Aktifkan izin lokasi di pengaturan aplikasi.");
+                    break;
+            }
+        }, function (error) {
+            console.error("Error meminta izin lokasi: " + error);
+            alert("Terjadi kesalahan saat meminta izin lokasi.");
+        });
+    });
+
+    // Fungsi untuk menampilkan waktu sholat pada halaman
+    function displayPrayerTimes(waktuSholat) {
+        const container = document.getElementById('waktu-sholat');
+        container.innerHTML = ''; // Kosongkan kontainer sebelum menambahkan waktu sholat
+
+        for (const [sholat, waktu] of Object.entries(waktuSholat)) {
+            const sholatDiv = document.createElement('div');
+            sholatDiv.classList.add('sholat-item');
+            sholatDiv.innerHTML = `
+         <div class="rounded border-3 shadow d-flex border p-4">
+            <h5 class="fw-bold">${sholat}:</h5>
+            <h5 class="fw-bold ms-auto">${waktu}</h5>
+         </div>`;
+            container.appendChild(sholatDiv);
+        }
+    }
+</script> -->
 
 
     <!-- Library Bundle Script -->
